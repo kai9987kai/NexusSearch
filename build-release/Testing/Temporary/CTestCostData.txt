@@ -1,0 +1,23 @@
+test_arena_rollback 1 0.108572
+test_arena_rollback_shared 1 0.0938528
+test_bitmap 1 0.103336
+test_bitmap_shared 1 0.124246
+test_core 1 0.197101
+test_core_shared 1 0.227698
+test_fuzzy 1 0.105913
+test_fuzzy_shared 1 0.104033
+test_json 1 0.132908
+test_json_shared 1 0.145949
+test_parse 1 0.145299
+test_parse_shared 1 0.157012
+test_platform 1 0.165588
+test_platform_shared 1 0.169395
+test_regex 1 0.306054
+test_regex_shared 1 0.317763
+test_simd 1 0.0844086
+test_simd_shared 1 0.100227
+test_utf8 1 0.147485
+test_utf8_shared 1 0.165603
+test_vec 1 0.111551
+test_vec_shared 1 0.100106
+---

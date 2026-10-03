@@ -1,0 +1,511 @@
+Start testing: Oct 03 18:05 GMT Summer Time
+----------------------------------------------------------
+1/22 Testing: test_arena_rollback
+1/22 Test: test_arena_rollback
+Command: "C:/Users/kai99/Desktop/NEXUS/build/test_arena_rollback.exe"
+Directory: C:/Users/kai99/Desktop/NEXUS
+"test_arena_rollback" start time: Oct 03 18:05 GMT Summer Time
+Output:
+----------------------------------------------------------
+[ OK ] test_rollback_reclaims_oversize                          0.05 ms
+[ OK ] test_arena_huge_chunk_rejected                           0.00 ms
+
+2 test(s), 0 failed, 84 check(s)
+<end of output>
+Test time =   0.08 sec
+----------------------------------------------------------
+Test Passed.
+"test_arena_rollback" end time: Oct 03 18:05 GMT Summer Time
+"test_arena_rollback" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/22 Testing: test_arena_rollback_shared
+2/22 Test: test_arena_rollback_shared
+Command: "C:/Users/kai99/Desktop/NEXUS/build/test_arena_rollback_shared.exe"
+Directory: C:/Users/kai99/Desktop/NEXUS
+"test_arena_rollback_shared" start time: Oct 03 18:05 GMT Summer Time
+Output:
+----------------------------------------------------------
+[ OK ] test_rollback_reclaims_oversize                          0.05 ms
+[ OK ] test_arena_huge_chunk_rejected                           0.00 ms
+
+2 test(s), 0 failed, 84 check(s)
+<end of output>
+Test time =   0.15 sec
+----------------------------------------------------------
+Test Passed.
+"test_arena_rollback_shared" end time: Oct 03 18:05 GMT Summer Time
+"test_arena_rollback_shared" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/22 Testing: test_bitmap
+3/22 Test: test_bitmap
+Command: "C:/Users/kai99/Desktop/NEXUS/build/test_bitmap.exe"
+Directory: C:/Users/kai99/Desktop/NEXUS
+"test_bitmap" start time: Oct 03 18:05 GMT Summer Time
+Output:
+----------------------------------------------------------
+[ OK ] test_bitmap_boundaries                                   0.05 ms
+[ OK ] test_bitmap_set_oracle                                  37.58 ms
+[ OK ] test_bitmap_random_corruption                           40.54 ms
+[ OK ] test_bitmap_oom                                          0.22 ms
+[ OK ] test_bitmap_empty_threshold                              1.29 ms
+
+5 test(s), 0 failed, 1351530 check(s)
+<end of output>
+Test time =   0.18 sec
+----------------------------------------------------------
+Test Passed.
+"test_bitmap" end time: Oct 03 18:05 GMT Summer Time
+"test_bitmap" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/22 Testing: test_bitmap_shared
+4/22 Test: test_bitmap_shared
+Command: "C:/Users/kai99/Desktop/NEXUS/build/test_bitmap_shared.exe"
+Directory: C:/Users/kai99/Desktop/NEXUS
+"test_bitmap_shared" start time: Oct 03 18:05 GMT Summer Time
+Output:
+----------------------------------------------------------
+[ OK ] test_bitmap_boundaries                                   0.48 ms
+[ OK ] test_bitmap_set_oracle                                  31.35 ms
+[ OK ] test_bitmap_random_corruption                           42.15 ms
+[ OK ] test_bitmap_oom                                          0.22 ms
+[ OK ] test_bitmap_empty_threshold                              1.33 ms
+
+5 test(s), 0 failed, 1351530 check(s)
+<end of output>
+Test time =   0.15 sec
+----------------------------------------------------------
+Test Passed.
+"test_bitmap_shared" end time: Oct 03 18:05 GMT Summer Time
+"test_bitmap_shared" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/22 Testing: test_core
+5/22 Test: test_core
+Command: "C:/Users/kai99/Desktop/NEXUS/build/test_core.exe"
+Directory: C:/Users/kai99/Desktop/NEXUS
+"test_core" start time: Oct 03 18:05 GMT Summer Time
+Output:
+----------------------------------------------------------
+[ OK ] test_mem_basic                                           0.03 ms
+[ OK ] test_mem_aligned                                         0.02 ms
+[ OK ] test_mem_calloc_overflow                                 0.01 ms
+[ OK ] test_mem_fail_injection                                  0.00 ms
+[ OK ] test_mem_canary_detects_nothing_when_clean               0.00 ms
+[ OK ] test_strdup                                              0.01 ms
+[ OK ] test_arena                                               0.20 ms
+[ OK ] test_arena_oom                                           0.14 ms
+[ OK ] test_buf_put_and_read                                    0.01 ms
+[ OK ] test_buf_patch_pad_printf                                0.01 ms
+[ OK ] test_varint_roundtrip_fuzz                               0.86 ms
+[ OK ] test_cursor_malformed_varints                            0.01 ms
+[ OK ] test_slice_sub                                           0.00 ms
+[ OK ] test_buf_oom                                             0.34 ms
+[ OK ] test_hash_known_stability                                0.01 ms
+[ OK ] test_hash_distribution                                  33.82 ms
+[ OK ] test_rng                                                 1.89 ms
+[ OK ] test_bits                                                0.00 ms
+[ OK ] test_threads_and_mutex                                   3.23 ms
+[ OK ] test_cond_and_timeout                                   62.91 ms
+[ OK ] test_rwlock                                              0.05 ms
+[ OK ] test_clock                                              17.94 ms
+[ OK ] test_pool_group                                         10.19 ms
+[ OK ] test_pool_nested_fanout_single_thread                    1.30 ms
+[ OK ] test_parallel_for                                        1.42 ms
+[ OK ] test_pool_destroy_drains                                 1.86 ms
+[ OK ] test_pool_oom_never_loses_work                           0.83 ms
+
+27 test(s), 0 failed, 211015 check(s)
+<end of output>
+Test time =   0.21 sec
+----------------------------------------------------------
+Test Passed.
+"test_core" end time: Oct 03 18:05 GMT Summer Time
+"test_core" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/22 Testing: test_core_shared
+6/22 Test: test_core_shared
+Command: "C:/Users/kai99/Desktop/NEXUS/build/test_core_shared.exe"
+Directory: C:/Users/kai99/Desktop/NEXUS
+"test_core_shared" start time: Oct 03 18:05 GMT Summer Time
+Output:
+----------------------------------------------------------
+[ OK ] test_mem_basic                                           0.02 ms
+[ OK ] test_mem_aligned                                         0.31 ms
+[ OK ] test_mem_calloc_overflow                                 0.01 ms
+[ OK ] test_mem_fail_injection                                  0.00 ms
+[ OK ] test_mem_canary_detects_nothing_when_clean               0.00 ms
+[ OK ] test_strdup                                              0.01 ms
+[ OK ] test_arena                                               0.46 ms
+[ OK ] test_arena_oom                                           0.14 ms
+[ OK ] test_buf_put_and_read                                    0.02 ms
+[ OK ] test_buf_patch_pad_printf                                0.07 ms
+[ OK ] test_varint_roundtrip_fuzz                               0.92 ms
+[ OK ] test_cursor_malformed_varints                            0.01 ms
+[ OK ] test_slice_sub                                           0.00 ms
+[ OK ] test_buf_oom                                             0.36 ms
+[ OK ] test_hash_known_stability                                0.01 ms
+[ OK ] test_hash_distribution                                  32.41 ms
+[ OK ] test_rng                                                 1.75 ms
+[ OK ] test_bits                                                0.00 ms
+[ OK ] test_threads_and_mutex                                   2.59 ms
+[ OK ] test_cond_and_timeout                                   62.39 ms
+[ OK ] test_rwlock                                              0.05 ms
+[ OK ] test_clock                                              21.36 ms
+[ OK ] test_pool_group                                          4.99 ms
+[ OK ] test_pool_nested_fanout_single_thread                    0.59 ms
+[ OK ] test_parallel_for                                        0.50 ms
+[ OK ] test_pool_destroy_drains                                 0.73 ms
+[ OK ] test_pool_oom_never_loses_work                           0.66 ms
+
+27 test(s), 0 failed, 211015 check(s)
+<end of output>
+Test time =   0.22 sec
+----------------------------------------------------------
+Test Passed.
+"test_core_shared" end time: Oct 03 18:05 GMT Summer Time
+"test_core_shared" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/22 Testing: test_fuzzy
+7/22 Test: test_fuzzy
+Command: "C:/Users/kai99/Desktop/NEXUS/build/test_fuzzy.exe"
+Directory: C:/Users/kai99/Desktop/NEXUS
+"test_fuzzy" start time: Oct 03 18:05 GMT Summer Time
+Output:
+----------------------------------------------------------
+[ OK ] test_fuzzy_oracle                                       27.15 ms
+[ OK ] test_fuzzy_oom                                           0.01 ms
+
+2 test(s), 0 failed, 10014 check(s)
+<end of output>
+Test time =   0.10 sec
+----------------------------------------------------------
+Test Passed.
+"test_fuzzy" end time: Oct 03 18:05 GMT Summer Time
+"test_fuzzy" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/22 Testing: test_fuzzy_shared
+8/22 Test: test_fuzzy_shared
+Command: "C:/Users/kai99/Desktop/NEXUS/build/test_fuzzy_shared.exe"
+Directory: C:/Users/kai99/Desktop/NEXUS
+"test_fuzzy_shared" start time: Oct 03 18:05 GMT Summer Time
+Output:
+----------------------------------------------------------
+[ OK ] test_fuzzy_oracle                                       39.44 ms
+[ OK ] test_fuzzy_oom                                           0.02 ms
+
+2 test(s), 0 failed, 10014 check(s)
+<end of output>
+Test time =   0.14 sec
+----------------------------------------------------------
+Test Passed.
+"test_fuzzy_shared" end time: Oct 03 18:05 GMT Summer Time
+"test_fuzzy_shared" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/22 Testing: test_json
+9/22 Test: test_json
+Command: "C:/Users/kai99/Desktop/NEXUS/build/test_json.exe"
+Directory: C:/Users/kai99/Desktop/NEXUS
+"test_json" start time: Oct 03 18:05 GMT Summer Time
+Output:
+----------------------------------------------------------
+[ OK ] test_json_typed_binary_and_numbers                       0.08 ms
+[ OK ] test_json_rejects_malformed                              0.04 ms
+[ OK ] test_json_bounds_and_rollback                            0.02 ms
+[ OK ] test_json_integer_oracle_roundtrip                      23.24 ms
+[ OK ] test_json_mutation_fuzz                                 29.36 ms
+[ OK ] test_json_oom                                            0.08 ms
+
+6 test(s), 0 failed, 30585 check(s)
+<end of output>
+Test time =   0.15 sec
+----------------------------------------------------------
+Test Passed.
+"test_json" end time: Oct 03 18:05 GMT Summer Time
+"test_json" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/22 Testing: test_json_shared
+10/22 Test: test_json_shared
+Command: "C:/Users/kai99/Desktop/NEXUS/build/test_json_shared.exe"
+Directory: C:/Users/kai99/Desktop/NEXUS
+"test_json_shared" start time: Oct 03 18:05 GMT Summer Time
+Output:
+----------------------------------------------------------
+[ OK ] test_json_typed_binary_and_numbers                       0.60 ms
+[ OK ] test_json_rejects_malformed                              0.05 ms
+[ OK ] test_json_bounds_and_rollback                            0.12 ms
+[ OK ] test_json_integer_oracle_roundtrip                      24.41 ms
+[ OK ] test_json_mutation_fuzz                                 29.25 ms
+[ OK ] test_json_oom                                            0.06 ms
+
+6 test(s), 0 failed, 30585 check(s)
+<end of output>
+Test time =   0.15 sec
+----------------------------------------------------------
+Test Passed.
+"test_json_shared" end time: Oct 03 18:05 GMT Summer Time
+"test_json_shared" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/22 Testing: test_parse
+11/22 Test: test_parse
+Command: "C:/Users/kai99/Desktop/NEXUS/build/test_parse.exe"
+Directory: C:/Users/kai99/Desktop/NEXUS
+"test_parse" start time: Oct 03 18:05 GMT Summer Time
+Output:
+----------------------------------------------------------
+[ OK ] test_examples                                            1.56 ms
+[ OK ] test_shape_and_values                                    0.05 ms
+[ OK ] test_rejections_and_rollback                             0.11 ms
+[ OK ] test_limits                                              0.02 ms
+[ OK ] test_oom                                                 0.48 ms
+[ OK ] test_mutations                                          31.40 ms
+[ OK ] test_float_roundtrip                                    19.09 ms
+[ OK ] test_year_precision                                      0.02 ms
+
+8 test(s), 0 failed, 13772 check(s)
+<end of output>
+Test time =   0.17 sec
+----------------------------------------------------------
+Test Passed.
+"test_parse" end time: Oct 03 18:05 GMT Summer Time
+"test_parse" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/22 Testing: test_parse_shared
+12/22 Test: test_parse_shared
+Command: "C:/Users/kai99/Desktop/NEXUS/build/test_parse_shared.exe"
+Directory: C:/Users/kai99/Desktop/NEXUS
+"test_parse_shared" start time: Oct 03 18:05 GMT Summer Time
+Output:
+----------------------------------------------------------
+[ OK ] test_examples                                            2.34 ms
+[ OK ] test_shape_and_values                                    0.05 ms
+[ OK ] test_rejections_and_rollback                             0.13 ms
+[ OK ] test_limits                                              0.02 ms
+[ OK ] test_oom                                                 0.59 ms
+[ OK ] test_mutations                                          30.04 ms
+[ OK ] test_float_roundtrip                                    14.08 ms
+[ OK ] test_year_precision                                      0.01 ms
+
+8 test(s), 0 failed, 13772 check(s)
+<end of output>
+Test time =   0.14 sec
+----------------------------------------------------------
+Test Passed.
+"test_parse_shared" end time: Oct 03 18:05 GMT Summer Time
+"test_parse_shared" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/22 Testing: test_platform
+13/22 Test: test_platform
+Command: "C:/Users/kai99/Desktop/NEXUS/build/test_platform.exe"
+Directory: C:/Users/kai99/Desktop/NEXUS
+"test_platform" start time: Oct 03 18:05 GMT Summer Time
+Output:
+----------------------------------------------------------
+[ OK ] test_crc_oracle_and_boundaries                         206.95 ms
+[ OK ] test_file_mapping_replacement                           15.65 ms
+[ OK ] test_file_oom_and_invalid                                8.31 ms
+
+3 test(s), 0 failed, 1676 check(s)
+<end of output>
+Test time =   0.35 sec
+----------------------------------------------------------
+Test Passed.
+"test_platform" end time: Oct 03 18:05 GMT Summer Time
+"test_platform" time elapsed: 00:00:00
+----------------------------------------------------------
+
+14/22 Testing: test_platform_shared
+14/22 Test: test_platform_shared
+Command: "C:/Users/kai99/Desktop/NEXUS/build/test_platform_shared.exe"
+Directory: C:/Users/kai99/Desktop/NEXUS
+"test_platform_shared" start time: Oct 03 18:05 GMT Summer Time
+Output:
+----------------------------------------------------------
+[ OK ] test_crc_oracle_and_boundaries                         192.06 ms
+[ OK ] test_file_mapping_replacement                           14.18 ms
+[ OK ] test_file_oom_and_invalid                               10.38 ms
+
+3 test(s), 0 failed, 1676 check(s)
+<end of output>
+Test time =   0.29 sec
+----------------------------------------------------------
+Test Passed.
+"test_platform_shared" end time: Oct 03 18:05 GMT Summer Time
+"test_platform_shared" time elapsed: 00:00:00
+----------------------------------------------------------
+
+15/22 Testing: test_regex
+15/22 Test: test_regex
+Command: "C:/Users/kai99/Desktop/NEXUS/build/test_regex.exe"
+Directory: C:/Users/kai99/Desktop/NEXUS
+"test_regex" start time: Oct 03 18:05 GMT Summer Time
+Output:
+----------------------------------------------------------
+[ OK ] test_regex_language                                      1.28 ms
+[ OK ] test_regex_differential                                 50.83 ms
+[ OK ] test_regex_rejections_limits_mutation                   68.28 ms
+[ OK ] test_regex_oom                                           0.14 ms
+
+4 test(s), 0 failed, 9579 check(s)
+<end of output>
+Test time =   0.20 sec
+----------------------------------------------------------
+Test Passed.
+"test_regex" end time: Oct 03 18:05 GMT Summer Time
+"test_regex" time elapsed: 00:00:00
+----------------------------------------------------------
+
+16/22 Testing: test_regex_shared
+16/22 Test: test_regex_shared
+Command: "C:/Users/kai99/Desktop/NEXUS/build/test_regex_shared.exe"
+Directory: C:/Users/kai99/Desktop/NEXUS
+"test_regex_shared" start time: Oct 03 18:05 GMT Summer Time
+Output:
+----------------------------------------------------------
+[ OK ] test_regex_language                                      0.75 ms
+[ OK ] test_regex_differential                                 54.85 ms
+[ OK ] test_regex_rejections_limits_mutation                   92.21 ms
+[ OK ] test_regex_oom                                           0.15 ms
+
+4 test(s), 0 failed, 9579 check(s)
+<end of output>
+Test time =   0.23 sec
+----------------------------------------------------------
+Test Passed.
+"test_regex_shared" end time: Oct 03 18:05 GMT Summer Time
+"test_regex_shared" time elapsed: 00:00:00
+----------------------------------------------------------
+
+17/22 Testing: test_simd
+17/22 Test: test_simd
+Command: "C:/Users/kai99/Desktop/NEXUS/build/test_simd.exe"
+Directory: C:/Users/kai99/Desktop/NEXUS
+"test_simd" start time: Oct 03 18:05 GMT Summer Time
+Output:
+----------------------------------------------------------
+    host simd level: scalar
+[ OK ] test_detect                                              0.12 ms
+
+1 test(s), 0 failed, 4 check(s)
+<end of output>
+Test time =   0.08 sec
+----------------------------------------------------------
+Test Passed.
+"test_simd" end time: Oct 03 18:05 GMT Summer Time
+"test_simd" time elapsed: 00:00:00
+----------------------------------------------------------
+
+18/22 Testing: test_simd_shared
+18/22 Test: test_simd_shared
+Command: "C:/Users/kai99/Desktop/NEXUS/build/test_simd_shared.exe"
+Directory: C:/Users/kai99/Desktop/NEXUS
+"test_simd_shared" start time: Oct 03 18:05 GMT Summer Time
+Output:
+----------------------------------------------------------
+    host simd level: scalar
+[ OK ] test_detect                                              0.09 ms
+
+1 test(s), 0 failed, 4 check(s)
+<end of output>
+Test time =   0.10 sec
+----------------------------------------------------------
+Test Passed.
+"test_simd_shared" end time: Oct 03 18:05 GMT Summer Time
+"test_simd_shared" time elapsed: 00:00:00
+----------------------------------------------------------
+
+19/22 Testing: test_utf8
+19/22 Test: test_utf8
+Command: "C:/Users/kai99/Desktop/NEXUS/build/test_utf8.exe"
+Directory: C:/Users/kai99/Desktop/NEXUS
+"test_utf8" start time: Oct 03 18:05 GMT Summer Time
+Output:
+----------------------------------------------------------
+[ OK ] test_utf8_scalar_boundaries                              0.01 ms
+[ OK ] test_utf8_invalid_and_truncated                          0.01 ms
+[ OK ] test_utf8_random_scalar_roundtrip                       37.77 ms
+[ OK ] test_utf8_normalization_and_spans                        0.04 ms
+[ OK ] test_utf8_oom                                            0.01 ms
+
+5 test(s), 0 failed, 75024 check(s)
+<end of output>
+Test time =   0.13 sec
+----------------------------------------------------------
+Test Passed.
+"test_utf8" end time: Oct 03 18:05 GMT Summer Time
+"test_utf8" time elapsed: 00:00:00
+----------------------------------------------------------
+
+20/22 Testing: test_utf8_shared
+20/22 Test: test_utf8_shared
+Command: "C:/Users/kai99/Desktop/NEXUS/build/test_utf8_shared.exe"
+Directory: C:/Users/kai99/Desktop/NEXUS
+"test_utf8_shared" start time: Oct 03 18:05 GMT Summer Time
+Output:
+----------------------------------------------------------
+[ OK ] test_utf8_scalar_boundaries                              0.01 ms
+[ OK ] test_utf8_invalid_and_truncated                          0.01 ms
+[ OK ] test_utf8_random_scalar_roundtrip                       29.69 ms
+[ OK ] test_utf8_normalization_and_spans                        0.37 ms
+[ OK ] test_utf8_oom                                            0.03 ms
+
+5 test(s), 0 failed, 75024 check(s)
+<end of output>
+Test time =   0.11 sec
+----------------------------------------------------------
+Test Passed.
+"test_utf8_shared" end time: Oct 03 18:05 GMT Summer Time
+"test_utf8_shared" time elapsed: 00:00:00
+----------------------------------------------------------
+
+21/22 Testing: test_vec
+21/22 Test: test_vec
+Command: "C:/Users/kai99/Desktop/NEXUS/build/test_vec.exe"
+Directory: C:/Users/kai99/Desktop/NEXUS
+"test_vec" start time: Oct 03 18:05 GMT Summer Time
+Output:
+----------------------------------------------------------
+[ OK ] test_vector_oracle                                       8.18 ms
+[ OK ] test_vector_extremes                                     0.00 ms
+[ OK ] test_sq8_error_bound                                     1.90 ms
+
+3 test(s), 0 failed, 53917 check(s)
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Passed.
+"test_vec" end time: Oct 03 18:05 GMT Summer Time
+"test_vec" time elapsed: 00:00:00
+----------------------------------------------------------
+
+22/22 Testing: test_vec_shared
+22/22 Test: test_vec_shared
+Command: "C:/Users/kai99/Desktop/NEXUS/build/test_vec_shared.exe"
+Directory: C:/Users/kai99/Desktop/NEXUS
+"test_vec_shared" start time: Oct 03 18:05 GMT Summer Time
+Output:
+----------------------------------------------------------
+[ OK ] test_vector_oracle                                       8.39 ms
+[ OK ] test_vector_extremes                                     0.00 ms
+[ OK ] test_sq8_error_bound                                     1.35 ms
+
+3 test(s), 0 failed, 53917 check(s)
+<end of output>
+Test time =   0.15 sec
+----------------------------------------------------------
+Test Passed.
+"test_vec_shared" end time: Oct 03 18:05 GMT Summer Time
+"test_vec_shared" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 03 18:05 GMT Summer Time
