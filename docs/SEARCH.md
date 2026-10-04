@@ -3,8 +3,8 @@
 NexusSearch can build an immutable snapshot from JSON Lines and search it
 locally. Integer filtering uses a bit-sliced index. Text ranking currently scans
 stored text with BM25; vector ranking scores every eligible stored vector.
-These are exact, inspectable baselines. There is no embedding model or network
-service to configure.
+These are exact, inspectable baselines. No embedding model or remote service
+is required; an optional local HTTP server provides the browser interface.
 
 ## First run
 
@@ -31,9 +31,13 @@ Commands:
 | `search SNAPSHOT QUERY [--scan]` | Search and emit JSON hits, total matches and execution counters. `--scan` selects the independent numeric filter scan. |
 | `explain SNAPSHOT QUERY` | Bind and validate the query without executing it. Pass a query without an `EXPLAIN` prefix. |
 | `stats SNAPSHOT` | Validate the snapshot and return its row count and inferred field schema. |
+| `serve SNAPSHOT [--host 127.0.0.1] [--port 8080]` | Serve the local browser UI and read-only HTTP API for this snapshot. |
+| `repl SNAPSHOT` | Start an interactive query shell; use `:help` for inspection commands. |
+| `mcp SNAPSHOT` | Start the experimental MCP stdio tool interface. |
 | `--help`, `--version` | Show usage or version. |
 
-Successful data commands write one JSON value to stdout. Diagnostics go to
+Successful `build`, `search`, `explain` and `stats` commands write one JSON value
+to stdout. Diagnostics go to
 stderr; exit status is 0 for success, 1 for a runtime/input error, and 2 for
 incorrect command-line usage. Snapshot validation fails before results are
 published. Build reads at most 64 MiB of JSONL, and commands open at most 256 MiB
@@ -115,27 +119,113 @@ To execute and inspect measured work, use:
 ```
 
 Execution counters distinguish numeric index use, scanned cells, scored vectors
-and bounded work. Text retrieval is currently a corpus scan, so larger corpora
-need the planned postings/dictionary layer for speed.
+and bounded work. Text retrieval is currently a corpus scan. Standalone postings
+and trigram modules exist, but still need integration with this binder and
+ranking model before snapshot searches can use them.
+
+## Browser and HTTP API
+
+```powershell
+.\build\nexus.exe serve build\example.nxs --host 127.0.0.1 --port 8080
+```
+
+Visit `http://127.0.0.1:8080`. The interface offers query presets, results, schema
+and explain views, a numeric scan toggle, execution counters and original JSON
+for each result. The server opens one snapshot at startup; rebuild and restart
+to use a changed collection. It handles clients sequentially and has no
+authentication or TLS. Keep this development interface on loopback.
+
+| Route | Purpose |
+| --- | --- |
+| `GET /health` | Check that the process is serving requests. |
+| `GET /api/stats` | Retrieve row count and field schema. |
+| `GET /api/search?q=QUERY&scan=false` | Query the snapshot; URL-encode the query. |
+| `POST /api/search` | Send JSON such as `{"query":"year:>=2025","scan":false}`. |
+| `GET /api/explain?q=QUERY` or `POST /api/explain` | Validate/bind a query without running it; POST uses the same JSON shape. |
+| `GET /api/doc?row=0` | Retrieve original JSON by the snapshot's zero-based row number. |
+| `GET /api/stream?q=QUERY` or `POST /api/stream` | Deliver a completed search as SSE `start`, `hit`, `done` events. |
+
+SSE delivery begins after the search has completed. It does not report provisional
+hits or reduce the work needed to compute the final ranking. Row numbers refer
+to this particular snapshot; use `_id` as the persistent document identity.
+
+The `mcp` command exposes `nexus_search`, `nexus_stats`, `nexus_explain` and
+`nexus_get_document` over stdin/stdout. This is an experimental protocol subset;
+interoperability with a particular client requires a client-level check.
+
+## Python
+
+Build the shared library, then install the local wrapper or put it on your
+Python import path:
+
+```powershell
+$env:PYTHONPATH = "$PWD\bindings\python"
+$env:NEXUS_LIB_PATH = "$PWD\build\libnexus.dll"
+```
+
+```python
+from nexus import Snapshot
+
+with Snapshot.open("build/example.nxs") as snapshot:
+    results = snapshot.search("search AND year:>=2025 LIMIT 3")
+    print(results.total, results.work)
+    for hit in results:
+        print(hit.id, hit.score, hit.document)
+    print(snapshot.stats())
+    print(snapshot.explain("year:>=2025"))
+    print(snapshot.get_document(0))
+
+# Build from bytes and search without writing a file.
+encoded = Snapshot.build(b'{"_id":"demo","title":"local search"}\n')
+with Snapshot.open(encoded) as snapshot:
+    assert snapshot.search("title:search").total == 1
+```
+
+The wrapper owns snapshot bytes in Python memory. Opening a path reads the whole
+file; it does not use the C mapping helper. The `with` syntax is supported, but
+memory follows Python object lifetime. `search(scan=True)` selects the numeric
+reference path. `limit` sets the allowed hit cap; use NexusQL `LIMIT` to request
+a smaller page explicitly. Results include copied IDs/documents and the engine's
+execution counters. `search` raises `NexusError` on query failures; `explain`
+returns an error object for an invalid query.
+
+`Snapshot.build(..., output_path=...)` writes a temporary file in the destination
+directory, flushes and synchronizes it, closes it, then replaces the destination.
+Pre-replacement failures preserve an existing snapshot. This does not synchronize
+the containing directory or promise power-loss durability on every filesystem.
+The wrapper reads source files before applying the C ingestion limits, so use
+bounded inputs. See [Python wrapper documentation](../bindings/python/README.md).
 
 ## Boundaries and next work
 
 `docs/QUERY_LANGUAGE.md` describes the wider language roadmap. Parsing syntax
 does not mean this snapshot engine executes it. `WATCH`, `SOURCE`, `FACET`,
 units, calendar/relative dates, embedding inference and clause parameters
-such as `semantic(k=...)` fail explicitly when requested. No live updates,
-multi-segment store, WAL, merges, HNSW, network server or browser UI is included
-in this milestone. Four-digit integer years are supported as numeric values;
-calendar date interpretation remains deferred.
+such as `semantic(k=...)` fail explicitly when requested. Four-digit integer
+years are supported as numeric values; calendar date interpretation remains
+deferred.
+
+Postings, trigrams, proximity graphs, RaBitQ-style quantization, sealed segments,
+WAL, store and compaction exist as separate experimental C modules. The active
+CLI, server and Python search use `nx_table` snapshots and `nx_search`, with
+scanned text and exhaustive vectors. They do not query those multi-segment stores
+or apply approximate pruning. Integration needs shared analysis semantics,
+missing-value handling and comparisons with the exact engine. ANN recall and
+quantization accuracy remain workload-specific; unit tests do not establish
+universal bounds or production performance. Storage checksums and simulated
+recovery tests do not establish power-loss durability of the multi-file store.
 
 The [research update](RESEARCH_UPDATE_2026-10-03.md) records the sources behind
-these implementation priorities. The sample vectors demonstrate geometry only;
+these implementation priorities. Sample vectors demonstrate geometry only;
 they are not outputs of an embedding model or a relevance benchmark.
 
-Run CLI integration checks with Python 3 (standard library only):
+Run integration checks with Python 3 (standard library only):
 
 ```powershell
 python tests\test_cli.py --exe build\nexus.exe
+python tests\test_server.py --exe build\nexus.exe
+python tests\test_bindings.py
 ```
 
-Tests use a temporary directory and never replace a user snapshot.
+CLI and server tests use temporary snapshots. Binding tests use `build/example.nxs`, creating it from the example corpus when
+it is absent, plus temporary directories for publication/failure checks.

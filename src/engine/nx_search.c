@@ -8,6 +8,7 @@
 #include <inttypes.h>
 #include <math.h>
 #include <stdio.h>
+#include <locale.h>
 
 #define SEARCH_ARENA_LIMIT (32u * 1024u * 1024u)
 #define SEARCH_TERMS 16u
@@ -251,6 +252,12 @@ static bool scores_text(const value *v) {
     }
     return v->kind >= V_TEXT && v->kind <= V_FUZZY;
 }
+static size_t count_indexes(const value *v) {
+    if (v->kind == V_INT) return 1;
+    size_t count = 0;
+    if (v->kind == V_ANY) for (uint32_t i = 0; i < v->count; i++) count += count_indexes(v->items[i]);
+    return count;
+}
 static plan *bind_node(search_context *c, const nx_node *node, bool positive) {
     plan *p = alloc_arena(c, sizeof(*p), _Alignof(plan));
     if (!p) return NULL;
@@ -289,7 +296,7 @@ static plan *bind_node(search_context *c, const nx_node *node, bool positive) {
     }
     if (positive && p->v->kind == V_VECTOR) c->vector = true;
     if (positive && p->type == NX_FIELD_TEXT && scores_text(p->v)) c->lexical = true;
-    if (p->type == NX_FIELD_INT && p->v->kind == V_INT && c->options.indexed) c->stats.numeric_indexes++;
+    if (p->type == NX_FIELD_INT && c->options.indexed) c->stats.numeric_indexes += count_indexes(p->v);
     return p;
 }
 
@@ -564,13 +571,17 @@ void nx_search_result_free(nx_search_result *r) { if (r) { nx_free(r->hits); mem
 nx_status nx_search(const nx_table *table, nx_slice query, const nx_search_options *options,
                     nx_search_result *out, nx_error *error) {
     nx_error_clear(error);
-    if (!out) return NX_ERR_INVALID;
+    if (!out) { nx_error_set(error, NX_ERR_INVALID, -1, 0, "Missing search output"); return NX_ERR_INVALID; }
     memset(out, 0, sizeof(*out));
-    if (!table || (!query.p && query.n)) return NX_ERR_INVALID;
+    if (!table || !table->bytes.p || (!query.p && query.n)) {
+        nx_error_set(error, NX_ERR_INVALID, -1, 0, "Search needs a validated table and query bytes"); return NX_ERR_INVALID;
+    }
     search_context c = {0}; c.table = table; c.error = error;
     c.options = options ? *options : nx_search_default_options();
     if (!finite_number(c.options.bm25_k1) || c.options.bm25_k1 < 0 || c.options.bm25_b < 0 ||
-        c.options.bm25_b > 1 || !finite_number(c.options.bm25_b) || c.options.max_hits > 1000000) return NX_ERR_INVALID;
+        c.options.bm25_b > 1 || !finite_number(c.options.bm25_b) || c.options.max_hits > 1000000) {
+        nx_error_set(error, NX_ERR_INVALID, -1, 0, "Invalid search options"); return NX_ERR_INVALID;
+    }
     nx_arena_init(&c.arena, 0);
     nx_parse_limits limits = nx_parse_limits_default(); limits.max_clauses = 256; limits.max_list_items = 256; limits.max_depth = 32;
     nx_stmt *stmt = NULL; plan *root = NULL; double *lexical = NULL;
@@ -641,6 +652,7 @@ nx_status nx_search(const nx_table *table, nx_slice query, const nx_search_optio
         for (size_t i = 0; i < c.stats.count; i++) c.stats.hits[i] = hits[offset + i].hit;
     }
 success:
+    c.stats.indexed = c.options.indexed; c.stats.has_lexical = c.lexical; c.stats.has_vector = c.vector;
     *out = c.stats;
 done:
     if (st != NX_OK) {
@@ -665,8 +677,10 @@ static void json_string(nx_buf *out, nx_slice s) {
 nx_status nx_search_json(const nx_search_result *r, nx_buf *out) {
     if (!r || !out || (r->count && !r->hits)) return NX_ERR_INVALID;
     size_t start = out->len; bool old_oom = out->oom;
-    nx_buf_printf(out, "{\"total\":%zu,\"count\":%zu,\"explain_only\":%s,\"execution\":{\"numeric_indexes\":%zu,\"scanned_cells\":%zu,\"vectors_scored\":%zu,\"work\":%zu},\"hits\":[",
-        r->total, r->count, r->explain_only ? "true" : "false", r->numeric_indexes, r->scanned_cells, r->vectors_scored, r->work);
+    nx_buf_printf(out, "{\"total\":%zu,\"count\":%zu,\"explain_only\":%s,\"execution\":{\"numeric_mode\":\"%s\",\"lexical\":\"%s\",\"vector\":\"%s\",\"fusion\":\"%s\",\"numeric_indexes\":%zu,\"scanned_cells\":%zu,\"vectors_scored\":%zu,\"work\":%zu},\"hits\":[",
+        r->total, r->count, r->explain_only ? "true" : "false", r->indexed ? "bsi" : "scan",
+        r->has_lexical ? "text_scan" : "none", r->has_vector ? "exact_cosine" : "none",
+        r->has_lexical && r->has_vector ? "rrf" : "none", r->numeric_indexes, r->scanned_cells, r->vectors_scored, r->work);
     for (size_t i = 0; i < r->count; i++) {
         if (i) nx_buf_put_u8(out, ',');
         nx_buf_put_str(out, "{\"_id\":"); json_string(out, r->hits[i].id);
@@ -674,8 +688,13 @@ nx_status nx_search_json(const nx_search_result *r, nx_buf *out) {
         if (!finite_number(r->hits[i].score)) { out->len = start; out->oom = old_oom; return NX_ERR_INVALID; }
         /* Keep JSON decimal punctuation independent of the caller's locale. */
         char number[64]; (void)snprintf(number, sizeof(number), "%.17g", r->hits[i].score);
-        for (size_t j = 0; number[j]; j++) if (number[j] == ',') number[j] = '.';
-        nx_buf_put_str(out, ",\"score\":"); nx_buf_put_str(out, number);
+        nx_buf_put_str(out, ",\"score\":");
+        const char *point = localeconv()->decimal_point;
+        const char *found = point && *point ? strstr(number, point) : NULL;
+        if (found && strcmp(point, ".") != 0) {
+            nx_buf_put(out, number, (size_t)(found - number)); nx_buf_put_u8(out, '.');
+            nx_buf_put_str(out, found + strlen(point));
+        } else nx_buf_put_str(out, number);
         nx_buf_put_str(out, ",\"document\":"); nx_buf_put(out, r->hits[i].document.p, r->hits[i].document.n);
         nx_buf_put_u8(out, '}');
     }

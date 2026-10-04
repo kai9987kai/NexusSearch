@@ -4,7 +4,9 @@ from __future__ import annotations
 import ctypes
 from dataclasses import dataclass
 import json
+import os
 from pathlib import Path
+import tempfile
 from typing import Any, Optional, Union
 
 from . import _ffi as ffi
@@ -54,6 +56,9 @@ class SearchResult:
     scanned_cells: int
     vectors_scored: int
     explain_only: bool
+    indexed: bool = True
+    has_lexical: bool = False
+    has_vector: bool = False
 
     def __iter__(self):
         return iter(self.hits)
@@ -121,7 +126,24 @@ class Snapshot:
         if output_path is not None:
             p = Path(output_path)
             p.parent.mkdir(parents=True, exist_ok=True)
-            p.write_bytes(result_bytes)
+            # Publish only a complete, flushed snapshot. Keeping the temporary
+            # file beside the destination makes replacement atomic on the same
+            # filesystem; close it first so replacement also works on Windows.
+            temporary_path = None
+            try:
+                with tempfile.NamedTemporaryFile(
+                    mode="wb", prefix=f".{p.name}.", suffix=".tmp",
+                    dir=p.parent, delete=False,
+                ) as temporary:
+                    temporary_path = Path(temporary.name)
+                    if temporary.write(result_bytes) != len(result_bytes):
+                        raise OSError("Incomplete snapshot write")
+                    temporary.flush()
+                    os.fsync(temporary.fileno())
+                os.replace(temporary_path, p)
+            finally:
+                if temporary_path is not None:
+                    temporary_path.unlink(missing_ok=True)
 
         return result_bytes
 
@@ -200,6 +222,9 @@ class Snapshot:
                 scanned_cells=result.scanned_cells,
                 vectors_scored=result.vectors_scored,
                 explain_only=result.explain_only,
+                indexed=result.indexed,
+                has_lexical=result.has_lexical,
+                has_vector=result.has_vector,
             )
         finally:
             ffi.lib.nx_search_result_free(ctypes.byref(result))

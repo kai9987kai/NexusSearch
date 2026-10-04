@@ -643,6 +643,12 @@
 },
 {
   "directory": "C:/Users/kai99/Desktop/NEXUS/build-release",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/bench -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\bench_search_compare.dir\\bench\\bench_search_compare.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\bench\\bench_search_compare.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/bench/bench_search_compare.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-release/CMakeFiles/bench_search_compare.dir/bench/bench_search_compare.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-release",
   "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/bench -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\bench_vec.dir\\bench\\bench_vec.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\bench\\bench_vec.c",
   "file": "C:/Users/kai99/Desktop/NEXUS/bench/bench_vec.c",
   "output": "C:/Users/kai99/Desktop/NEXUS/build-release/CMakeFiles/bench_vec.dir/bench/bench_vec.c.obj"

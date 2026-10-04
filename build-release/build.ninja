@@ -2561,6 +2561,45 @@ build bench_search.exe: C_EXECUTABLE_LINKER__bench_search_Release CMakeFiles/ben
   TARGET_SUPPORT_DIR = CMakeFiles\bench_search.dir
 
 # =============================================================================
+# Object build statements for EXECUTABLE target bench_search_compare
+
+
+#############################################
+# Order-only phony target for bench_search_compare
+
+build cmake_object_order_depends_target_bench_search_compare: phony || cmake_object_order_depends_target_nexus
+
+build CMakeFiles/bench_search_compare.dir/bench/bench_search_compare.c.obj: C_COMPILER__bench_search_compare_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/bench/bench_search_compare.c || cmake_object_order_depends_target_bench_search_compare
+  CONFIG = Release
+  DEP_FILE = CMakeFiles\bench_search_compare.dir\bench\bench_search_compare.c.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1
+  INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/bench -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
+  OBJECT_DIR = CMakeFiles\bench_search_compare.dir
+  OBJECT_FILE_DIR = CMakeFiles\bench_search_compare.dir\bench
+  TARGET_SUPPORT_DIR = CMakeFiles\bench_search_compare.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target bench_search_compare
+
+
+#############################################
+# Link the executable bench_search_compare.exe
+
+build bench_search_compare.exe: C_EXECUTABLE_LINKER__bench_search_compare_Release CMakeFiles/bench_search_compare.dir/bench/bench_search_compare.c.obj | libnexus.a || libnexus.a
+  CONFIG = Release
+  FLAGS = -O3 -DNDEBUG
+  LINK_FLAGS = -static
+  LINK_LIBRARIES = libnexus.a  -lm  -lws2_32  -lbcrypt  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\bench_search_compare.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = bench_search_compare.exe
+  TARGET_IMPLIB = libbench_search_compare.dll.a
+  TARGET_PDB = bench_search_compare.exe.dbg
+  TARGET_SUPPORT_DIR = CMakeFiles\bench_search_compare.dir
+
+# =============================================================================
 # Object build statements for EXECUTABLE target bench_vec
 
 
@@ -2640,6 +2679,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 build bench_bsi: phony bench_bsi.exe
 
 build bench_search: phony bench_search.exe
+
+build bench_search_compare: phony bench_search_compare.exe
 
 build bench_vec: phony bench_vec.exe
 
@@ -2749,7 +2790,7 @@ build test_wal_shared: phony test_wal_shared.exe
 #############################################
 # Folder: C:/Users/kai99/Desktop/NEXUS/build-release
 
-build all: phony libnexus.a libnexus.dll nexus.exe test_arena_rollback.exe test_arena_rollback_shared.exe test_bitmap.exe test_bitmap_shared.exe test_bsi.exe test_bsi_shared.exe test_core.exe test_core_shared.exe test_dict.exe test_dict_shared.exe test_fuzzy.exe test_fuzzy_shared.exe test_graph.exe test_graph_shared.exe test_json.exe test_json_shared.exe test_merge.exe test_merge_shared.exe test_parse.exe test_parse_shared.exe test_platform.exe test_platform_shared.exe test_postings.exe test_postings_shared.exe test_rabitq.exe test_rabitq_shared.exe test_regex.exe test_regex_shared.exe test_search.exe test_search_shared.exe test_seg_builder.exe test_seg_builder_shared.exe test_server.exe test_server_shared.exe test_simd.exe test_simd_shared.exe test_table.exe test_table_shared.exe test_trigram.exe test_trigram_shared.exe test_utf8.exe test_utf8_shared.exe test_vec.exe test_vec_shared.exe test_wal.exe test_wal_shared.exe bench_bsi.exe bench_search.exe bench_vec.exe
+build all: phony libnexus.a libnexus.dll nexus.exe test_arena_rollback.exe test_arena_rollback_shared.exe test_bitmap.exe test_bitmap_shared.exe test_bsi.exe test_bsi_shared.exe test_core.exe test_core_shared.exe test_dict.exe test_dict_shared.exe test_fuzzy.exe test_fuzzy_shared.exe test_graph.exe test_graph_shared.exe test_json.exe test_json_shared.exe test_merge.exe test_merge_shared.exe test_parse.exe test_parse_shared.exe test_platform.exe test_platform_shared.exe test_postings.exe test_postings_shared.exe test_rabitq.exe test_rabitq_shared.exe test_regex.exe test_regex_shared.exe test_search.exe test_search_shared.exe test_seg_builder.exe test_seg_builder_shared.exe test_server.exe test_server_shared.exe test_simd.exe test_simd_shared.exe test_table.exe test_table_shared.exe test_trigram.exe test_trigram_shared.exe test_utf8.exe test_utf8_shared.exe test_vec.exe test_vec_shared.exe test_wal.exe test_wal_shared.exe bench_bsi.exe bench_search.exe bench_search_compare.exe bench_vec.exe
 
 # =============================================================================
 # Built-in targets

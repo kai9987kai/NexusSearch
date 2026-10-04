@@ -6,6 +6,7 @@ file(GLOB NEW_GLOB LIST_DIRECTORIES true "C:/Users/kai99/Desktop/NEXUS/bench/ben
 set(OLD_GLOB
   "C:/Users/kai99/Desktop/NEXUS/bench/bench_bsi.c"
   "C:/Users/kai99/Desktop/NEXUS/bench/bench_search.c"
+  "C:/Users/kai99/Desktop/NEXUS/bench/bench_search_compare.c"
   "C:/Users/kai99/Desktop/NEXUS/bench/bench_vec.c"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")

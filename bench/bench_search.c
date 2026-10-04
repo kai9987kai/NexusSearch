@@ -22,9 +22,9 @@ static void generate_synthetic_corpus(nx_buf *jsonl, size_t count) {
         int64_t year = 2000 + (int64_t)(i % 30);
         double rating = 1.0 + (double)(i % 40) * 0.1;
         bool active = (i % 2 == 0);
-        float v0 = (float)((i % 10) - 5) * 0.2f;
-        float v1 = (float)(((i / 10) % 10) - 5) * 0.2f;
-        float v2 = (float)(((i / 100) % 10) - 5) * 0.2f;
+        float v0 = (float)((int)(i % 10) - 5) * 0.2f;
+        float v1 = (float)((int)((i / 10) % 10) - 5) * 0.2f;
+        float v2 = (float)((int)((i / 100) % 10) - 5) * 0.2f;
 
         nx_buf_printf(jsonl,
             "{\"_id\":\"doc-%05zu\",\"title\":\"%s %s\",\"body\":\"A %s engine for %s with %s\",\"year\":%" PRId64 ",\"rating\":%.2f,\"active\":%s,\"embedding\":[%.2f,%.2f,%.2f]}\n",
@@ -114,7 +114,7 @@ int main(void) {
         return 1;
     }
 
-    puts("Query Engine Latency & Throughput (1000 iters per query):");
+    printf("Query Engine Latency & Throughput (%d iters per query):\n", SEARCH_ITERS);
     puts("------------------------------------------------------------------------------------------");
     run_search_bench(&table, "BSI Numeric Filter (year:>=2020)", "year:>=2020", false, SEARCH_ITERS);
     run_search_bench(&table, "Scan Oracle (year:>=2020)", "year:>=2020", true, SEARCH_ITERS);

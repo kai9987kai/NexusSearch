@@ -156,6 +156,24 @@ class ServerTests(unittest.TestCase):
         hit_ids = [h["_id"] for h in data["hits"]]
         self.assertEqual(hit_ids, ["paper-01", "paper-02", "paper-05"])
 
+    def test_post_quotes_unicode_and_invalid_values(self):
+        for query, expected in [('title="Local search in C"', ["paper-01"]),
+                                ('body:"Café"', ["paper-05"])]:
+            status, result, _ = self.post_json("/api/search", {"query": query})
+            self.assertEqual(status, 200)
+            self.assertEqual([hit["_id"] for hit in result["hits"]], expected)
+        for payload in ({"query": 12}, {"query": "*\u0000 OR title:cat"},
+                        {"query": "*", "scan": "false"}, {"query": "a" * 3000}):
+            status, result, _ = self.post_json("/api/search", payload)
+            self.assertEqual(status, 400)
+            self.assertIn("error", result)
+
+    def test_url_input_never_truncates_or_decodes_nul(self):
+        for query in ("%2a%00OR+bad:query", "%GG", "a" * 3000):
+            status, result, _ = self.get("/api/search?q=" + query)
+            self.assertEqual(status, 400)
+            self.assertIn("error", result)
+
     def test_search_vectors(self):
         status, data, _ = self.get("/api/search?q=" + urllib.parse.quote("embedding:[1,0,0] LIMIT 3"))
         self.assertEqual(status, 200)
@@ -171,6 +189,33 @@ class ServerTests(unittest.TestCase):
         status, data, _ = self.get("/api/doc?row=0")
         self.assertEqual(status, 200)
         self.assertEqual(data["_id"], "paper-01")
+
+    def test_doc_rejects_invalid_row_without_wrapping(self):
+        for row in ("4294967296", "18446744073709551616", "-1", "abc", "0junk", ""):
+            status, data, _ = self.get("/api/doc?row=" + row)
+            self.assertEqual(status, 404)
+            self.assertIn("error", data)
+
+    def test_http_framing_and_case_insensitive_length(self):
+        body = json.dumps({"query": 'title="Local search in C"'}).encode()
+        headers = (b"cOnTeNt-LeNgTh: " + str(len(body)).encode(),
+                   b"Content-Length: -1",
+                   b"Content-Length: 99999999999999999999",
+                   b"Content-Length: 0\r\nContent-Length: 0",
+                   b"Transfer-Encoding: chunked")
+        for index, header in enumerate(headers):
+            with socket.create_connection(("127.0.0.1", self.port), timeout=5) as client:
+                client.sendall(b"POST /api/search HTTP/1.1\r\nHost: localhost\r\n" + header + b"\r\n\r\n" + body)
+                chunks = []
+                while chunk := client.recv(65536):
+                    chunks.append(chunk)
+            head, payload = b"".join(chunks).split(b"\r\n\r\n", 1)
+            result = json.loads(payload)
+            self.assertIn(b" 200 " if index == 0 else b" 400 ", head.split(b"\r\n", 1)[0])
+            if index == 0:
+                self.assertEqual(result["hits"][0]["_id"], "paper-01")
+            else:
+                self.assertIn("error", result)
 
     def test_web_ui(self):
         status, data, headers = self.get("/")

@@ -6,6 +6,7 @@ from pathlib import Path
 import sys
 import tempfile
 import unittest
+from unittest import mock
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "bindings" / "python"))
@@ -100,6 +101,92 @@ class BindingsTests(unittest.TestCase):
         with nexus.Snapshot.open(self.example_nxs) as snap:
             with self.assertRaises(nexus.NexusError):
                 snap.search("nonexistent_field:foo")
+
+    def test_execution_metadata(self):
+        with nexus.Snapshot.open(self.example_nxs) as snap:
+            cases = (
+                ("year:>=2025", False, False),
+                ("title:search", True, False),
+                ("embedding:[1,0,0]", False, True),
+                ("title:search AND embedding:[1,0,0]", True, True),
+            )
+            for query, lexical, vector in cases:
+                for scan in (False, True):
+                    with self.subTest(query=query, scan=scan):
+                        result = snap.search(query, scan=scan)
+                        self.assertEqual(result.indexed, not scan)
+                        self.assertEqual(result.has_lexical, lexical)
+                        self.assertEqual(result.has_vector, vector)
+            result = snap.search("EXPLAIN title:search")
+            self.assertTrue(result.explain_only)
+            self.assertTrue(result.has_lexical)
+            self.assertEqual(result.work, 0)
+
+    def test_build_replaces_only_after_complete_flush(self):
+        old_source = b'{"_id":"old","text":"existing snapshot"}\n'
+        new_source = b'{"_id":"new","text":"replacement snapshot"}\n'
+        old_bytes = nexus.Snapshot.build(old_source)
+        expected_bytes = nexus.Snapshot.build(new_source)
+        real_replace = os.replace
+        with tempfile.TemporaryDirectory() as directory:
+            destination = Path(directory) / "snapshot Caf\u00e9.nxs"
+            destination.write_bytes(old_bytes)
+            unrelated = Path(directory) / ".unrelated.tmp"
+            unrelated.write_bytes(b"preserve")
+
+            def checked_replace(source, target):
+                self.assertEqual(Path(source).parent, destination.parent)
+                self.assertNotEqual(Path(source), destination)
+                self.assertEqual(Path(source).read_bytes(), expected_bytes)
+                self.assertEqual(Path(target).read_bytes(), old_bytes)
+                sync.assert_called_once()
+                return real_replace(source, target)
+
+            with mock.patch("nexus.snapshot.os.fsync", wraps=os.fsync) as sync:
+                with mock.patch("nexus.snapshot.os.replace", side_effect=checked_replace) as replace:
+                    result = nexus.Snapshot.build(new_source, destination)
+                    replace.assert_called_once()
+            self.assertEqual(result, expected_bytes)
+            self.assertEqual(destination.read_bytes(), expected_bytes)
+            self.assertEqual(nexus.Snapshot.open(destination).get_document(0)["_id"], "new")
+            self.assertEqual(unrelated.read_bytes(), b"preserve")
+            self.assertEqual(set(Path(directory).iterdir()), {destination, unrelated})
+
+    def test_failed_save_preserves_previous_snapshot_and_cleans_own_temp(self):
+        old_source = b'{"_id":"old","text":"existing snapshot"}\n'
+        new_source = b'{"_id":"new","text":"replacement snapshot"}\n'
+        old_bytes = nexus.Snapshot.build(old_source)
+        for failure_point in ("fsync", "replace"):
+            for existing in (False, True):
+                with self.subTest(failure_point=failure_point, existing=existing):
+                    with tempfile.TemporaryDirectory() as directory:
+                        destination = Path(directory) / "snapshot.nxs"
+                        unrelated = Path(directory) / ".snapshot.nxs.unrelated.tmp"
+                        unrelated.write_bytes(b"preserve")
+                        if existing:
+                            destination.write_bytes(old_bytes)
+                        with mock.patch(
+                            "nexus.snapshot.os." + failure_point,
+                            side_effect=OSError("injected save failure"),
+                        ):
+                            with self.assertRaisesRegex(OSError, "injected save failure"):
+                                nexus.Snapshot.build(new_source, destination)
+                        if existing:
+                            self.assertEqual(destination.read_bytes(), old_bytes)
+                            self.assertEqual(nexus.Snapshot.open(destination).get_document(0)["_id"], "old")
+                        else:
+                            self.assertFalse(destination.exists())
+                        expected = {unrelated, destination} if existing else {unrelated}
+                        self.assertEqual(set(Path(directory).iterdir()), expected)
+                        self.assertEqual(unrelated.read_bytes(), b"preserve")
+
+    def test_build_creates_snapshot_in_new_directory(self):
+        with tempfile.TemporaryDirectory() as directory:
+            destination = Path(directory) / "new" / "nested" / "snapshot.nxs"
+            expected = nexus.Snapshot.build(b'{"_id":"new","value":42}\n', destination)
+            self.assertEqual(destination.read_bytes(), expected)
+            self.assertEqual(nexus.Snapshot.open(destination).get_document(0)["value"], 42)
+            self.assertEqual(list(destination.parent.iterdir()), [destination])
 
 
 if __name__ == "__main__":

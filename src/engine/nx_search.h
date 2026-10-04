@@ -18,6 +18,7 @@ typedef struct nx_search_result {
     nx_search_hit *hits;
     size_t count, total, work, numeric_indexes, scanned_cells, vectors_scored;
     bool explain_only;
+    bool indexed, has_lexical, has_vector;
 } nx_search_result;
 NX_API nx_search_options nx_search_default_options(void);
 NX_API nx_status nx_search(const nx_table *table, nx_slice query, const nx_search_options *options,

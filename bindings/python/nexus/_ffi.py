@@ -189,6 +189,9 @@ class nx_search_result(Structure):
         ("scanned_cells", c_size_t),
         ("vectors_scored", c_size_t),
         ("explain_only", c_bool),
+        ("indexed", c_bool),
+        ("has_lexical", c_bool),
+        ("has_vector", c_bool),
     ]
 
 

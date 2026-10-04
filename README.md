@@ -1,8 +1,10 @@
-# NexusSearch
+# NexusSearch 0.2
 
-Dependency-free C11 search-engine project, currently at the **leaf-library
-milestone**. The parser and index primitives work; a complete search engine,
-durable index store, CLI, HTTP/MCP server and web UI are not implemented yet.
+NexusSearch is a dependency-free C11 engine for searching local JSON documents.
+Build an immutable snapshot, query it from the command line or Python, or explore
+it in the included local browser interface. The active search path supports exact
+integer filters, BM25 text ranking, exhaustive cosine vector ranking and hybrid
+reciprocal rank fusion.
 
 ## Build and test on this Windows machine
 
@@ -14,68 +16,77 @@ cmake --build build -j 4
 ctest --test-dir build --output-on-failure
 ```
 
-CMake builds `libnexus.a`, `libnexus.dll`, and tests for both libraries. Keep
-the UCRT64 directory on PATH when using the DLL. No packages are downloaded.
-`NX_BUILD_SHARED=OFF` disables the DLL and its test copies. `NX_MEM_DEBUG=ON`
-enables guarded allocations; tests include leak checks and allocation-failure
-sweeps. These checks do not replace ASan/UBSan/TSan, which are unavailable in
-the installed GCC toolchain. Windows atomic replacement requires the
-FileRenameInfoEx operation supported by modern Windows/filesystems.
+CMake builds `nexus.exe`, `libnexus.a`, `libnexus.dll`, benchmarks, and tests for
+both libraries. Keep the UCRT64 directory on PATH when using the DLL. No packages
+are downloaded. `NX_BUILD_SHARED=OFF` disables the DLL and its test copies.
+`NX_MEM_DEBUG=ON` enables guarded allocations; tests include leak checks and
+allocation-failure sweeps. These checks do not replace ASan/UBSan/TSan, which
+are unavailable in the installed GCC toolchain. Linux, macOS and other compiler
+configurations require separate validation.
 
-Useful reproducibility controls:
+## Try a search
 
 ```powershell
-$env:NX_TEST_SEED = "12345"
-$env:NX_TEST_SCALE = "2"
-$env:NX_SIMD = "scalar"
-ctest --test-dir build --output-on-failure
-Remove-Item Env:NX_TEST_SEED,Env:NX_TEST_SCALE,Env:NX_SIMD
+.\build\nexus.exe build examples\documents.jsonl build\example.nxs
+.\build\nexus.exe search build\example.nxs 'search AND active:true AND year:>=2025'
+.\build\nexus.exe search build\example.nxs 'embedding:[1,0,0] LIMIT 3'
+.\build\nexus.exe explain build\example.nxs 'year:>=2025'
+.\build\nexus.exe serve build\example.nxs --host 127.0.0.1 --port 8080
 ```
 
-## Current implementation
+Open `http://127.0.0.1:8080` while the last command is running. The server reads
+one fixed snapshot and handles local search and document inspection. It has no
+authentication or TLS and is a development interface; keep it on loopback.
+Use `repl SNAPSHOT` for an interactive terminal or `mcp SNAPSHOT` for the
+experimental stdio tool interface.
 
-| Area | Available |
+The [search guide](docs/SEARCH.md) covers types, query syntax, scoring, the HTTP
+API and Python examples. Vectors must be supplied by the caller; no embedding
+model is included.
+
+## Implementation status
+
+| Area | Current behavior |
 | --- | --- |
-| Core | Guarded allocator, rollback arena, buffers/cursors, hash/RNG, threads/pool, runtime SIMD detection |
-| Files | Bounded read-only mappings, atomic file replacement, CRC32C software/hardware/streaming/combine |
-| Text | Strict UTF-8, explicit ASCII/fullwidth analysis profile, bounded JSON with exact numeric lexemes |
-| Query | NexusQL parser, canonical printer, AST equality/dumps, spans and configurable limits |
-| Sets | Immutable Roaring array/bitset portable format, membership, iteration, AND/OR/XOR/difference |
-| Text Index | Inverted Postings Index with term dictionary, document frequency, tf stream, and Lucene 10.3.1 BM25 |
-| Code / Regex | 24-bit Trigram Inverted Index for microsecond substring candidate pruning (Google Code Search style) |
-| Matching | Bounded Thompson byte-regex engine and Unicode-scalar Levenshtein distance |
-| Vectors | Scalar/AVX2 dot, squared L2, cosine and per-vector uniform SQ8 |
-| Vector Index | Flat Navigable Proximity Graph (FlatNav / RobustPrune) for sub-ms filtered ANN vector search |
-| Storage / WAL | Write-Ahead Log (WAL) with CRC32C framing, torn write crash recovery, and physical sync |
-| Segments | Immutable sealed segment format (`NXSEG1`), column store with BSI, multi-field section directory |
-| Indexes | Roaring bitmaps, sorted dictionary, BSI numeric ranges, BM25 inverted postings, trigram candidate filtering, FlatNav proximity graph, RaBitQ 1-bit vector quantization with FastScan 4-bit LUT |
-| Storage & Durability | Transactional Write-Ahead Log (WAL) with CRC32C, crash recovery replay, atomic manifest generations (`manifest-<gen>.json`), tiered compaction merge |
-| Search | BM25 text ranking, exact & approximate vector search (FlatNav graph, RaBitQ), reciprocal rank fusion, numeric/boolean/text/regex/fuzzy filters |
-| Server | HTTP/1.1 REST API, Server-Sent Events (SSE) progressive streaming (`/api/stream`), embedded interactive Web UI, Model Context Protocol (MCP) over stdio |
-| CLI & REPL | build, search, explain, stats, serve, mcp, interactive REPL with inline docs |
-| Python SDK | Typed Snapshot, search, build, stats, and explain APIs (`bindings/python/nexus`) |
+| Snapshot workflow | Bounded JSONL ingestion, unique IDs, inferred scalar/vector columns, original documents and integrity validation. CLI publication uses atomic file replacement. |
+| Numeric search | Exact signed int64 bit-sliced comparisons, plus a scalar filter reference selected with `--scan`; float and Boolean filters are scanned. |
+| Text search | Analyzed terms and phrases with corpus-wide BM25 statistics; exact original strings, prefix, bounded regex/fuzzy and substring matching. Text is scanned by the active engine. |
+| Vector and hybrid search | Every eligible stored vector receives an exact cosine score. Positive lexical/vector rankings combine using deterministic RRF. |
+| Results | Stable ID tie breaking, explicit sort/pagination, binding-only explain and measured execution counters. |
+| Interfaces | CLI, REPL, local HTTP/browser UI, SSE delivery of completed results, experimental MCP subset, and Python ctypes bindings. |
+| Foundation | Guarded memory, bounded parsing, UTF-8/text profile, bitmap sets, CRC32C, file/mapping helpers and scalar/SIMD vector primitives. |
+| Experimental modules | Standalone postings, trigram, proximity graph, RaBitQ-style quantization, sealed segments, WAL, persistent store and merge APIs. These are not used by the snapshot search command. |
 
-Low-level APIs live in `src/core`, `src/index`, `src/query`, and `src/store`.
-The search engine API is in `src/engine` and `src/seg`. The HTTP/MCP/SSE server is
-in `src/server`. Python bindings live in `bindings/python`.
+The experimental modules have dedicated tests, but their presence does not make
+snapshot queries use ANN or inverted indexes. ANN recall and quantization error
+need workload-specific evaluation against the exact engine. Checksums detect
+corruption; they do not establish power-loss durability or transactional recovery
+for the experimental multi-file store. Benchmark timings apply only to the
+recorded machine, build, data and queries.
 
+Useful test controls include `NX_TEST_SEED`, `NX_TEST_SCALE` and `NX_SIMD=scalar`.
+Python integration checks use the standard library:
 
+```powershell
+python tests\test_cli.py --exe build\nexus.exe
+python tests\test_server.py --exe build\nexus.exe
+python tests\test_bindings.py
+python tests\test_backup_source.py
+```
 
-
-See [search guide](docs/SEARCH.md), [module contracts](docs/LEAF_MODULES.md),
-[query language](docs/QUERY_LANGUAGE.md), [continuation ledger](docs/PROGRESS.md),
-[architecture](docs/ARCHITECTURE.md), and [next layer](docs/NEXT_LAYER.md).
-Research notes in `docs/research/` retain their original evidence labels and
-are not independently fact-checked as a set.
-
+See the [continuation ledger](docs/PROGRESS.md) for validation status and remaining
+work, [module contracts](docs/LEAF_MODULES.md) for the foundation,
+[language reference](docs/QUERY_LANGUAGE.md) and [architecture](docs/ARCHITECTURE.md)
+for the wider roadmap, and [research update](docs/RESEARCH_UPDATE_2026-10-03.md) for
+the sources informing the active engine. Roadmap syntax is broader than the
+features currently executed. Older notes in `docs/research/` retain their original
+evidence labels and have not been independently fact-checked as a set.
 
 ## Recovery and backups
 
-The project was recovered from its saved development records on 2026-10-03.
-All 66 recorded project files were reconstructed, including the later fixes.
-See [recovery details and verification](docs/RECOVERY.md).
-
-Create a new source backup with Python 3:
+The project was recovered from saved development records on 2026-10-03. All 66
+recorded project files were reconstructed, including the later fixes; subsequent
+development has added more files. See [recovery details](docs/RECOVERY.md).
 
 ```powershell
 python tools/backup_source.py

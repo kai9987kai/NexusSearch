@@ -1,74 +1,121 @@
-# NexusSearch Python SDK
+# NexusSearch Python bindings
 
-High-performance, dependency-free embedded search engine written in C11.
+A standard-library `ctypes` wrapper for the local NexusSearch C11 snapshot engine.
+It supports typed document snapshots, text and numeric queries, exhaustive vector
+ranking, hybrid RRF ranking, schema inspection and query explanations.
 
-## Installation
+## Setup
 
-Install locally in development mode:
+Build the shared C library first using the project README. From the project root,
+use the source wrapper directly:
 
-```bash
-cd bindings/python
-pip install -e .
+```powershell
+$env:PYTHONPATH = "$PWD\bindings\python"
+$env:NEXUS_LIB_PATH = "$PWD\build\libnexus.dll"
 ```
 
-Ensure `libnexus.dll` (Windows), `libnexus.so` (Linux), or `libnexus.dylib` (macOS) is built in `build/` or set `NEXUS_LIB_PATH`.
+Alternatively, install the local package:
 
-## Quickstart
+```powershell
+python -m pip install -e bindings/python
+```
+
+This installs the wrapper, not a prebuilt native library. Keep the matching
+shared library available through `NEXUS_LIB_PATH` or `build/`.
+The platform library names are `libnexus.dll`, `libnexus.so` and `libnexus.dylib`;
+non-Windows builds need their own validation. Use wrapper and library files from
+the same source revision because the C structure layout is part of the interface.
+
+## Open and query
+
+Create the example snapshot with the CLI first:
+
+```powershell
+.\build\nexus.exe build examples\documents.jsonl build\example.nxs
+```
 
 ```python
-import nexus
+from nexus import Snapshot
 
-# 1. Open an existing snapshot
-with nexus.Snapshot.open("build/example.nxs") as snap:
-    print(f"Loaded snapshot with {snap.rows} rows, {snap.fields_count} fields")
+with Snapshot.open("build/example.nxs") as snapshot:
+    print(snapshot.rows, snapshot.fields_count)
+    print(snapshot.stats())
 
-    # 2. Get snapshot schema & stats
-    stats = snap.stats()
-    for field in stats["fields"]:
-        print(f"  Field: {field['name']} ({field['type']})")
+    result = snapshot.search("search AND year:>=2025 LIMIT 3")
+    print(result.total, result.work, result.numeric_indexes)
+    for hit in result:
+        print(hit.id, hit.row, hit.score, hit.document)
 
-    # 3. Search using NexusQL syntax
-    results = snap.search("search AND year:>=2025")
-    print(f"Found {len(results)} matches (total: {results.total})")
-
-    for hit in results:
-        print(f"#{hit.row} [{hit.score:.4f}] ID: {hit.id}")
-        print(f"   Title: {hit.document.get('title')}")
-
-    # 4. Vector similarity search
-    vec_results = snap.search("embedding:[1,0,0] LIMIT 3")
-    for hit in vec_results:
-        print(f"Top vector match: {hit.id} (score: {hit.score:.4f})")
-
-    # 5. Explain query execution plan
-    plan = snap.explain("year:>=2025 AND active:true")
-    print("Execution plan:", plan)
+    vectors = snapshot.search("embedding:[1,0,0] LIMIT 3")
+    print([(hit.id, hit.score) for hit in vectors])
+    print(snapshot.explain("year:>=2025 AND active:true"))
+    print(snapshot.get_document(0))
 ```
 
-## Building Snapshots from Python
+`SearchResult` contains hits, total matches, returned count and execution counters:
+`work`, `numeric_indexes`, `scanned_cells`, `vectors_scored`, `explain_only`,
+`indexed`, `has_lexical` and `has_vector`. Each `Hit` contains copied `id`, `row`,
+`score`, `raw_document` and lazily parsed `document` values. `row` identifies a
+position in this particular snapshot; `_id` is the persistent document identity.
+
+`search(scan=True)` uses the independent numeric filter reference. `limit` sets
+the permitted hit cap (default 20); an explicit NexusQL `LIMIT` must fit that
+cap. For example, use `search("* LIMIT 100", limit=100)` to request 100 hits.
+The snapshot engine returns at most 20 hits when no query `LIMIT` is specified,
+clamped by the wrapper's lower cap if supplied.
+
+`search` raises `NexusError` for invalid queries. `explain` returns a JSON-decoded
+object that can contain an `error` field. File operations may raise normal Python
+I/O exceptions. See the [search guide](../../docs/SEARCH.md) for complete supported
+syntax and score semantics.
+
+## Build from JSON Lines
 
 ```python
-import nexus
+from nexus import Snapshot
 
-# Build from JSON Lines file or bytes
-jsonl_data = b'''{"_id":"doc1","title":"Hello Nexus","year":2026,"active":true}
-{"_id":"doc2","title":"High Performance Search","year":2025,"active":true}
-'''
+source = (
+    b'{"_id":"one","title":"local search","year":2026}\n'
+    b'{"_id":"two","title":"document storage","year":2025}\n'
+)
 
-# Build to disk
-nexus.Snapshot.build(jsonl_data, output_path="my_index.nxs")
+# Returns serialized snapshot bytes, with no file needed.
+encoded = Snapshot.build(source)
+with Snapshot.open(encoded) as snapshot:
+    assert snapshot.search("title:search").total == 1
 
-# Or build in memory and query immediately
-snap_bytes = nexus.Snapshot.build(jsonl_data)
-with nexus.Snapshot.open(snap_bytes) as snap:
-    res = snap.search("title:Nexus")
-    assert len(res) == 1
+# Paths are accepted as inputs; output publication is optional.
+Snapshot.build(source, output_path="my_index.nxs")
 ```
 
-## Features
+Documents require unique string `_id` values. Inferred fields must have consistent
+types. Missing/null values remain missing; invalid JSON, mixed types, unsupported
+nested values and inconsistent vector dimensions fail explicitly. Vectors are
+finite float32 arrays supplied by the caller. No embedding model is included.
 
-- **Blazing Fast**: Sub-millisecond queries backed by C11 bit-sliced indexes (BSI) and SIMD vector kernels.
-- **Dependency-Free**: Pure C core, wrapped with standard Python `ctypes`.
-- **Hybrid Search**: Combines BM25 lexical ranking and Cosine vector similarity with Reciprocal Rank Fusion (RRF).
-- **Exact Numeric Indexes**: Bit-sliced signed int64 filtering with zero index skew.
-- **Interactive Web UI & REST**: Launch with `nexus serve snapshot.nxs --port 8080`.
+When saving, the wrapper writes a same-directory temporary file, checks the write,
+flushes and synchronizes it, closes it, then uses `os.replace`. Failures before
+replacement preserve the previous destination and clean up the wrapper's temporary
+file. The containing directory is not synchronized; this is not a guarantee of
+power-loss durability on every platform/filesystem.
+
+## Current limits
+
+- Opening a path reads its complete bytes into Python memory before C validation;
+  this wrapper does not use memory mapping. JSONL inputs are likewise read before
+  applying the C ingestion limits, so use bounded source files.
+- The `with` syntax is supported, but snapshot memory follows Python object
+  lifetime. There is no persistent file handle to close at context exit.
+- Integer comparisons can use BSI. Text retrieval scans stored cells with BM25,
+  while vector queries exhaustively score eligible vectors. Performance depends
+  on the corpus, query, dimensions, platform and build configuration.
+- Standalone postings, trigram, ANN, quantization, WAL/store and merge modules are
+  experimental C APIs; this Python snapshot interface does not use them.
+- Snapshot checksums detect corruption. They do not establish semantic relevance,
+  general crash durability or calibrated confidence in result scores.
+
+Run the wrapper regression suite from the project root:
+
+```powershell
+python tests\test_bindings.py
+```

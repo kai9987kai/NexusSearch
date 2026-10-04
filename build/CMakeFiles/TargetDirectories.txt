@@ -49,6 +49,7 @@ C:/Users/kai99/Desktop/NEXUS/build/CMakeFiles/test_wal.dir
 C:/Users/kai99/Desktop/NEXUS/build/CMakeFiles/test_wal_shared.dir
 C:/Users/kai99/Desktop/NEXUS/build/CMakeFiles/bench_bsi.dir
 C:/Users/kai99/Desktop/NEXUS/build/CMakeFiles/bench_search.dir
+C:/Users/kai99/Desktop/NEXUS/build/CMakeFiles/bench_search_compare.dir
 C:/Users/kai99/Desktop/NEXUS/build/CMakeFiles/bench_vec.dir
 C:/Users/kai99/Desktop/NEXUS/build/CMakeFiles/test.dir
 C:/Users/kai99/Desktop/NEXUS/build/CMakeFiles/edit_cache.dir
