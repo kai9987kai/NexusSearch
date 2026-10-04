@@ -205,7 +205,7 @@ class ServerTests(unittest.TestCase):
                    b"Transfer-Encoding: chunked")
         for index, header in enumerate(headers):
             with socket.create_connection(("127.0.0.1", self.port), timeout=5) as client:
-                client.sendall(b"POST /api/search HTTP/1.1\r\nHost: localhost\r\n" + header + b"\r\n\r\n" + body)
+                client.sendall(f"POST /api/search HTTP/1.1\r\nHost: localhost:{self.port}\r\n".encode() + header + b"\r\n\r\n" + body)
                 chunks = []
                 while chunk := client.recv(65536):
                     chunks.append(chunk)
@@ -225,7 +225,20 @@ class ServerTests(unittest.TestCase):
 
     def test_cors(self):
         status, _, headers = self.get("/health")
-        self.assertEqual(headers.get("Access-Control-Allow-Origin"), "*")
+        self.assertEqual(status, 200)
+        self.assertNotIn("Access-Control-Allow-Origin", headers)
+
+    def test_same_origin_and_rebinding_protection(self):
+        url = f"http://127.0.0.1:{self.port}/health"
+        allowed = urllib.request.Request(url, headers={"Origin":f"http://127.0.0.1:{self.port}"})
+        with urllib.request.urlopen(allowed, timeout=5) as response:
+            self.assertEqual(response.status, 200)
+        for headers in ({"Origin":"https://unrelated.example"}, {"Origin":"null"},
+                        {"Host":f"unrelated.example:{self.port}"}):
+            with self.assertRaises(urllib.error.HTTPError) as error:
+                urllib.request.urlopen(urllib.request.Request(url, headers=headers),timeout=5)
+            self.assertEqual(error.exception.code,403)
+            self.assertIn('error',json.loads(error.exception.read()))
 
     def test_bad_query(self):
         status, data, _ = self.get("/api/search?q=unknown_field:123")

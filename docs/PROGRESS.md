@@ -1,6 +1,6 @@
 # NexusSearch continuation ledger
 
-## Current status: integration and verification (2026-10-04)
+## Current status: verified snapshot workflow (2026-10-04)
 
 The active project is `C:\Users\kai99\Desktop\NEXUS`. The chat's starting
 `didactic-lamp` checkout is unrelated and remains separate. NEXUS has no Git
@@ -60,33 +60,51 @@ is made. Approximate indexes and paper-derived error estimates do not establish
 universal recall or pruning guarantees. Existing benchmark programs are local
 measurement tools, not universal sub-millisecond or throughput claims.
 
-### Validation checkpoint
+### Validation checkpoint: 2026-10-04
 
-Before the latest integration edits, the root run reported 46 CTest entries
-(23 suites linked both statically and dynamically), 12 CLI integration tests,
-11 HTTP integration tests and 10 Python-binding tests passing. Backup tooling
-had also passed its focused tests. These are historical checkpoints, not a
-claim about every edit currently in progress.
+Verified locally on Windows with MSYS2 UCRT64 GCC 15.2 (x64 binaries on an ARM64
+host). Debug uses guarded allocation; Release has `NX_MEM_DEBUG=OFF`.
 
-The current full Debug/Release/shared and Python rerun, browser exercise,
-review and final source backup are pending in this ledger until their fresh
-results are recorded. HTTP regression coverage has been expanded to include
-quoted/Unicode queries and malformed input. The source plan retains an unchecked
-final-verification item for this work.
+- Full CTest: **46/46 Debug** and **46/46 Release**, covering 23 suites through
+  static and shared libraries. The final server-origin change was followed by
+  the focused shared/static server checks and HTTP regression suite.
+- Release interfaces: **12 CLI**, **16 HTTP**, **7 MCP**, **14 Python-binding**
+  tests passed. Backup tooling: **9 tests** passed.
+- Node renderer checks passed for object documents, nested execution counters,
+  escaped document fields and text-only errors.
+- Live browser checks passed for numeric indexed/scan parity (the same three
+  IDs, with 1 versus 0 indexes and 6 versus 12 scanned cells), original document
+  previews, explain/schema, visible query errors and exact vector ordering.
+- The paired [benchmark receipt](benchmarks/2026-10-04-snapshot-search.json)
+  records all 96 oracle-validated searches, raw timings and configuration.
+  On its synthetic 10,000-row warm-cache data, indexed/scan median times were
+  1.129/1.941 ms for 85 hits and 7.526/8.277 ms for 6,722 hits. These results are
+  specific to this emulated host and workload; work-unit counts are not CPU time.
+
+Review fixes include exact-text ANYOF binding, exists-only hybrid ranking,
+regex argument validation and measured VM work budgets, bounded KMP substring
+matching, JSON error escaping, strict HTTP parsing, document row overflow,
+MCP frame/ID/notification/argument handling, browser preview/counter/error
+rendering, and atomic Python snapshot publication. HTTP rejects unrelated
+Origins and rebinding Host values. The server is still a sequential local
+development service, not a hardened public deployment.
+
+No sanitizer run or other-platform certification is claimed. Source backup
+receipts are stored alongside their ZIPs in `Documents/NexusSearch Backups`;
+the final archive is created after this ledger and all source edits are saved.
 
 ## Next implementation priorities
 
-1. Complete the current verification and retain a fresh verified source backup.
-2. Integrate postings/trigram acceleration while preserving the exact engine's
+1. Integrate postings/trigram acceleration while preserving the exact engine's
    analysis, missing values, whole-corpus statistics, IDs and scores.
-3. Add reproducible ANN/quantization comparisons across selective filters,
+2. Add reproducible ANN/quantization comparisons across selective filters,
    missing vectors and correlated workloads; adopt approximate paths only with
    explicit recall and resource evidence.
-4. Harden experimental storage publication/recovery and define live-document
+3. Harden experimental storage publication/recovery and define live-document
    statistics before exposing mutation or multi-segment search through the CLI.
-5. Continue language features deliberately: calendar/relative dates, units,
+4. Continue language features deliberately: calendar/relative dates, units,
    `FACET`, `WATCH`, federation and embedding inference remain deferred.
-6. Validate other operating systems/toolchains and add available sanitizers.
+5. Validate other operating systems/toolchains and add available sanitizers.
 
 ## Historical foundation and recovery (2026-10-02 to 2026-10-03)
 

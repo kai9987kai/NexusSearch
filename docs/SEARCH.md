@@ -133,7 +133,12 @@ Visit `http://127.0.0.1:8080`. The interface offers query presets, results, sche
 and explain views, a numeric scan toggle, execution counters and original JSON
 for each result. The server opens one snapshot at startup; rebuild and restart
 to use a changed collection. It handles clients sequentially and has no
-authentication or TLS. Keep this development interface on loopback.
+authentication or TLS. Keep this development interface on loopback. Browser requests
+must come from the same origin; unrelated origins and unrecognized Host values
+are rejected, and wildcard CORS access is disabled. Requests are bounded to
+64 KiB, query strings to 2,047 UTF-8 bytes, with five-second socket I/O timeouts.
+POST JSON supports escaped quotes and Unicode; malformed framing, NULs and
+truncated query values are rejected.
 
 | Route | Purpose |
 | --- | --- |
@@ -151,7 +156,11 @@ to this particular snapshot; use `_id` as the persistent document identity.
 
 The `mcp` command exposes `nexus_search`, `nexus_stats`, `nexus_explain` and
 `nexus_get_document` over stdin/stdout. This is an experimental protocol subset;
-interoperability with a particular client requires a client-level check.
+interoperability with a particular client requires a client-level check. It
+advertises protocol version `2024-11-05`, uses newline-delimited frames up to
+64 KiB, echoes numeric/string IDs without conversion, suppresses notification
+responses, and reports malformed requests and unknown methods explicitly.
+It does not implement arbitrary JSON-RPC batches or all current MCP features.
 
 ## Python
 
@@ -224,8 +233,12 @@ Run integration checks with Python 3 (standard library only):
 ```powershell
 python tests\test_cli.py --exe build\nexus.exe
 python tests\test_server.py --exe build\nexus.exe
+python tests\test_mcp.py --exe build\nexus.exe
 python tests\test_bindings.py
 ```
 
 CLI and server tests use temporary snapshots. Binding tests use `build/example.nxs`, creating it from the example corpus when
 it is absent, plus temporary directories for publication/failure checks.
+
+The browser renderer also has focused Node.js checks: `node tests/test_web_ui.cjs`.
+Regenerate the embedded page after editing its source with `python tools/gen_web_ui.py`.

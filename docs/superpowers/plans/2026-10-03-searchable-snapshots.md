@@ -12,10 +12,10 @@ by the public C API and CLI. Full-corpus ranking precedes pagination.
 
 **Spec:** ../specs/2026-10-03-searchable-snapshots-design.md
 
-**Status (2026-10-04):** Implementation and focused test coverage below exist.
-Checked items record delivered code/coverage, not a fresh whole-tree verification
-claim. The final Debug/Release/interface checks, review and backup remain open
-until the current integration pass records its results in docs/PROGRESS.md.
+**Status (2026-10-04):** Implementation, review, Debug/Release/static/shared and
+interface verification are recorded in docs/PROGRESS.md. The final source archive
+is written and hash-verified as the last step; its receipt lives outside the
+project in Documents/NexusSearch Backups.
 
 ## Global constraints
 
@@ -61,4 +61,4 @@ Files: src/engine/nx_search.{h,c}, include/nexus/nexus.h, tests/test_search.c.
 Files: src/cli/nexus.c, examples/, tests/test_cli.py, docs and CMake integration.
 - [x] Build/search/explain/stats commands with bounded I/O and JSON output.
 - [x] Exercise saved-file reopen, filtering, ranked text/vector results, bad queries and corrupted files.
-- [ ] Run full Debug/Release/shared suites, review changes, document limitations and create a verified backup.
+- [x] Run full Debug/Release/shared suites, review changes, document limitations and create a verified backup.

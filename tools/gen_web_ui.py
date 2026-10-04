@@ -35,7 +35,7 @@ HTML_CONTENT = """<!DOCTYPE html>
     .search-box { position: relative; margin-bottom: 16px; }
     .search-input-wrapper { display: flex; gap: 10px; background: var(--bg-surface); border: 2px solid var(--border); border-radius: 12px; padding: 6px 8px; transition: all 0.2s ease; }
     .search-input-wrapper:focus-within { border-color: var(--accent); box-shadow: 0 0 0 4px var(--accent-glow); }
-    .search-input { flex: 1; background: transparent; border: none; outline: none; color: #fff; font-size: 16px; padding: 8px 12px; }
+    .search-input { flex: 1; min-width: 0; background: transparent; border: none; outline: none; color: #fff; font-size: 16px; padding: 8px 12px; }
     .search-btn { background: var(--accent); color: #fff; border: none; border-radius: 8px; padding: 0 20px; font-size: 14px; font-weight: 600; cursor: pointer; transition: background 0.15s; }
     .search-btn:hover { background: var(--accent-hover); }
     .controls { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 24px; }
@@ -54,7 +54,7 @@ HTML_CONTENT = """<!DOCTYPE html>
     .tab-btn { background: none; border: none; color: var(--text-muted); font-size: 14px; font-weight: 600; padding: 10px 0; cursor: pointer; position: relative; }
     .tab-btn.active { color: var(--text-main); }
     .tab-btn.active::after { content: ''; position: absolute; bottom: -1px; left: 0; right: 0; height: 2px; background: var(--accent); }
-    .metrics-bar { display: flex; gap: 20px; background: var(--bg-surface); border: 1px solid var(--border); padding: 12px 18px; border-radius: 8px; margin-bottom: 20px; font-size: 13px; }
+    .metrics-bar { display: flex; flex-wrap: wrap; gap: 20px; background: var(--bg-surface); border: 1px solid var(--border); padding: 12px 18px; border-radius: 8px; margin-bottom: 20px; font-size: 13px; }
     .metric-item { display: flex; align-items: center; gap: 6px; }
     .metric-item strong { color: var(--success); }
     .results-container { display: flex; flex-direction: column; gap: 14px; }
@@ -84,6 +84,8 @@ HTML_CONTENT = """<!DOCTYPE html>
     .type-vector { background: rgba(236, 72, 153, 0.2); color: #f472b6; }
     .explain-view { background: var(--bg-surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; font-family: monospace; font-size: 13px; color: #38bdf8; white-space: pre-wrap; }
     .empty-state { text-align: center; padding: 60px 20px; color: var(--text-muted); }
+    button:focus-visible, input:focus-visible { outline: 2px solid #a5b4fc; outline-offset: 4px; }
+    @media (max-width: 600px) { body { padding: 12px; } header { align-items: flex-start; gap: 16px; flex-direction: column; } .tabs { gap: 16px; } .result-header { flex-wrap: wrap; gap: 8px; } }
     .empty-icon { font-size: 40px; margin-bottom: 12px; }
   </style>
 </head>
@@ -101,23 +103,23 @@ HTML_CONTENT = """<!DOCTYPE html>
     </header>
     <div class="search-box">
       <div class="search-input-wrapper">
-        <input type="text" id="queryInput" class="search-input" placeholder="Search with NexusQL (e.g. title:search AND year:>=2025)..." autofocus>
+        <input type="text" aria-label="Search query" id="queryInput" class="search-input" placeholder="Search with NexusQL (e.g. title:search AND year:>=2025)..." autofocus>
         <button class="search-btn" id="searchBtn">Search</button>
       </div>
     </div>
     <div class="controls">
       <div class="presets">
         <span class="preset-label">Try:</span>
-        <span class="preset-chip" data-q="search">search</span>
-        <span class="preset-chip" data-q="active:true AND year:>=2025">year:>=2025 AND active:true</span>
-        <span class="preset-chip" data-q="title:prefix(sea)">title:prefix(sea)</span>
-        <span class="preset-chip" data-q="title:fuzzy(serch,1)">title:fuzzy(serch,1)</span>
-        <span class="preset-chip" data-q="embedding:[1,0,0] LIMIT 3">embedding:[1,0,0]</span>
-        <span class="preset-chip" data-q="* SORT BY year DESC">* SORT BY year DESC</span>
+        <button type="button" class="preset-chip" data-q="search">search</button>
+        <button type="button" class="preset-chip" data-q="active:true AND year:>=2025">year:>=2025 AND active:true</button>
+        <button type="button" class="preset-chip" data-q="title:prefix(sea)">title:prefix(sea)</button>
+        <button type="button" class="preset-chip" data-q="title:fuzzy(serch,1)">title:fuzzy(serch,1)</button>
+        <button type="button" class="preset-chip" data-q="embedding:[1,0,0] LIMIT 3">embedding:[1,0,0]</button>
+        <button type="button" class="preset-chip" data-q="* SORT BY year DESC">* SORT BY year DESC</button>
       </div>
       <div class="toggle-group">
         <label class="switch">
-          <input type="checkbox" id="scanToggle">
+          <input type="checkbox" aria-label="Scan Oracle Mode" id="scanToggle">
           <span class="slider"></span>
         </label>
         <span>Scan Oracle Mode</span>
@@ -137,7 +139,7 @@ HTML_CONTENT = """<!DOCTYPE html>
         <div class="metric-item">Vectors Scored: <strong id="metricVectors">0</strong></div>
         <div class="metric-item">Latency: <strong id="metricTime">0ms</strong></div>
       </div>
-      <div class="results-container" id="resultsList">
+      <div class="results-container" id="resultsList" aria-live="polite">
         <div class="empty-state">
           <div class="empty-icon">⚡</div>
           <h3>Enter a query or select a preset above</h3>
@@ -157,6 +159,19 @@ HTML_CONTENT = """<!DOCTYPE html>
   </div>
   <script>
     let currentSchema = null;
+    let searchGeneration = 0;
+    function escapeHtml(value) {
+      return String(value).replace(/[&<>"']/g, c => ({'&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;'}[c]));
+    }
+    function renderError(message) {
+      document.getElementById('metricsBar').style.display = 'none';
+      const card = document.createElement('div');
+      card.className = 'result-card';
+      card.setAttribute('role', 'alert');
+      card.textContent = 'Search error: ' + message;
+      document.getElementById('resultsList').replaceChildren(card);
+      document.getElementById('explainContent').textContent = 'Correct the query to see its plan.';
+    }
     async function loadStats() {
       try {
         const res = await fetch('/api/stats');
@@ -171,7 +186,7 @@ HTML_CONTENT = """<!DOCTYPE html>
           const tr = document.createElement('tr');
           const typeClass = 'type-' + f.type;
           const details = f.type === 'vector' ? (f.dimensions + ' dimensions') : '-';
-          tr.innerHTML = `<td><strong>${f.name}</strong></td><td><span class="type-badge ${typeClass}">${f.type}</span></td><td>${details}</td>`;
+          tr.innerHTML = `<td><strong>${escapeHtml(f.name)}</strong></td><td><span class="type-badge ${escapeHtml(typeClass)}">${escapeHtml(f.type)}</span></td><td>${escapeHtml(details)}</td>`;
           tbody.appendChild(tr);
         });
       } catch (e) { console.error('Failed to load stats', e); }
@@ -179,39 +194,40 @@ HTML_CONTENT = """<!DOCTYPE html>
     async function doSearch() {
       const q = document.getElementById('queryInput').value.trim();
       if (!q) return;
+      const generation = ++searchGeneration;
       const scan = document.getElementById('scanToggle').checked;
+      document.querySelector('[data-tab="tabResults"]').click();
       const start = performance.now();
       try {
-        const res = await fetch(`/api/search?q=${encodeURIComponent(q)}&scan=${scan ? 1 : 0}`);
-        const elapsed = (performance.now() - start).toFixed(1);
+        const res = await fetch('/api/search', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({query:q, scan})});
         const data = await res.json();
-        if (!res.ok) {
-          document.getElementById('resultsList').innerHTML = `<div class="result-card" style="border-color: #ef4444;"><strong style="color:#ef4444;">Error:</strong> ${data.error || 'Search failed'}</div>`;
-          return;
-        }
+        if (generation !== searchGeneration) return;
+        const elapsed = (performance.now() - start).toFixed(1);
+        if (!res.ok || data.error) { renderError(data.error || 'Search failed'); return; }
         renderResults(data, elapsed);
-        loadExplain(q);
+        loadExplain(q, scan, generation);
       } catch (e) {
-        document.getElementById('resultsList').innerHTML = `<div class="result-card" style="border-color: #ef4444;"><strong style="color:#ef4444;">Request Error:</strong> ${e.message}</div>`;
+        if (generation === searchGeneration) renderError(e.message);
       }
     }
-    async function loadExplain(q) {
+    async function loadExplain(q, scan, generation) {
       try {
-        const res = await fetch(`/api/explain?q=${encodeURIComponent(q)}`);
-        if (res.ok) {
-          const data = await res.json();
-          document.getElementById('explainContent').textContent = JSON.stringify(data, null, 2);
-        }
-      } catch (e) {}
+        const res = await fetch('/api/explain', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({query:q, scan})});
+        const data = await res.json();
+        if (generation === searchGeneration) document.getElementById('explainContent').textContent = JSON.stringify(data, null, 2);
+      } catch (e) {
+        if (generation === searchGeneration) document.getElementById('explainContent').textContent = 'Plan unavailable: ' + e.message;
+      }
     }
     function renderResults(data, elapsed) {
+      const execution = data.execution || {};
       const metricsBar = document.getElementById('metricsBar');
       metricsBar.style.display = 'flex';
       document.getElementById('metricMatches').textContent = `${data.count} / ${data.total}`;
-      document.getElementById('metricWork').textContent = (data.work || 0).toLocaleString();
-      document.getElementById('metricIndexed').textContent = (data.numeric_indexes || 0).toLocaleString();
-      document.getElementById('metricScanned').textContent = (data.scanned_cells || 0).toLocaleString();
-      document.getElementById('metricVectors').textContent = (data.vectors_scored || 0).toLocaleString();
+      document.getElementById('metricWork').textContent = (execution.work || 0).toLocaleString();
+      document.getElementById('metricIndexed').textContent = (execution.numeric_indexes || 0).toLocaleString();
+      document.getElementById('metricScanned').textContent = (execution.scanned_cells || 0).toLocaleString();
+      document.getElementById('metricVectors').textContent = (execution.vectors_scored || 0).toLocaleString();
       document.getElementById('metricTime').textContent = `${elapsed}ms`;
       const container = document.getElementById('resultsList');
       if (!data.hits || data.hits.length === 0) {
@@ -222,23 +238,24 @@ HTML_CONTENT = """<!DOCTYPE html>
       const maxScore = Math.max(...data.hits.map(h => h.score || 0), 0.001);
       data.hits.forEach((hit, idx) => {
         let doc = {};
-        try { doc = JSON.parse(hit.document); } catch (e) {}
+        if (hit.document && typeof hit.document === 'object') doc = hit.document;
+        else { try { doc = JSON.parse(hit.document); } catch (e) {} }
         const scorePercent = Math.min(100, Math.max(5, Math.round(((hit.score || 0) / maxScore) * 100)));
         let fieldsHtml = '';
         for (const [k, v] of Object.entries(doc)) {
           if (k === '_id' || k === 'body' || k === 'title') continue;
           const valStr = typeof v === 'object' ? JSON.stringify(v) : String(v);
-          fieldsHtml += `<span class="field-tag"><span class="field-name">${k}:</span> <span class="field-val">${valStr}</span></span>`;
+          fieldsHtml += `<span class="field-tag"><span class="field-name">${escapeHtml(k)}:</span> <span class="field-val">${escapeHtml(valStr)}</span></span>`;
         }
-        const bodyText = doc.body ? `<div class="result-body">${doc.body}</div>` : '';
-        const titleText = doc.title ? `<div style="font-size:16px;font-weight:600;color:#fff;margin-bottom:6px;">${doc.title}</div>` : '';
+        const bodyText = doc.body ? `<div class="result-body">${escapeHtml(doc.body)}</div>` : '';
+        const titleText = doc.title ? `<div style="font-size:16px;font-weight:600;color:#fff;margin-bottom:6px;">${escapeHtml(doc.title)}</div>` : '';
         const scoreDisplay = typeof hit.score === 'number' ? hit.score.toFixed(4) : '-';
         html += `
           <div class="result-card">
             <div class="result-header">
               <div class="result-id">
-                <span>${hit._id}</span>
-                <span class="row-badge">row ${hit.row}</span>
+                <span>${escapeHtml(hit._id)}</span>
+                <span class="row-badge">row ${escapeHtml(hit.row)}</span>
               </div>
               <div class="score-badge">
                 <div class="score-bar"><div class="score-fill" style="width: ${scorePercent}%"></div></div>
@@ -249,7 +266,7 @@ HTML_CONTENT = """<!DOCTYPE html>
             ${bodyText}
             <div class="result-fields">${fieldsHtml}</div>
             <button class="json-toggle" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block'">View JSON &darr;</button>
-            <div class="raw-json">${JSON.stringify(doc, null, 2)}</div>
+            <div class="raw-json">${escapeHtml(JSON.stringify(doc, null, 2))}</div>
           </div>`;
       });
       container.innerHTML = html;

@@ -139,3 +139,18 @@ CLI with truthful capability errors. Defer ANN, WAND pruning, quantization-based
 selection, automatic index selection, learned rankers, concurrent WAL/store
 operations and network services until their exact baselines and lifecycle
 tests exist. A newer paper alone is not a reason to add implementation risk.
+
+
+## Integration follow-up: 2026-10-04
+
+The bounded immutable snapshot baseline above is now implemented. The local
+HTTP/browser and Python adapters have targeted integration checks; this does
+not promote experimental ANN or multi-file storage to the active query path.
+The MCP adapter uses the [JSON-RPC 2.0 specification](https://www.jsonrpc.org/specification)
+for response identity, notifications and error envelopes, and the
+[MCP stdio transport specification](https://modelcontextprotocol.io/specification/2025-11-25/basic/transports)
+for newline-delimited messages. Its advertised protocol remains the narrower
+2024-11-05 subset; no full current-client compatibility claim is made.
+The paired numeric-filter benchmark records an independent generated-data
+oracle and raw alternating indexed/scan timings in
+[the benchmark receipt](benchmarks/2026-10-04-snapshot-search.json).

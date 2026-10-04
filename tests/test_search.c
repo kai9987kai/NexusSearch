@@ -123,6 +123,18 @@ static void test_bind_before_execute_limits_and_explain(void) {
     nx_search_options o = nx_search_default_options(); o.max_work = 2;
     NX_CHECK_EQ_I(nx_search(&t, nx_slice_cstr("title:cat"), &o, &r, NULL), NX_ERR_LIMIT);
     NX_CHECK(r.hits == NULL);
+    /* Count actual regex VM work, including expanded repetition states. */
+    const char *regex_query = "title:/a{100}/";
+    NX_CHECK_OK(nx_search(&t, nx_slice_cstr(regex_query), NULL, &r, NULL));
+    size_t measured_work = r.work;
+    NX_CHECK(measured_work > 0);
+    nx_search_result_free(&r);
+    o.max_work = measured_work;
+    NX_CHECK_OK(nx_search(&t, nx_slice_cstr(regex_query), &o, &r, NULL));
+    nx_search_result_free(&r);
+    o.max_work = measured_work - 1;
+    NX_CHECK_EQ_I(nx_search(&t, nx_slice_cstr(regex_query), &o, &r, NULL), NX_ERR_LIMIT);
+    NX_CHECK(r.hits == NULL);
     nx_buf_free(&bytes);
 }
 

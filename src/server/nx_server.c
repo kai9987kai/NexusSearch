@@ -232,9 +232,6 @@ static void send_http_response(nx_socket_t sock, int status_code, const char *st
                         "HTTP/1.1 %d %s\r\n"
                         "Content-Type: %s\r\n"
                         "Content-Length: %zu\r\n"
-                        "Access-Control-Allow-Origin: *\r\n"
-                        "Access-Control-Allow-Methods: GET, POST, OPTIONS\r\n"
-                        "Access-Control-Allow-Headers: Content-Type\r\n"
                         "Connection: close\r\n"
                         "\r\n",
                         status_code, status_text, content_type, body_len);
@@ -250,9 +247,6 @@ static void send_sse_headers(nx_socket_t sock) {
         "Content-Type: text/event-stream; charset=utf-8\r\n"
         "Cache-Control: no-cache\r\n"
         "Connection: close\r\n"
-        "Access-Control-Allow-Origin: *\r\n"
-        "Access-Control-Allow-Methods: GET, POST, OPTIONS\r\n"
-        "Access-Control-Allow-Headers: Content-Type\r\n"
         "\r\n";
     (void)send_all(sock, headers, strlen(headers));
 }
@@ -307,6 +301,51 @@ static bool content_length(const char *req, const char *end, size_t *length) {
     return true;
 }
 
+/* Keep the local document service same-origin and reject DNS-rebinding hosts. */
+static bool allowed_origin(nx_socket_t client, const char *req) {
+    struct sockaddr_in local;
+#ifdef _WIN32
+    int local_len = sizeof(local);
+#else
+    socklen_t local_len = sizeof(local);
+#endif
+    if (getsockname(client, (struct sockaddr *)&local, &local_len)) return false;
+    char address[INET_ADDRSTRLEN], numeric_host[64], localhost[64];
+    if (!inet_ntop(AF_INET, &local.sin_addr, address, sizeof(address))) return false;
+    unsigned port = (unsigned)ntohs(local.sin_port);
+    (void)snprintf(numeric_host, sizeof(numeric_host), "%s:%u", address, port);
+    (void)snprintf(localhost, sizeof(localhost), "localhost:%u", port);
+    nx_slice host = {0}, origin = {0};
+    const char *line = strstr(req, "\r\n");
+    if (!line) return false;
+    line += 2;
+    while (*line && strncmp(line, "\r\n", 2)) {
+        const char *next = strstr(line, "\r\n");
+        const char *colon = next ? memchr(line, ':', (size_t)(next - line)) : NULL;
+        if (!colon) return false;
+        const char *value = colon + 1, *end = next;
+        while (value < end && (*value == ' ' || *value == '\t')) ++value;
+        while (end > value && (end[-1] == ' ' || end[-1] == '\t')) --end;
+        nx_slice field = nx_slice_make((const uint8_t *)value, (size_t)(end - value));
+        if (header_name(line, (size_t)(colon - line), "host")) {
+            if (host.p || !field.n) return false;
+            host = field;
+        } else if (header_name(line, (size_t)(colon - line), "origin")) {
+            if (origin.p || !field.n) return false;
+            origin = field;
+        }
+        line = next + 2;
+    }
+    bool loopback = (ntohl(local.sin_addr.s_addr) >> 24) == 127;
+    if (!nx_slice_eq(host, nx_slice_cstr(numeric_host)) &&
+        !(loopback && nx_slice_eq(host, nx_slice_cstr(localhost))) &&
+        !(port == 80 && (nx_slice_eq(host, nx_slice_cstr(address)) ||
+                       (loopback && nx_slice_eq(host, nx_slice_cstr("localhost")))))) return false;
+    if (!origin.p) return true;
+    return origin.n == host.n + 7 && !memcmp(origin.p, "http://", 7) &&
+           !memcmp(origin.p + 7, host.p, host.n);
+}
+
 static void handle_http_client(const nx_table *table, nx_socket_t client) {
 #ifdef _WIN32
     DWORD timeout = 5000;
@@ -358,7 +397,20 @@ static void handle_http_client(const nx_table *table, nx_socket_t client) {
     }
 
     if (!strcmp(method, "OPTIONS")) {
+        if (!allowed_origin(client, req)) {
+            const char message[] = "{\"error\":\"origin or host not allowed\"}";
+            send_http_response(client, 403, "Forbidden", "application/json", message, sizeof(message) - 1);
+            NX_CLOSESOCKET(client);
+            return;
+        }
         send_http_response(client, 204, "No Content", "text/plain", "", 0);
+        NX_CLOSESOCKET(client);
+        return;
+    }
+
+    if (!allowed_origin(client, req)) {
+        const char message[] = "{\"error\":\"origin or host not allowed\"}";
+        send_http_response(client, 403, "Forbidden", "application/json", message, sizeof(message) - 1);
         NX_CLOSESOCKET(client);
         return;
     }
