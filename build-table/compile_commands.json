@@ -1,0 +1,218 @@
+[
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-table",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DNX_MEM_DEBUG=1 -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include -g -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus.dir\\src\\core\\nx_arena.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\src\\core\\nx_arena.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/src/core/nx_arena.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-table/CMakeFiles/nexus.dir/src/core/nx_arena.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-table",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DNX_MEM_DEBUG=1 -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include -g -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus.dir\\src\\core\\nx_buf.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\src\\core\\nx_buf.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/src/core/nx_buf.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-table/CMakeFiles/nexus.dir/src/core/nx_buf.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-table",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DNX_MEM_DEBUG=1 -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include -g -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus.dir\\src\\core\\nx_crc32c.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\src\\core\\nx_crc32c.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/src/core/nx_crc32c.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-table/CMakeFiles/nexus.dir/src/core/nx_crc32c.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-table",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DNX_MEM_DEBUG=1 -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include -g -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus.dir\\src\\core\\nx_file.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\src\\core\\nx_file.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/src/core/nx_file.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-table/CMakeFiles/nexus.dir/src/core/nx_file.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-table",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DNX_MEM_DEBUG=1 -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include -g -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus.dir\\src\\core\\nx_json.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\src\\core\\nx_json.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/src/core/nx_json.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-table/CMakeFiles/nexus.dir/src/core/nx_json.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-table",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DNX_MEM_DEBUG=1 -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include -g -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus.dir\\src\\core\\nx_mem.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\src\\core\\nx_mem.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/src/core/nx_mem.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-table/CMakeFiles/nexus.dir/src/core/nx_mem.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-table",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DNX_MEM_DEBUG=1 -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include -g -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus.dir\\src\\core\\nx_simd.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\src\\core\\nx_simd.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/src/core/nx_simd.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-table/CMakeFiles/nexus.dir/src/core/nx_simd.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-table",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DNX_MEM_DEBUG=1 -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include -g -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus.dir\\src\\core\\nx_status.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\src\\core\\nx_status.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/src/core/nx_status.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-table/CMakeFiles/nexus.dir/src/core/nx_status.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-table",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DNX_MEM_DEBUG=1 -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include -g -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus.dir\\src\\core\\nx_thread.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\src\\core\\nx_thread.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/src/core/nx_thread.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-table/CMakeFiles/nexus.dir/src/core/nx_thread.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-table",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DNX_MEM_DEBUG=1 -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include -g -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus.dir\\src\\core\\nx_utf8.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\src\\core\\nx_utf8.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/src/core/nx_utf8.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-table/CMakeFiles/nexus.dir/src/core/nx_utf8.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-table",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DNX_MEM_DEBUG=1 -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include -g -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus.dir\\src\\engine\\nx_search.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\src\\engine\\nx_search.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/src/engine/nx_search.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-table/CMakeFiles/nexus.dir/src/engine/nx_search.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-table",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DNX_MEM_DEBUG=1 -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include -g -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus.dir\\src\\index\\nx_bitmap.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\src\\index\\nx_bitmap.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/src/index/nx_bitmap.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-table/CMakeFiles/nexus.dir/src/index/nx_bitmap.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-table",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DNX_MEM_DEBUG=1 -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include -g -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus.dir\\src\\index\\nx_bsi.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\src\\index\\nx_bsi.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/src/index/nx_bsi.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-table/CMakeFiles/nexus.dir/src/index/nx_bsi.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-table",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DNX_MEM_DEBUG=1 -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include -g -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus.dir\\src\\index\\nx_dict.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\src\\index\\nx_dict.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/src/index/nx_dict.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-table/CMakeFiles/nexus.dir/src/index/nx_dict.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-table",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DNX_MEM_DEBUG=1 -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include -g -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus.dir\\src\\index\\nx_fuzzy.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\src\\index\\nx_fuzzy.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/src/index/nx_fuzzy.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-table/CMakeFiles/nexus.dir/src/index/nx_fuzzy.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-table",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DNX_MEM_DEBUG=1 -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include -g -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus.dir\\src\\index\\nx_regex.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\src\\index\\nx_regex.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/src/index/nx_regex.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-table/CMakeFiles/nexus.dir/src/index/nx_regex.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-table",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DNX_MEM_DEBUG=1 -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include -g -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus.dir\\src\\index\\nx_vec.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\src\\index\\nx_vec.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/src/index/nx_vec.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-table/CMakeFiles/nexus.dir/src/index/nx_vec.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-table",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DNX_MEM_DEBUG=1 -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include -g -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus.dir\\src\\query\\nx_ast.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\src\\query\\nx_ast.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/src/query/nx_ast.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-table/CMakeFiles/nexus.dir/src/query/nx_ast.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-table",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DNX_MEM_DEBUG=1 -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include -g -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus.dir\\src\\query\\nx_parse.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\src\\query\\nx_parse.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/src/query/nx_parse.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-table/CMakeFiles/nexus.dir/src/query/nx_parse.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-table",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DNX_MEM_DEBUG=1 -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include -g -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus.dir\\src\\seg\\nx_table.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\src\\seg\\nx_table.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/src/seg/nx_table.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-table/CMakeFiles/nexus.dir/src/seg/nx_table.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-table",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DNX_MEM_DEBUG=1 -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include -g -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus_cli.dir\\src\\cli\\nexus.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\src\\cli\\nexus.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/src/cli/nexus.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-table/CMakeFiles/nexus_cli.dir/src/cli/nexus.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-table",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DNX_MEM_DEBUG=1 -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include -g -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_arena_rollback.dir\\tests\\test_arena_rollback.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\tests\\test_arena_rollback.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/tests/test_arena_rollback.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-table/CMakeFiles/test_arena_rollback.dir/tests/test_arena_rollback.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-table",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DNX_MEM_DEBUG=1 -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include -g -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_bitmap.dir\\tests\\test_bitmap.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\tests\\test_bitmap.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/tests/test_bitmap.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-table/CMakeFiles/test_bitmap.dir/tests/test_bitmap.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-table",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DNX_MEM_DEBUG=1 -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include -g -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_bsi.dir\\tests\\test_bsi.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\tests\\test_bsi.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/tests/test_bsi.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-table/CMakeFiles/test_bsi.dir/tests/test_bsi.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-table",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DNX_MEM_DEBUG=1 -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include -g -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_core.dir\\tests\\test_core.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\tests\\test_core.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/tests/test_core.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-table/CMakeFiles/test_core.dir/tests/test_core.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-table",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DNX_MEM_DEBUG=1 -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include -g -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_dict.dir\\tests\\test_dict.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\tests\\test_dict.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/tests/test_dict.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-table/CMakeFiles/test_dict.dir/tests/test_dict.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-table",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DNX_MEM_DEBUG=1 -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include -g -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_fuzzy.dir\\tests\\test_fuzzy.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\tests\\test_fuzzy.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/tests/test_fuzzy.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-table/CMakeFiles/test_fuzzy.dir/tests/test_fuzzy.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-table",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DNX_MEM_DEBUG=1 -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include -g -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_json.dir\\tests\\test_json.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\tests\\test_json.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/tests/test_json.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-table/CMakeFiles/test_json.dir/tests/test_json.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-table",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DNX_MEM_DEBUG=1 -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include -g -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_parse.dir\\tests\\test_parse.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\tests\\test_parse.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/tests/test_parse.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-table/CMakeFiles/test_parse.dir/tests/test_parse.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-table",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DNX_MEM_DEBUG=1 -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include -g -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_platform.dir\\tests\\test_platform.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\tests\\test_platform.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/tests/test_platform.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-table/CMakeFiles/test_platform.dir/tests/test_platform.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-table",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DNX_MEM_DEBUG=1 -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include -g -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_regex.dir\\tests\\test_regex.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\tests\\test_regex.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/tests/test_regex.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-table/CMakeFiles/test_regex.dir/tests/test_regex.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-table",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DNX_MEM_DEBUG=1 -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include -g -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_search.dir\\tests\\test_search.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\tests\\test_search.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/tests/test_search.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-table/CMakeFiles/test_search.dir/tests/test_search.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-table",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DNX_MEM_DEBUG=1 -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include -g -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_simd.dir\\tests\\test_simd.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\tests\\test_simd.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/tests/test_simd.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-table/CMakeFiles/test_simd.dir/tests/test_simd.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-table",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DNX_MEM_DEBUG=1 -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include -g -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_table.dir\\tests\\test_table.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\tests\\test_table.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/tests/test_table.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-table/CMakeFiles/test_table.dir/tests/test_table.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-table",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DNX_MEM_DEBUG=1 -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include -g -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_utf8.dir\\tests\\test_utf8.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\tests\\test_utf8.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/tests/test_utf8.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-table/CMakeFiles/test_utf8.dir/tests/test_utf8.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-table",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DNX_MEM_DEBUG=1 -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include -g -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_vec.dir\\tests\\test_vec.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\tests\\test_vec.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/tests/test_vec.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-table/CMakeFiles/test_vec.dir/tests/test_vec.c.obj"
+}
+]

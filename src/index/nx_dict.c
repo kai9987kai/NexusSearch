@@ -40,9 +40,12 @@ nx_status nx_dict_build(const nx_slice *terms, size_t count, nx_buf *out) {
     if (!out || (count && !terms)) return NX_ERR_INVALID;
     if (count > NX_DICT_MAX_TERMS) return NX_ERR_LIMIT;
     if (out->oom) return NX_ERR_NOMEM;
+    size_t input_bytes = 0;
     for (size_t i = 0; i < count; i++) {
         if (terms[i].n && !terms[i].p) return NX_ERR_INVALID;
         if (terms[i].n > NX_DICT_MAX_TERM_BYTES) return NX_ERR_LIMIT;
+        if (nx_add_overflow(input_bytes, terms[i].n, &input_bytes) || input_bytes > NX_DICT_MAX_DATA_BYTES)
+            return NX_ERR_LIMIT;
     }
     nx_slice *copy = count ? NX_NEW_ARRAY(nx_slice, count) : NULL;
     if (count && !copy) return NX_ERR_NOMEM;

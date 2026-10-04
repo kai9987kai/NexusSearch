@@ -539,6 +539,73 @@ static nx_status validate_column(const nx_table *table, field_record r) {
     return text_next == variable.n ? NX_OK : NX_ERR_CORRUPT;
 }
 
+static nx_status document_matches_cell(builder *parser, const nx_json *value, const nx_cell *cell) {
+    if (value->kind == NX_JSON_NULL) return cell->present ? NX_ERR_CORRUPT : NX_OK;
+    nx_field_type type; uint32_t dims;
+    nx_status status = classify(parser, value, &type, &dims);
+    if (status != NX_OK) return status;
+    if (!cell->present || cell->type != type) return NX_ERR_CORRUPT;
+    switch (type) {
+    case NX_FIELD_INT: return cell->as.integer == value->as.number.i64 ? NX_OK : NX_ERR_CORRUPT;
+    case NX_FIELD_FLOAT: {
+        double number; status = as_double(parser, value, &number);
+        if (status != NX_OK) return status;
+        return memcmp(&number, &cell->as.real, sizeof number) == 0 ? NX_OK : NX_ERR_CORRUPT;
+    }
+    case NX_FIELD_BOOL: return cell->as.boolean == value->as.boolean ? NX_OK : NX_ERR_CORRUPT;
+    case NX_FIELD_TEXT: return nx_slice_eq(cell->as.text, value->as.string) ? NX_OK : NX_ERR_CORRUPT;
+    case NX_FIELD_VECTOR: {
+        if (dims != cell->as.vector.dims) return NX_ERR_CORRUPT;
+        uint32_t dimension = 0;
+        for (const nx_json *item = value->child; item; item = item->next) {
+            double number; status = as_double(parser, item, &number);
+            if (status != NX_OK) return status;
+            float expected = (float)number, actual = nx_cell_vector_at(cell, dimension++);
+            if (memcmp(&expected, &actual, sizeof expected) != 0) return NX_ERR_CORRUPT;
+        }
+        return NX_OK;
+    }
+    default: return NX_ERR_CORRUPT;
+    }
+}
+
+static nx_status validate_documents(const nx_table *table) {
+    builder parser; memset(&parser, 0, sizeof parser);
+    parser.limits = nx_table_default_limits();
+    parser.limits.max_input_bytes = HARD_INPUT; parser.limits.max_fields = HARD_FIELDS;
+    parser.limits.max_field_bytes = HARD_FIELD; parser.limits.max_vector_dims = HARD_DIMS;
+    nx_arena_init(&parser.parse, 4096);
+    nx_status status = NX_OK;
+    for (uint32_t row = 0; row < table->rows && status == NX_OK; row++) {
+        nx_json *object = NULL;
+        status = parse_document(&parser, nx_table_document(table, row), &object);
+        if (status != NX_OK) break;
+        bool seen[HARD_FIELDS] = {false};
+        for (const nx_json *value = object->child; value; value = value->next) {
+            uint32_t field;
+            if (nx_table_find(table, value->key, &field) != NX_OK) { status = NX_ERR_CORRUPT; break; }
+            seen[field] = true;
+            nx_cell cell;
+            status = nx_table_get(table, row, field, &cell);
+            if (status == NX_OK) status = document_matches_cell(&parser, value, &cell);
+            if (status != NX_OK) break;
+        }
+        if (!seen[0] && status == NX_OK) status = NX_ERR_CORRUPT;
+        for (uint32_t field = 0; field < table->fields && status == NX_OK; field++) {
+            if (seen[field]) continue;
+            nx_cell cell; status = nx_table_get(table, row, field, &cell);
+            if (cell.present) status = NX_ERR_CORRUPT;
+        }
+    }
+#ifdef NX_WINDOWS
+    if (parser.locale) _free_locale(parser.locale);
+#else
+    if (parser.locale) freelocale(parser.locale);
+#endif
+    nx_arena_free(&parser.parse);
+    return status == NX_OK || status == NX_ERR_NOMEM ? status : NX_ERR_CORRUPT;
+}
+
 nx_status nx_table_open(nx_slice bytes, nx_table *out, nx_error *error) {
     nx_error_clear(error);
     if (out) memset(out, 0, sizeof *out);
@@ -580,6 +647,7 @@ nx_status nx_table_open(nx_slice bytes, nx_table *out, nx_error *error) {
         if (document.p[0] != '{' || document.p[document.n - 1] != '}'
             || nx_utf8_validate(document, NULL) != NX_OK) goto corrupt;
     }
+    if (next - (size_t)data_off > HARD_INPUT) goto corrupt;
     for (uint32_t f = 0; f < fields; f++) {
         field_record r = read_record(bytes, f);
         if (!r.name_len || r.name_len > HARD_FIELD || r.type > NX_FIELD_VECTOR || r.reserved
@@ -607,6 +675,9 @@ nx_status nx_table_open(nx_slice bytes, nx_table *out, nx_error *error) {
         if (!valid_name(id) || (i && slice_order(previous, id) >= 0)) goto corrupt;
         previous = id;
     }
+    nx_status documents_status = validate_documents(&table);
+    if (documents_status == NX_ERR_NOMEM) return failure(error, NX_ERR_NOMEM, "table document validation allocation failed");
+    if (documents_status != NX_OK) goto corrupt;
     *out = table;
     return NX_OK;
 corrupt:

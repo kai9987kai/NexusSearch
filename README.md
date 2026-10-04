@@ -41,19 +41,33 @@ Remove-Item Env:NX_TEST_SEED,Env:NX_TEST_SCALE,Env:NX_SIMD
 | Text | Strict UTF-8, explicit ASCII/fullwidth analysis profile, bounded JSON with exact numeric lexemes |
 | Query | NexusQL parser, canonical printer, AST equality/dumps, spans and configurable limits |
 | Sets | Immutable Roaring array/bitset portable format, membership, iteration, AND/OR/XOR/difference |
+| Text Index | Inverted Postings Index with term dictionary, document frequency, tf stream, and Lucene 10.3.1 BM25 |
+| Code / Regex | 24-bit Trigram Inverted Index for microsecond substring candidate pruning (Google Code Search style) |
 | Matching | Bounded Thompson byte-regex engine and Unicode-scalar Levenshtein distance |
 | Vectors | Scalar/AVX2 dot, squared L2, cosine and per-vector uniform SQ8 |
+| Vector Index | Flat Navigable Proximity Graph (FlatNav / RobustPrune) for sub-ms filtered ANN vector search |
+| Storage / WAL | Write-Ahead Log (WAL) with CRC32C framing, torn write crash recovery, and physical sync |
+| Segments | Immutable sealed segment format (`NXSEG1`), column store with BSI, multi-field section directory |
+| Indexes | Roaring bitmaps, sorted dictionary, BSI numeric ranges, BM25 inverted postings, trigram candidate filtering, FlatNav proximity graph, RaBitQ 1-bit vector quantization with FastScan 4-bit LUT |
+| Storage & Durability | Transactional Write-Ahead Log (WAL) with CRC32C, crash recovery replay, atomic manifest generations (`manifest-<gen>.json`), tiered compaction merge |
+| Search | BM25 text ranking, exact & approximate vector search (FlatNav graph, RaBitQ), reciprocal rank fusion, numeric/boolean/text/regex/fuzzy filters |
+| Server | HTTP/1.1 REST API, Server-Sent Events (SSE) progressive streaming (`/api/stream`), embedded interactive Web UI, Model Context Protocol (MCP) over stdio |
+| CLI & REPL | build, search, explain, stats, serve, mcp, interactive REPL with inline docs |
+| Python SDK | Typed Snapshot, search, build, stats, and explain APIs (`bindings/python/nexus`) |
 
-These are low-level APIs in `src/core`, `src/index`, and `src/query`; they are
-not a stable public engine API. Bitmap run containers, full Unicode normalization,
-HNSW, RaBitQ, and ranked search are not implemented. Tests on this machine
-exercise x64 code under Windows ARM64 emulation; native ARM64, Linux, macOS,
-and MSVC execution still need validation.
+Low-level APIs live in `src/core`, `src/index`, `src/query`, and `src/store`.
+The search engine API is in `src/engine` and `src/seg`. The HTTP/MCP/SSE server is
+in `src/server`. Python bindings live in `bindings/python`.
 
-See [module contracts](docs/LEAF_MODULES.md), [query language](docs/QUERY_LANGUAGE.md),
-[continuation ledger](docs/PROGRESS.md), [architecture](docs/ARCHITECTURE.md),
-and [next layer](docs/NEXT_LAYER.md). Research notes in `docs/research/` retain
-their original evidence labels and are not independently fact-checked as a set.
+
+
+
+See [search guide](docs/SEARCH.md), [module contracts](docs/LEAF_MODULES.md),
+[query language](docs/QUERY_LANGUAGE.md), [continuation ledger](docs/PROGRESS.md),
+[architecture](docs/ARCHITECTURE.md), and [next layer](docs/NEXT_LAYER.md).
+Research notes in `docs/research/` retain their original evidence labels and
+are not independently fact-checked as a set.
+
 
 ## Recovery and backups
 

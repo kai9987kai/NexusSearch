@@ -258,7 +258,9 @@ static void closure(re_work *w, uint32_t start, size_t pos) {
         } else w->list[w->count++] = id;
     }
 }
-nx_status nx_regex_match(const nx_regex *re, nx_slice text, uint64_t max_work, bool *matched) {
+nx_status nx_regex_match_counted(const nx_regex *re, nx_slice text, uint64_t max_work,
+                                bool *matched, uint64_t *used) {
+    if (used) *used = 0;
     if (!matched) return NX_ERR_INVALID;
     *matched = false;
     if (!re || (!text.p && text.n)) return NX_ERR_INVALID;
@@ -285,6 +287,10 @@ nx_status nx_regex_match(const nx_regex *re, nx_slice text, uint64_t max_work, b
         uint32_t *swap = current; current = next; next = swap;
     }
 done:
+    if (used) *used = (max_work ? max_work : NX_RE_DEFAULT_WORK) - w.remaining;
     nx_free(memory);
     return w.limited ? NX_ERR_LIMIT : NX_OK;
+}
+nx_status nx_regex_match(const nx_regex *re, nx_slice text, uint64_t max_work, bool *matched) {
+    return nx_regex_match_counted(re, text, max_work, matched, NULL);
 }

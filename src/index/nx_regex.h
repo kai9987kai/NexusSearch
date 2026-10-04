@@ -25,4 +25,8 @@ NX_API nx_status nx_regex_compile(nx_slice pattern, uint32_t flags, nx_regex **o
 NX_API void nx_regex_free(nx_regex *re);
 /* max_work == 0 selects default. Clears matched on error. */
 NX_API nx_status nx_regex_match(const nx_regex *re, nx_slice text, uint64_t max_work, bool *matched);
+/* Same semantics, with actual state/transition work reported even on LIMIT.
+ * used is optional and cleared before any allocation or argument failure. */
+NX_API nx_status nx_regex_match_counted(const nx_regex *re, nx_slice text, uint64_t max_work,
+                                      bool *matched, uint64_t *used);
 #endif

@@ -139,6 +139,27 @@ static void test_bsi_corruption(void) {
         NX_CHECK(nx_bsi_open(nx_buf_slice(&bytes), &index) != NX_OK);
         bytes.data[off] = old;
     }
+    nx_buf mutated; nx_buf_init(&mutated);
+    for (size_t i = 0; i < nx_test_iters(150); i++) {
+        nx_buf_clear(&mutated); nx_buf_put(&mutated, bytes.data, bytes.len);
+        size_t destination = (size_t)(nx_rng_u64(&rng) % (bytes.len - 8u));
+        size_t source = (size_t)(nx_rng_u64(&rng) % (bytes.len - 8u));
+        memcpy(mutated.data + destination, bytes.data + source, 8);
+        patch_crc(&mutated);
+        nx_status st = nx_bsi_open(nx_buf_slice(&mutated), &index);
+        if (st == NX_OK) {
+            /* This fixed-length fixture can hold at most one 64-row word. */
+            NX_CHECK(index.rows <= 64);
+            int64_t recovered[64]; uint8_t has[64];
+            for (uint32_t row = 0; row < index.rows; row++) {
+                bool exists = false;
+                NX_CHECK_OK(nx_bsi_get(&index, row, &recovered[row], &exists));
+                has[row] = exists ? 1u : 0u;
+            }
+            compare_index(&index, recovered, has, 0);
+        }
+    }
+    nx_buf_free(&mutated);
     /* Recompute checksum so the canonical bit constraints, not only CRC,
      * reject missing-row value bits and out-of-universe tail bits. */
     bytes.data[40] |= 2u; patch_crc(&bytes);
@@ -180,6 +201,19 @@ static void test_bsi_oom_transaction(void) {
         NX_CHECK(memcmp(out.data, "prefix", 6) == 0);
         nx_buf_free(&out);
     }
+    nx_buf bytes; nx_buf_init(&bytes);
+    NX_CHECK_OK(nx_bsi_build(values, NULL, NX_ARRAY_LEN(values), &bytes));
+    nx_bsi index; NX_CHECK_OK(nx_bsi_open(nx_buf_slice(&bytes), &index));
+    for (int fail = 0; fail < 12; fail++) {
+        nx_buf out; nx_buf_init(&out); nx_buf_put_str(&out, "prefix");
+        nx_mem_fail_after(fail);
+        nx_status st = nx_bsi_filter(&index, NX_CMP_GE, INT64_MIN, &out);
+        nx_mem_fail_after(-1);
+        if (st != NX_OK) { NX_CHECK(st == NX_ERR_NOMEM); NX_CHECK_EQ_U(out.len, 6); }
+        NX_CHECK(memcmp(out.data, "prefix", 6) == 0);
+        nx_buf_free(&out);
+    }
+    nx_buf_free(&bytes);
 }
 
 typedef struct reader_context { const nx_bsi *index; bool ok; } reader_context;

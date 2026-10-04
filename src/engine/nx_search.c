@@ -5,7 +5,9 @@
 #include "index/nx_regex.h"
 #include "index/nx_fuzzy.h"
 #include <float.h>
+#include <inttypes.h>
 #include <math.h>
+#include <stdio.h>
 
 #define SEARCH_ARENA_LIMIT (32u * 1024u * 1024u)
 #define SEARCH_TERMS 16u
@@ -18,6 +20,7 @@ struct value {
     int64_t integer;
     double real;
     nx_slice text;
+    size_t *prefix;
     nx_utf8_tokens tokens;
     nx_regex *regex;
     value *cleanup_next;
@@ -129,7 +132,7 @@ static value *bind_value(search_context *c, const nx_value *src, nx_field_type t
             const nx_value *child = v->kind == V_ANY ? src->u.anyof.items[i] :
                 (i == 0 ? src->u.range.lo : src->u.range.hi);
             if (child) {
-                v->items[i] = bind_value(c, child, type, NX_OP_MATCH);
+                v->items[i] = bind_value(c, child, type, v->kind == V_ANY ? op : NX_OP_MATCH);
                 if (!v->items[i]) return NULL;
             }
         }
@@ -183,7 +186,15 @@ static value *bind_value(search_context *c, const nx_value *src, nx_field_type t
         else if (eqs(name, "prefix")) v->kind = V_PREFIX;
         else if (eqs(name, "phrase")) { v->kind = V_TEXT; v->phrase = true; }
         else if (eqs(name, "fuzzy")) v->kind = V_FUZZY;
-        else if (eqs(name, "regex") && src->u.call.nargs == 1) return bind_value(c, src->u.call.args[0], type, op);
+        else if (eqs(name, "regex") && src->u.call.nargs == 1) {
+            const nx_value *arg = src->u.call.args[0];
+            if (arg->kind == NX_VAL_REGEX) return bind_value(c, arg, type, op);
+            if (arg->kind != NX_VAL_WORD && arg->kind != NX_VAL_STRING) goto mismatch;
+            v->kind = V_REGEX;
+            nx_status rs = nx_regex_compile(raw_text(arg), 0, &v->regex, NULL);
+            if (rs != NX_OK) { fail(c, rs, src->span, "Invalid or unsupported regular expression"); return NULL; }
+            return v;
+        }
         else goto unsupported;
         v->text = raw_text(src->u.call.args[0]);
         if (v->kind == V_FUZZY && src->u.call.nargs == 2) {
@@ -210,6 +221,15 @@ static value *bind_value(search_context *c, const nx_value *src, nx_field_type t
     if (c->arena.total > SEARCH_ARENA_LIMIT) goto limit;
     if (v->kind == V_TEXT && (v->tokens.count == 0 || v->tokens.count > SEARCH_TERMS)) goto limit;
     if (v->kind != V_SUBSTR && v->text.n == 0) goto mismatch;
+    if (v->kind == V_SUBSTR && v->text.n) {
+        v->prefix = alloc_arena(c, v->text.n * sizeof(size_t), _Alignof(size_t));
+        if (!v->prefix) return NULL;
+        for (size_t i = 1, j = 0; i < v->text.n; i++) {
+            while (j && v->text.p[i] != v->text.p[j]) j = v->prefix[j - 1];
+            if (v->text.p[i] == v->text.p[j]) j++;
+            v->prefix[i] = j;
+        }
+    }
     if (v->kind == V_FUZZY && v->distance == UINT32_MAX) {
         size_t at = 0, scalars = 0; uint32_t cp;
         while (nx_utf8_decode(v->text, &at, &cp) == NX_OK) scalars++;
@@ -224,6 +244,13 @@ limit:
     fail(c, NX_ERR_LIMIT, src->span, "Query expansion/text limit exceeded"); return NULL;
 }
 
+static bool scores_text(const value *v) {
+    if (v->kind == V_ANY) {
+        for (uint32_t i = 0; i < v->count; i++) if (scores_text(v->items[i])) return true;
+        return false;
+    }
+    return v->kind >= V_TEXT && v->kind <= V_FUZZY;
+}
 static plan *bind_node(search_context *c, const nx_node *node, bool positive) {
     plan *p = alloc_arena(c, sizeof(*p), _Alignof(plan));
     if (!p) return NULL;
@@ -261,16 +288,19 @@ static plan *bind_node(search_context *c, const nx_node *node, bool positive) {
         fail(c, NX_ERR_TYPE, node->span, "Vector dimensions do not match schema"); return NULL;
     }
     if (positive && p->v->kind == V_VECTOR) c->vector = true;
-    if (positive && p->type == NX_FIELD_TEXT && cl->op != NX_OP_EQ && cl->op != NX_OP_NE &&
-        p->v->kind != V_EXISTS) c->lexical = true;
+    if (positive && p->type == NX_FIELD_TEXT && scores_text(p->v)) c->lexical = true;
     if (p->type == NX_FIELD_INT && p->v->kind == V_INT && c->options.indexed) c->stats.numeric_indexes++;
     return p;
 }
 
-static bool contains(nx_slice hay, nx_slice needle) {
-    if (needle.n > hay.n) return false;
-    if (!needle.n) return true;
-    for (size_t i = 0; i <= hay.n - needle.n; i++) if (!memcmp(hay.p + i, needle.p, needle.n)) return true;
+static bool contains(nx_slice hay, const value *v) {
+    if (v->text.n > hay.n) return false;
+    if (!v->text.n) return true;
+    for (size_t i = 0, j = 0; i < hay.n; i++) {
+        while (j && hay.p[i] != v->text.p[j]) j = v->prefix[j - 1];
+        if (hay.p[i] == v->text.p[j]) j++;
+        if (j == v->text.n) return true;
+    }
     return false;
 }
 static bool scalar_match(const nx_cell *cell, const value *v, nx_op op) {
@@ -309,18 +339,21 @@ static nx_status text_value(search_context *c, plan *p, const value *v, uint32_t
         nx_arena_reset(&scratch);
         if (v->kind == V_REGEX) {
             bool yes = false;
-            /* Reserve a pessimistic bounded NFA work allowance for each cell. */
-            size_t allowance;
-            if (nx_mul_overflow(cell.as.text.n + 1, (v->source->kind == NX_VAL_REGEX ? v->source->u.regex.pattern.len : 64u) + 1, &allowance) ||
-                !work(c, allowance)) { st = NX_ERR_LIMIT; break; }
-            st = nx_regex_match(v->regex, cell.as.text, allowance ? allowance : 1, &yes);
+            size_t remaining = c->options.max_work - c->stats.work;
+            if (!remaining) { st = NX_ERR_LIMIT; break; }
+            uint64_t used = 0;
+            st = nx_regex_match_counted(v->regex, cell.as.text, (uint64_t)remaining, &yes, &used);
+            if (!work(c, (size_t)used)) st = NX_ERR_LIMIT;
             matched[row] = (uint8_t)yes; continue;
         }
         nx_slice normalized;
         st = nx_utf8_normalize(&scratch, cell.as.text, NX_UTF8_FOLD_ASCII | NX_UTF8_FOLD_WIDTH,
                               1024u * 1024u, &normalized);
         if (st != NX_OK) break;
-        if (v->kind == V_SUBSTR) { matched[row] = (uint8_t)contains(normalized, v->text); continue; }
+        if (v->kind == V_SUBSTR) {
+            if (!work(c, normalized.n + 1)) { st = NX_ERR_LIMIT; break; }
+            matched[row] = (uint8_t)contains(normalized, v); continue;
+        }
         nx_utf8_tokens ts;
         st = nx_utf8_tokenize(&scratch, cell.as.text, NULL, &ts);
         if (st != NX_OK) break;
@@ -349,7 +382,7 @@ static nx_status text_value(search_context *c, plan *p, const value *v, uint32_t
                     (!v->text.n || !memcmp(token.p, v->text.p, v->text.n)));
                 else if (v->kind == V_FUZZY) {
                     size_t cost;
-                    if (nx_mul_overflow(token.n + 1, (size_t)v->distance * 2 + 1, &cost) || !work(c, cost)) { st = NX_ERR_LIMIT; break; }
+                    if (nx_mul_overflow(token.n + v->text.n + 1, (size_t)v->distance * 2 + 1, &cost) || !work(c, cost)) { st = NX_ERR_LIMIT; break; }
                     uint32_t distance = 0;
                     st = nx_fuzzy_distance(token, v->text, v->distance, &distance);
                     matched[row] = (uint8_t)(st == NX_OK && distance <= v->distance);
@@ -413,6 +446,7 @@ static nx_status eval_value(search_context *c, plan *p, const value *v, double *
     for (uint32_t row = 0; row < c->table->rows; row++) {
         if (!work(c, 1)) return NX_ERR_LIMIT;
         nx_cell cell; nx_table_get(c->table, row, p->field, &cell); c->stats.scanned_cells++;
+        if (cell.present && v->kind == V_EXACT && !work(c, cell.as.text.n + v->text.n)) return NX_ERR_LIMIT;
         if (scalar_match(&cell, v, p->source->u.clause.op)) set_bit(p, row);
     }
     return NX_OK;
@@ -467,7 +501,8 @@ static nx_status vector_score(search_context *c, const plan *p, uint32_t row, do
             dot += a * b; aa += a * a; bb += b * b;
         }
         double cosine = aa == 0 || bb == 0 ? 0 : dot / sqrt(aa * bb);
-        if (cosine > 1) cosine = 1; if (cosine < -1) cosine = -1;
+        if (cosine > 1) cosine = 1;
+        if (cosine < -1) cosine = -1;
         *score += cosine * p->source->u.clause.boost; *active = true; c->stats.vectors_scored++;
         if (!finite_number(*score)) return NX_ERR_LIMIT;
     }
@@ -493,13 +528,16 @@ static int hit_compare(search_context *c, const ranked_hit *a, const ranked_hit 
                     case NX_FIELD_INT: cmp = (x.as.integer > y.as.integer) - (x.as.integer < y.as.integer); break;
                     case NX_FIELD_FLOAT: cmp = (x.as.real > y.as.real) - (x.as.real < y.as.real); break;
                     case NX_FIELD_BOOL: cmp = (int)x.as.boolean - (int)y.as.boolean; break;
-                    case NX_FIELD_TEXT: cmp = compare_bytes(x.as.text, y.as.text); break;
+                    case NX_FIELD_TEXT:
+                        if (!work(c, x.as.text.n + y.as.text.n)) return 0;
+                        cmp = compare_bytes(x.as.text, y.as.text); break;
                     default: break;
                 }
             }
             if (cmp) return c->sort_desc[i] ? -cmp : cmp;
         }
     } else if (a->hit.score != b->hit.score) return a->hit.score > b->hit.score ? -1 : 1;
+    if (!work(c, a->hit.id.n + b->hit.id.n)) return 0;
     return compare_bytes(a->hit.id, b->hit.id);
 }
 static nx_status sort_hits(search_context *c, ranked_hit *hits, size_t n, ranked_hit *tmp, int channel) {
@@ -513,6 +551,7 @@ static nx_status sort_hits(search_context *c, ranked_hit *hits, size_t n, ranked
                 tmp[k++] = j == end || (i < mid && hit_compare(c, &hits[i], &hits[j], channel) <= 0) ? hits[i++] : hits[j++];
             }
         }
+        if (c->status != NX_OK) return c->status;
         memcpy(hits, tmp, n * sizeof(*hits));
     }
     return NX_OK;
@@ -631,11 +670,12 @@ nx_status nx_search_json(const nx_search_result *r, nx_buf *out) {
     for (size_t i = 0; i < r->count; i++) {
         if (i) nx_buf_put_u8(out, ',');
         nx_buf_put_str(out, "{\"_id\":"); json_string(out, r->hits[i].id);
-        /* Scores are finite by construction. JSON punctuation is locale-free:
-         * use the AST's roundtrip formatter through a per-number replacement. */
+        nx_buf_printf(out, ",\"row\":%" PRIu32, r->hits[i].row);
+        if (!finite_number(r->hits[i].score)) { out->len = start; out->oom = old_oom; return NX_ERR_INVALID; }
+        /* Keep JSON decimal punctuation independent of the caller's locale. */
         char number[64]; (void)snprintf(number, sizeof(number), "%.17g", r->hits[i].score);
         for (size_t j = 0; number[j]; j++) if (number[j] == ',') number[j] = '.';
-        nx_buf_put_str(out, ",\"_score\":"); nx_buf_put_str(out, number);
+        nx_buf_put_str(out, ",\"score\":"); nx_buf_put_str(out, number);
         nx_buf_put_str(out, ",\"document\":"); nx_buf_put(out, r->hits[i].document.p, r->hits[i].document.n);
         nx_buf_put_u8(out, '}');
     }

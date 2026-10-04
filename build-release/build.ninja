@@ -56,8 +56,6 @@ build CMakeFiles/nexus.dir/src/core/nx_arena.c.obj: C_COMPILER__nexus_unscanned_
   INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
   OBJECT_DIR = CMakeFiles\nexus.dir
   OBJECT_FILE_DIR = CMakeFiles\nexus.dir\src\core
-  TARGET_COMPILE_PDB = CMakeFiles\nexus.dir\nexus.pdb
-  TARGET_PDB = libnexus.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\nexus.dir
 
 build CMakeFiles/nexus.dir/src/core/nx_buf.c.obj: C_COMPILER__nexus_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/src/core/nx_buf.c || cmake_object_order_depends_target_nexus
@@ -67,8 +65,6 @@ build CMakeFiles/nexus.dir/src/core/nx_buf.c.obj: C_COMPILER__nexus_unscanned_Re
   INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
   OBJECT_DIR = CMakeFiles\nexus.dir
   OBJECT_FILE_DIR = CMakeFiles\nexus.dir\src\core
-  TARGET_COMPILE_PDB = CMakeFiles\nexus.dir\nexus.pdb
-  TARGET_PDB = libnexus.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\nexus.dir
 
 build CMakeFiles/nexus.dir/src/core/nx_crc32c.c.obj: C_COMPILER__nexus_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/src/core/nx_crc32c.c || cmake_object_order_depends_target_nexus
@@ -78,8 +74,6 @@ build CMakeFiles/nexus.dir/src/core/nx_crc32c.c.obj: C_COMPILER__nexus_unscanned
   INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
   OBJECT_DIR = CMakeFiles\nexus.dir
   OBJECT_FILE_DIR = CMakeFiles\nexus.dir\src\core
-  TARGET_COMPILE_PDB = CMakeFiles\nexus.dir\nexus.pdb
-  TARGET_PDB = libnexus.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\nexus.dir
 
 build CMakeFiles/nexus.dir/src/core/nx_file.c.obj: C_COMPILER__nexus_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/src/core/nx_file.c || cmake_object_order_depends_target_nexus
@@ -89,8 +83,6 @@ build CMakeFiles/nexus.dir/src/core/nx_file.c.obj: C_COMPILER__nexus_unscanned_R
   INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
   OBJECT_DIR = CMakeFiles\nexus.dir
   OBJECT_FILE_DIR = CMakeFiles\nexus.dir\src\core
-  TARGET_COMPILE_PDB = CMakeFiles\nexus.dir\nexus.pdb
-  TARGET_PDB = libnexus.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\nexus.dir
 
 build CMakeFiles/nexus.dir/src/core/nx_json.c.obj: C_COMPILER__nexus_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/src/core/nx_json.c || cmake_object_order_depends_target_nexus
@@ -100,8 +92,6 @@ build CMakeFiles/nexus.dir/src/core/nx_json.c.obj: C_COMPILER__nexus_unscanned_R
   INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
   OBJECT_DIR = CMakeFiles\nexus.dir
   OBJECT_FILE_DIR = CMakeFiles\nexus.dir\src\core
-  TARGET_COMPILE_PDB = CMakeFiles\nexus.dir\nexus.pdb
-  TARGET_PDB = libnexus.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\nexus.dir
 
 build CMakeFiles/nexus.dir/src/core/nx_mem.c.obj: C_COMPILER__nexus_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/src/core/nx_mem.c || cmake_object_order_depends_target_nexus
@@ -111,8 +101,6 @@ build CMakeFiles/nexus.dir/src/core/nx_mem.c.obj: C_COMPILER__nexus_unscanned_Re
   INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
   OBJECT_DIR = CMakeFiles\nexus.dir
   OBJECT_FILE_DIR = CMakeFiles\nexus.dir\src\core
-  TARGET_COMPILE_PDB = CMakeFiles\nexus.dir\nexus.pdb
-  TARGET_PDB = libnexus.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\nexus.dir
 
 build CMakeFiles/nexus.dir/src/core/nx_simd.c.obj: C_COMPILER__nexus_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/src/core/nx_simd.c || cmake_object_order_depends_target_nexus
@@ -122,8 +110,6 @@ build CMakeFiles/nexus.dir/src/core/nx_simd.c.obj: C_COMPILER__nexus_unscanned_R
   INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
   OBJECT_DIR = CMakeFiles\nexus.dir
   OBJECT_FILE_DIR = CMakeFiles\nexus.dir\src\core
-  TARGET_COMPILE_PDB = CMakeFiles\nexus.dir\nexus.pdb
-  TARGET_PDB = libnexus.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\nexus.dir
 
 build CMakeFiles/nexus.dir/src/core/nx_status.c.obj: C_COMPILER__nexus_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/src/core/nx_status.c || cmake_object_order_depends_target_nexus
@@ -133,8 +119,6 @@ build CMakeFiles/nexus.dir/src/core/nx_status.c.obj: C_COMPILER__nexus_unscanned
   INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
   OBJECT_DIR = CMakeFiles\nexus.dir
   OBJECT_FILE_DIR = CMakeFiles\nexus.dir\src\core
-  TARGET_COMPILE_PDB = CMakeFiles\nexus.dir\nexus.pdb
-  TARGET_PDB = libnexus.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\nexus.dir
 
 build CMakeFiles/nexus.dir/src/core/nx_thread.c.obj: C_COMPILER__nexus_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/src/core/nx_thread.c || cmake_object_order_depends_target_nexus
@@ -144,8 +128,6 @@ build CMakeFiles/nexus.dir/src/core/nx_thread.c.obj: C_COMPILER__nexus_unscanned
   INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
   OBJECT_DIR = CMakeFiles\nexus.dir
   OBJECT_FILE_DIR = CMakeFiles\nexus.dir\src\core
-  TARGET_COMPILE_PDB = CMakeFiles\nexus.dir\nexus.pdb
-  TARGET_PDB = libnexus.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\nexus.dir
 
 build CMakeFiles/nexus.dir/src/core/nx_utf8.c.obj: C_COMPILER__nexus_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/src/core/nx_utf8.c || cmake_object_order_depends_target_nexus
@@ -155,8 +137,15 @@ build CMakeFiles/nexus.dir/src/core/nx_utf8.c.obj: C_COMPILER__nexus_unscanned_R
   INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
   OBJECT_DIR = CMakeFiles\nexus.dir
   OBJECT_FILE_DIR = CMakeFiles\nexus.dir\src\core
-  TARGET_COMPILE_PDB = CMakeFiles\nexus.dir\nexus.pdb
-  TARGET_PDB = libnexus.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles\nexus.dir
+
+build CMakeFiles/nexus.dir/src/engine/nx_search.c.obj: C_COMPILER__nexus_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/src/engine/nx_search.c || cmake_object_order_depends_target_nexus
+  CONFIG = Release
+  DEP_FILE = CMakeFiles\nexus.dir\src\engine\nx_search.c.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1
+  INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
+  OBJECT_DIR = CMakeFiles\nexus.dir
+  OBJECT_FILE_DIR = CMakeFiles\nexus.dir\src\engine
   TARGET_SUPPORT_DIR = CMakeFiles\nexus.dir
 
 build CMakeFiles/nexus.dir/src/index/nx_bitmap.c.obj: C_COMPILER__nexus_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/src/index/nx_bitmap.c || cmake_object_order_depends_target_nexus
@@ -166,8 +155,24 @@ build CMakeFiles/nexus.dir/src/index/nx_bitmap.c.obj: C_COMPILER__nexus_unscanne
   INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
   OBJECT_DIR = CMakeFiles\nexus.dir
   OBJECT_FILE_DIR = CMakeFiles\nexus.dir\src\index
-  TARGET_COMPILE_PDB = CMakeFiles\nexus.dir\nexus.pdb
-  TARGET_PDB = libnexus.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles\nexus.dir
+
+build CMakeFiles/nexus.dir/src/index/nx_bsi.c.obj: C_COMPILER__nexus_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/src/index/nx_bsi.c || cmake_object_order_depends_target_nexus
+  CONFIG = Release
+  DEP_FILE = CMakeFiles\nexus.dir\src\index\nx_bsi.c.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1
+  INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
+  OBJECT_DIR = CMakeFiles\nexus.dir
+  OBJECT_FILE_DIR = CMakeFiles\nexus.dir\src\index
+  TARGET_SUPPORT_DIR = CMakeFiles\nexus.dir
+
+build CMakeFiles/nexus.dir/src/index/nx_dict.c.obj: C_COMPILER__nexus_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/src/index/nx_dict.c || cmake_object_order_depends_target_nexus
+  CONFIG = Release
+  DEP_FILE = CMakeFiles\nexus.dir\src\index\nx_dict.c.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1
+  INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
+  OBJECT_DIR = CMakeFiles\nexus.dir
+  OBJECT_FILE_DIR = CMakeFiles\nexus.dir\src\index
   TARGET_SUPPORT_DIR = CMakeFiles\nexus.dir
 
 build CMakeFiles/nexus.dir/src/index/nx_fuzzy.c.obj: C_COMPILER__nexus_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/src/index/nx_fuzzy.c || cmake_object_order_depends_target_nexus
@@ -177,8 +182,33 @@ build CMakeFiles/nexus.dir/src/index/nx_fuzzy.c.obj: C_COMPILER__nexus_unscanned
   INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
   OBJECT_DIR = CMakeFiles\nexus.dir
   OBJECT_FILE_DIR = CMakeFiles\nexus.dir\src\index
-  TARGET_COMPILE_PDB = CMakeFiles\nexus.dir\nexus.pdb
-  TARGET_PDB = libnexus.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles\nexus.dir
+
+build CMakeFiles/nexus.dir/src/index/nx_graph.c.obj: C_COMPILER__nexus_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/src/index/nx_graph.c || cmake_object_order_depends_target_nexus
+  CONFIG = Release
+  DEP_FILE = CMakeFiles\nexus.dir\src\index\nx_graph.c.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1
+  INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
+  OBJECT_DIR = CMakeFiles\nexus.dir
+  OBJECT_FILE_DIR = CMakeFiles\nexus.dir\src\index
+  TARGET_SUPPORT_DIR = CMakeFiles\nexus.dir
+
+build CMakeFiles/nexus.dir/src/index/nx_postings.c.obj: C_COMPILER__nexus_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/src/index/nx_postings.c || cmake_object_order_depends_target_nexus
+  CONFIG = Release
+  DEP_FILE = CMakeFiles\nexus.dir\src\index\nx_postings.c.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1
+  INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
+  OBJECT_DIR = CMakeFiles\nexus.dir
+  OBJECT_FILE_DIR = CMakeFiles\nexus.dir\src\index
+  TARGET_SUPPORT_DIR = CMakeFiles\nexus.dir
+
+build CMakeFiles/nexus.dir/src/index/nx_rabitq.c.obj: C_COMPILER__nexus_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/src/index/nx_rabitq.c || cmake_object_order_depends_target_nexus
+  CONFIG = Release
+  DEP_FILE = CMakeFiles\nexus.dir\src\index\nx_rabitq.c.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1
+  INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
+  OBJECT_DIR = CMakeFiles\nexus.dir
+  OBJECT_FILE_DIR = CMakeFiles\nexus.dir\src\index
   TARGET_SUPPORT_DIR = CMakeFiles\nexus.dir
 
 build CMakeFiles/nexus.dir/src/index/nx_regex.c.obj: C_COMPILER__nexus_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/src/index/nx_regex.c || cmake_object_order_depends_target_nexus
@@ -188,8 +218,15 @@ build CMakeFiles/nexus.dir/src/index/nx_regex.c.obj: C_COMPILER__nexus_unscanned
   INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
   OBJECT_DIR = CMakeFiles\nexus.dir
   OBJECT_FILE_DIR = CMakeFiles\nexus.dir\src\index
-  TARGET_COMPILE_PDB = CMakeFiles\nexus.dir\nexus.pdb
-  TARGET_PDB = libnexus.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles\nexus.dir
+
+build CMakeFiles/nexus.dir/src/index/nx_trigram.c.obj: C_COMPILER__nexus_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/src/index/nx_trigram.c || cmake_object_order_depends_target_nexus
+  CONFIG = Release
+  DEP_FILE = CMakeFiles\nexus.dir\src\index\nx_trigram.c.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1
+  INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
+  OBJECT_DIR = CMakeFiles\nexus.dir
+  OBJECT_FILE_DIR = CMakeFiles\nexus.dir\src\index
   TARGET_SUPPORT_DIR = CMakeFiles\nexus.dir
 
 build CMakeFiles/nexus.dir/src/index/nx_vec.c.obj: C_COMPILER__nexus_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/src/index/nx_vec.c || cmake_object_order_depends_target_nexus
@@ -199,8 +236,6 @@ build CMakeFiles/nexus.dir/src/index/nx_vec.c.obj: C_COMPILER__nexus_unscanned_R
   INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
   OBJECT_DIR = CMakeFiles\nexus.dir
   OBJECT_FILE_DIR = CMakeFiles\nexus.dir\src\index
-  TARGET_COMPILE_PDB = CMakeFiles\nexus.dir\nexus.pdb
-  TARGET_PDB = libnexus.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\nexus.dir
 
 build CMakeFiles/nexus.dir/src/query/nx_ast.c.obj: C_COMPILER__nexus_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/src/query/nx_ast.c || cmake_object_order_depends_target_nexus
@@ -210,8 +245,6 @@ build CMakeFiles/nexus.dir/src/query/nx_ast.c.obj: C_COMPILER__nexus_unscanned_R
   INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
   OBJECT_DIR = CMakeFiles\nexus.dir
   OBJECT_FILE_DIR = CMakeFiles\nexus.dir\src\query
-  TARGET_COMPILE_PDB = CMakeFiles\nexus.dir\nexus.pdb
-  TARGET_PDB = libnexus.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\nexus.dir
 
 build CMakeFiles/nexus.dir/src/query/nx_parse.c.obj: C_COMPILER__nexus_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/src/query/nx_parse.c || cmake_object_order_depends_target_nexus
@@ -221,8 +254,60 @@ build CMakeFiles/nexus.dir/src/query/nx_parse.c.obj: C_COMPILER__nexus_unscanned
   INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
   OBJECT_DIR = CMakeFiles\nexus.dir
   OBJECT_FILE_DIR = CMakeFiles\nexus.dir\src\query
-  TARGET_COMPILE_PDB = CMakeFiles\nexus.dir\nexus.pdb
-  TARGET_PDB = libnexus.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles\nexus.dir
+
+build CMakeFiles/nexus.dir/src/seg/nx_seg_builder.c.obj: C_COMPILER__nexus_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/src/seg/nx_seg_builder.c || cmake_object_order_depends_target_nexus
+  CONFIG = Release
+  DEP_FILE = CMakeFiles\nexus.dir\src\seg\nx_seg_builder.c.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1
+  INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
+  OBJECT_DIR = CMakeFiles\nexus.dir
+  OBJECT_FILE_DIR = CMakeFiles\nexus.dir\src\seg
+  TARGET_SUPPORT_DIR = CMakeFiles\nexus.dir
+
+build CMakeFiles/nexus.dir/src/seg/nx_table.c.obj: C_COMPILER__nexus_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/src/seg/nx_table.c || cmake_object_order_depends_target_nexus
+  CONFIG = Release
+  DEP_FILE = CMakeFiles\nexus.dir\src\seg\nx_table.c.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1
+  INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
+  OBJECT_DIR = CMakeFiles\nexus.dir
+  OBJECT_FILE_DIR = CMakeFiles\nexus.dir\src\seg
+  TARGET_SUPPORT_DIR = CMakeFiles\nexus.dir
+
+build CMakeFiles/nexus.dir/src/server/nx_server.c.obj: C_COMPILER__nexus_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/src/server/nx_server.c || cmake_object_order_depends_target_nexus
+  CONFIG = Release
+  DEP_FILE = CMakeFiles\nexus.dir\src\server\nx_server.c.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1
+  INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
+  OBJECT_DIR = CMakeFiles\nexus.dir
+  OBJECT_FILE_DIR = CMakeFiles\nexus.dir\src\server
+  TARGET_SUPPORT_DIR = CMakeFiles\nexus.dir
+
+build CMakeFiles/nexus.dir/src/store/nx_merge.c.obj: C_COMPILER__nexus_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/src/store/nx_merge.c || cmake_object_order_depends_target_nexus
+  CONFIG = Release
+  DEP_FILE = CMakeFiles\nexus.dir\src\store\nx_merge.c.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1
+  INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
+  OBJECT_DIR = CMakeFiles\nexus.dir
+  OBJECT_FILE_DIR = CMakeFiles\nexus.dir\src\store
+  TARGET_SUPPORT_DIR = CMakeFiles\nexus.dir
+
+build CMakeFiles/nexus.dir/src/store/nx_store.c.obj: C_COMPILER__nexus_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/src/store/nx_store.c || cmake_object_order_depends_target_nexus
+  CONFIG = Release
+  DEP_FILE = CMakeFiles\nexus.dir\src\store\nx_store.c.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1
+  INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
+  OBJECT_DIR = CMakeFiles\nexus.dir
+  OBJECT_FILE_DIR = CMakeFiles\nexus.dir\src\store
+  TARGET_SUPPORT_DIR = CMakeFiles\nexus.dir
+
+build CMakeFiles/nexus.dir/src/store/nx_wal.c.obj: C_COMPILER__nexus_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/src/store/nx_wal.c || cmake_object_order_depends_target_nexus
+  CONFIG = Release
+  DEP_FILE = CMakeFiles\nexus.dir\src\store\nx_wal.c.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1
+  INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
+  OBJECT_DIR = CMakeFiles\nexus.dir
+  OBJECT_FILE_DIR = CMakeFiles\nexus.dir\src\store
   TARGET_SUPPORT_DIR = CMakeFiles\nexus.dir
 
 
@@ -233,15 +318,14 @@ build CMakeFiles/nexus.dir/src/query/nx_parse.c.obj: C_COMPILER__nexus_unscanned
 #############################################
 # Link the static library libnexus.a
 
-build libnexus.a: C_STATIC_LIBRARY_LINKER__nexus_Release CMakeFiles/nexus.dir/src/core/nx_arena.c.obj CMakeFiles/nexus.dir/src/core/nx_buf.c.obj CMakeFiles/nexus.dir/src/core/nx_crc32c.c.obj CMakeFiles/nexus.dir/src/core/nx_file.c.obj CMakeFiles/nexus.dir/src/core/nx_json.c.obj CMakeFiles/nexus.dir/src/core/nx_mem.c.obj CMakeFiles/nexus.dir/src/core/nx_simd.c.obj CMakeFiles/nexus.dir/src/core/nx_status.c.obj CMakeFiles/nexus.dir/src/core/nx_thread.c.obj CMakeFiles/nexus.dir/src/core/nx_utf8.c.obj CMakeFiles/nexus.dir/src/index/nx_bitmap.c.obj CMakeFiles/nexus.dir/src/index/nx_fuzzy.c.obj CMakeFiles/nexus.dir/src/index/nx_regex.c.obj CMakeFiles/nexus.dir/src/index/nx_vec.c.obj CMakeFiles/nexus.dir/src/query/nx_ast.c.obj CMakeFiles/nexus.dir/src/query/nx_parse.c.obj
+build libnexus.a: C_STATIC_LIBRARY_LINKER__nexus_Release CMakeFiles/nexus.dir/src/core/nx_arena.c.obj CMakeFiles/nexus.dir/src/core/nx_buf.c.obj CMakeFiles/nexus.dir/src/core/nx_crc32c.c.obj CMakeFiles/nexus.dir/src/core/nx_file.c.obj CMakeFiles/nexus.dir/src/core/nx_json.c.obj CMakeFiles/nexus.dir/src/core/nx_mem.c.obj CMakeFiles/nexus.dir/src/core/nx_simd.c.obj CMakeFiles/nexus.dir/src/core/nx_status.c.obj CMakeFiles/nexus.dir/src/core/nx_thread.c.obj CMakeFiles/nexus.dir/src/core/nx_utf8.c.obj CMakeFiles/nexus.dir/src/engine/nx_search.c.obj CMakeFiles/nexus.dir/src/index/nx_bitmap.c.obj CMakeFiles/nexus.dir/src/index/nx_bsi.c.obj CMakeFiles/nexus.dir/src/index/nx_dict.c.obj CMakeFiles/nexus.dir/src/index/nx_fuzzy.c.obj CMakeFiles/nexus.dir/src/index/nx_graph.c.obj CMakeFiles/nexus.dir/src/index/nx_postings.c.obj CMakeFiles/nexus.dir/src/index/nx_rabitq.c.obj CMakeFiles/nexus.dir/src/index/nx_regex.c.obj CMakeFiles/nexus.dir/src/index/nx_trigram.c.obj CMakeFiles/nexus.dir/src/index/nx_vec.c.obj CMakeFiles/nexus.dir/src/query/nx_ast.c.obj CMakeFiles/nexus.dir/src/query/nx_parse.c.obj CMakeFiles/nexus.dir/src/seg/nx_seg_builder.c.obj CMakeFiles/nexus.dir/src/seg/nx_table.c.obj CMakeFiles/nexus.dir/src/server/nx_server.c.obj CMakeFiles/nexus.dir/src/store/nx_merge.c.obj CMakeFiles/nexus.dir/src/store/nx_store.c.obj CMakeFiles/nexus.dir/src/store/nx_wal.c.obj
   CONFIG = Release
   LANGUAGE_COMPILE_FLAGS = -O3 -DNDEBUG
   OBJECT_DIR = CMakeFiles\nexus.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\nexus.dir\nexus.pdb
   TARGET_FILE = libnexus.a
-  TARGET_PDB = libnexus.pdb
+  TARGET_PDB = nexus.a.dbg
   TARGET_SUPPORT_DIR = CMakeFiles\nexus.dir
 
 # =============================================================================
@@ -261,8 +345,6 @@ build CMakeFiles/nexus_shared.dir/src/core/nx_arena.c.obj: C_COMPILER__nexus_sha
   INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
   OBJECT_DIR = CMakeFiles\nexus_shared.dir
   OBJECT_FILE_DIR = CMakeFiles\nexus_shared.dir\src\core
-  TARGET_COMPILE_PDB = CMakeFiles\nexus_shared.dir\
-  TARGET_PDB = libnexus.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\nexus_shared.dir
 
 build CMakeFiles/nexus_shared.dir/src/core/nx_buf.c.obj: C_COMPILER__nexus_shared_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/src/core/nx_buf.c || cmake_object_order_depends_target_nexus_shared
@@ -273,8 +355,6 @@ build CMakeFiles/nexus_shared.dir/src/core/nx_buf.c.obj: C_COMPILER__nexus_share
   INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
   OBJECT_DIR = CMakeFiles\nexus_shared.dir
   OBJECT_FILE_DIR = CMakeFiles\nexus_shared.dir\src\core
-  TARGET_COMPILE_PDB = CMakeFiles\nexus_shared.dir\
-  TARGET_PDB = libnexus.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\nexus_shared.dir
 
 build CMakeFiles/nexus_shared.dir/src/core/nx_crc32c.c.obj: C_COMPILER__nexus_shared_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/src/core/nx_crc32c.c || cmake_object_order_depends_target_nexus_shared
@@ -285,8 +365,6 @@ build CMakeFiles/nexus_shared.dir/src/core/nx_crc32c.c.obj: C_COMPILER__nexus_sh
   INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
   OBJECT_DIR = CMakeFiles\nexus_shared.dir
   OBJECT_FILE_DIR = CMakeFiles\nexus_shared.dir\src\core
-  TARGET_COMPILE_PDB = CMakeFiles\nexus_shared.dir\
-  TARGET_PDB = libnexus.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\nexus_shared.dir
 
 build CMakeFiles/nexus_shared.dir/src/core/nx_file.c.obj: C_COMPILER__nexus_shared_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/src/core/nx_file.c || cmake_object_order_depends_target_nexus_shared
@@ -297,8 +375,6 @@ build CMakeFiles/nexus_shared.dir/src/core/nx_file.c.obj: C_COMPILER__nexus_shar
   INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
   OBJECT_DIR = CMakeFiles\nexus_shared.dir
   OBJECT_FILE_DIR = CMakeFiles\nexus_shared.dir\src\core
-  TARGET_COMPILE_PDB = CMakeFiles\nexus_shared.dir\
-  TARGET_PDB = libnexus.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\nexus_shared.dir
 
 build CMakeFiles/nexus_shared.dir/src/core/nx_json.c.obj: C_COMPILER__nexus_shared_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/src/core/nx_json.c || cmake_object_order_depends_target_nexus_shared
@@ -309,8 +385,6 @@ build CMakeFiles/nexus_shared.dir/src/core/nx_json.c.obj: C_COMPILER__nexus_shar
   INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
   OBJECT_DIR = CMakeFiles\nexus_shared.dir
   OBJECT_FILE_DIR = CMakeFiles\nexus_shared.dir\src\core
-  TARGET_COMPILE_PDB = CMakeFiles\nexus_shared.dir\
-  TARGET_PDB = libnexus.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\nexus_shared.dir
 
 build CMakeFiles/nexus_shared.dir/src/core/nx_mem.c.obj: C_COMPILER__nexus_shared_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/src/core/nx_mem.c || cmake_object_order_depends_target_nexus_shared
@@ -321,8 +395,6 @@ build CMakeFiles/nexus_shared.dir/src/core/nx_mem.c.obj: C_COMPILER__nexus_share
   INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
   OBJECT_DIR = CMakeFiles\nexus_shared.dir
   OBJECT_FILE_DIR = CMakeFiles\nexus_shared.dir\src\core
-  TARGET_COMPILE_PDB = CMakeFiles\nexus_shared.dir\
-  TARGET_PDB = libnexus.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\nexus_shared.dir
 
 build CMakeFiles/nexus_shared.dir/src/core/nx_simd.c.obj: C_COMPILER__nexus_shared_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/src/core/nx_simd.c || cmake_object_order_depends_target_nexus_shared
@@ -333,8 +405,6 @@ build CMakeFiles/nexus_shared.dir/src/core/nx_simd.c.obj: C_COMPILER__nexus_shar
   INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
   OBJECT_DIR = CMakeFiles\nexus_shared.dir
   OBJECT_FILE_DIR = CMakeFiles\nexus_shared.dir\src\core
-  TARGET_COMPILE_PDB = CMakeFiles\nexus_shared.dir\
-  TARGET_PDB = libnexus.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\nexus_shared.dir
 
 build CMakeFiles/nexus_shared.dir/src/core/nx_status.c.obj: C_COMPILER__nexus_shared_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/src/core/nx_status.c || cmake_object_order_depends_target_nexus_shared
@@ -345,8 +415,6 @@ build CMakeFiles/nexus_shared.dir/src/core/nx_status.c.obj: C_COMPILER__nexus_sh
   INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
   OBJECT_DIR = CMakeFiles\nexus_shared.dir
   OBJECT_FILE_DIR = CMakeFiles\nexus_shared.dir\src\core
-  TARGET_COMPILE_PDB = CMakeFiles\nexus_shared.dir\
-  TARGET_PDB = libnexus.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\nexus_shared.dir
 
 build CMakeFiles/nexus_shared.dir/src/core/nx_thread.c.obj: C_COMPILER__nexus_shared_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/src/core/nx_thread.c || cmake_object_order_depends_target_nexus_shared
@@ -357,8 +425,6 @@ build CMakeFiles/nexus_shared.dir/src/core/nx_thread.c.obj: C_COMPILER__nexus_sh
   INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
   OBJECT_DIR = CMakeFiles\nexus_shared.dir
   OBJECT_FILE_DIR = CMakeFiles\nexus_shared.dir\src\core
-  TARGET_COMPILE_PDB = CMakeFiles\nexus_shared.dir\
-  TARGET_PDB = libnexus.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\nexus_shared.dir
 
 build CMakeFiles/nexus_shared.dir/src/core/nx_utf8.c.obj: C_COMPILER__nexus_shared_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/src/core/nx_utf8.c || cmake_object_order_depends_target_nexus_shared
@@ -369,8 +435,16 @@ build CMakeFiles/nexus_shared.dir/src/core/nx_utf8.c.obj: C_COMPILER__nexus_shar
   INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
   OBJECT_DIR = CMakeFiles\nexus_shared.dir
   OBJECT_FILE_DIR = CMakeFiles\nexus_shared.dir\src\core
-  TARGET_COMPILE_PDB = CMakeFiles\nexus_shared.dir\
-  TARGET_PDB = libnexus.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles\nexus_shared.dir
+
+build CMakeFiles/nexus_shared.dir/src/engine/nx_search.c.obj: C_COMPILER__nexus_shared_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/src/engine/nx_search.c || cmake_object_order_depends_target_nexus_shared
+  CONFIG = Release
+  DEFINES = -DNX_BUILD_SHARED=1 -Dnexus_shared_EXPORTS
+  DEP_FILE = CMakeFiles\nexus_shared.dir\src\engine\nx_search.c.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1
+  INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
+  OBJECT_DIR = CMakeFiles\nexus_shared.dir
+  OBJECT_FILE_DIR = CMakeFiles\nexus_shared.dir\src\engine
   TARGET_SUPPORT_DIR = CMakeFiles\nexus_shared.dir
 
 build CMakeFiles/nexus_shared.dir/src/index/nx_bitmap.c.obj: C_COMPILER__nexus_shared_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/src/index/nx_bitmap.c || cmake_object_order_depends_target_nexus_shared
@@ -381,8 +455,26 @@ build CMakeFiles/nexus_shared.dir/src/index/nx_bitmap.c.obj: C_COMPILER__nexus_s
   INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
   OBJECT_DIR = CMakeFiles\nexus_shared.dir
   OBJECT_FILE_DIR = CMakeFiles\nexus_shared.dir\src\index
-  TARGET_COMPILE_PDB = CMakeFiles\nexus_shared.dir\
-  TARGET_PDB = libnexus.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles\nexus_shared.dir
+
+build CMakeFiles/nexus_shared.dir/src/index/nx_bsi.c.obj: C_COMPILER__nexus_shared_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/src/index/nx_bsi.c || cmake_object_order_depends_target_nexus_shared
+  CONFIG = Release
+  DEFINES = -DNX_BUILD_SHARED=1 -Dnexus_shared_EXPORTS
+  DEP_FILE = CMakeFiles\nexus_shared.dir\src\index\nx_bsi.c.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1
+  INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
+  OBJECT_DIR = CMakeFiles\nexus_shared.dir
+  OBJECT_FILE_DIR = CMakeFiles\nexus_shared.dir\src\index
+  TARGET_SUPPORT_DIR = CMakeFiles\nexus_shared.dir
+
+build CMakeFiles/nexus_shared.dir/src/index/nx_dict.c.obj: C_COMPILER__nexus_shared_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/src/index/nx_dict.c || cmake_object_order_depends_target_nexus_shared
+  CONFIG = Release
+  DEFINES = -DNX_BUILD_SHARED=1 -Dnexus_shared_EXPORTS
+  DEP_FILE = CMakeFiles\nexus_shared.dir\src\index\nx_dict.c.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1
+  INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
+  OBJECT_DIR = CMakeFiles\nexus_shared.dir
+  OBJECT_FILE_DIR = CMakeFiles\nexus_shared.dir\src\index
   TARGET_SUPPORT_DIR = CMakeFiles\nexus_shared.dir
 
 build CMakeFiles/nexus_shared.dir/src/index/nx_fuzzy.c.obj: C_COMPILER__nexus_shared_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/src/index/nx_fuzzy.c || cmake_object_order_depends_target_nexus_shared
@@ -393,8 +485,36 @@ build CMakeFiles/nexus_shared.dir/src/index/nx_fuzzy.c.obj: C_COMPILER__nexus_sh
   INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
   OBJECT_DIR = CMakeFiles\nexus_shared.dir
   OBJECT_FILE_DIR = CMakeFiles\nexus_shared.dir\src\index
-  TARGET_COMPILE_PDB = CMakeFiles\nexus_shared.dir\
-  TARGET_PDB = libnexus.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles\nexus_shared.dir
+
+build CMakeFiles/nexus_shared.dir/src/index/nx_graph.c.obj: C_COMPILER__nexus_shared_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/src/index/nx_graph.c || cmake_object_order_depends_target_nexus_shared
+  CONFIG = Release
+  DEFINES = -DNX_BUILD_SHARED=1 -Dnexus_shared_EXPORTS
+  DEP_FILE = CMakeFiles\nexus_shared.dir\src\index\nx_graph.c.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1
+  INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
+  OBJECT_DIR = CMakeFiles\nexus_shared.dir
+  OBJECT_FILE_DIR = CMakeFiles\nexus_shared.dir\src\index
+  TARGET_SUPPORT_DIR = CMakeFiles\nexus_shared.dir
+
+build CMakeFiles/nexus_shared.dir/src/index/nx_postings.c.obj: C_COMPILER__nexus_shared_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/src/index/nx_postings.c || cmake_object_order_depends_target_nexus_shared
+  CONFIG = Release
+  DEFINES = -DNX_BUILD_SHARED=1 -Dnexus_shared_EXPORTS
+  DEP_FILE = CMakeFiles\nexus_shared.dir\src\index\nx_postings.c.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1
+  INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
+  OBJECT_DIR = CMakeFiles\nexus_shared.dir
+  OBJECT_FILE_DIR = CMakeFiles\nexus_shared.dir\src\index
+  TARGET_SUPPORT_DIR = CMakeFiles\nexus_shared.dir
+
+build CMakeFiles/nexus_shared.dir/src/index/nx_rabitq.c.obj: C_COMPILER__nexus_shared_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/src/index/nx_rabitq.c || cmake_object_order_depends_target_nexus_shared
+  CONFIG = Release
+  DEFINES = -DNX_BUILD_SHARED=1 -Dnexus_shared_EXPORTS
+  DEP_FILE = CMakeFiles\nexus_shared.dir\src\index\nx_rabitq.c.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1
+  INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
+  OBJECT_DIR = CMakeFiles\nexus_shared.dir
+  OBJECT_FILE_DIR = CMakeFiles\nexus_shared.dir\src\index
   TARGET_SUPPORT_DIR = CMakeFiles\nexus_shared.dir
 
 build CMakeFiles/nexus_shared.dir/src/index/nx_regex.c.obj: C_COMPILER__nexus_shared_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/src/index/nx_regex.c || cmake_object_order_depends_target_nexus_shared
@@ -405,8 +525,16 @@ build CMakeFiles/nexus_shared.dir/src/index/nx_regex.c.obj: C_COMPILER__nexus_sh
   INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
   OBJECT_DIR = CMakeFiles\nexus_shared.dir
   OBJECT_FILE_DIR = CMakeFiles\nexus_shared.dir\src\index
-  TARGET_COMPILE_PDB = CMakeFiles\nexus_shared.dir\
-  TARGET_PDB = libnexus.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles\nexus_shared.dir
+
+build CMakeFiles/nexus_shared.dir/src/index/nx_trigram.c.obj: C_COMPILER__nexus_shared_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/src/index/nx_trigram.c || cmake_object_order_depends_target_nexus_shared
+  CONFIG = Release
+  DEFINES = -DNX_BUILD_SHARED=1 -Dnexus_shared_EXPORTS
+  DEP_FILE = CMakeFiles\nexus_shared.dir\src\index\nx_trigram.c.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1
+  INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
+  OBJECT_DIR = CMakeFiles\nexus_shared.dir
+  OBJECT_FILE_DIR = CMakeFiles\nexus_shared.dir\src\index
   TARGET_SUPPORT_DIR = CMakeFiles\nexus_shared.dir
 
 build CMakeFiles/nexus_shared.dir/src/index/nx_vec.c.obj: C_COMPILER__nexus_shared_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/src/index/nx_vec.c || cmake_object_order_depends_target_nexus_shared
@@ -417,8 +545,6 @@ build CMakeFiles/nexus_shared.dir/src/index/nx_vec.c.obj: C_COMPILER__nexus_shar
   INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
   OBJECT_DIR = CMakeFiles\nexus_shared.dir
   OBJECT_FILE_DIR = CMakeFiles\nexus_shared.dir\src\index
-  TARGET_COMPILE_PDB = CMakeFiles\nexus_shared.dir\
-  TARGET_PDB = libnexus.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\nexus_shared.dir
 
 build CMakeFiles/nexus_shared.dir/src/query/nx_ast.c.obj: C_COMPILER__nexus_shared_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/src/query/nx_ast.c || cmake_object_order_depends_target_nexus_shared
@@ -429,8 +555,6 @@ build CMakeFiles/nexus_shared.dir/src/query/nx_ast.c.obj: C_COMPILER__nexus_shar
   INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
   OBJECT_DIR = CMakeFiles\nexus_shared.dir
   OBJECT_FILE_DIR = CMakeFiles\nexus_shared.dir\src\query
-  TARGET_COMPILE_PDB = CMakeFiles\nexus_shared.dir\
-  TARGET_PDB = libnexus.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\nexus_shared.dir
 
 build CMakeFiles/nexus_shared.dir/src/query/nx_parse.c.obj: C_COMPILER__nexus_shared_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/src/query/nx_parse.c || cmake_object_order_depends_target_nexus_shared
@@ -441,8 +565,66 @@ build CMakeFiles/nexus_shared.dir/src/query/nx_parse.c.obj: C_COMPILER__nexus_sh
   INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
   OBJECT_DIR = CMakeFiles\nexus_shared.dir
   OBJECT_FILE_DIR = CMakeFiles\nexus_shared.dir\src\query
-  TARGET_COMPILE_PDB = CMakeFiles\nexus_shared.dir\
-  TARGET_PDB = libnexus.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles\nexus_shared.dir
+
+build CMakeFiles/nexus_shared.dir/src/seg/nx_seg_builder.c.obj: C_COMPILER__nexus_shared_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/src/seg/nx_seg_builder.c || cmake_object_order_depends_target_nexus_shared
+  CONFIG = Release
+  DEFINES = -DNX_BUILD_SHARED=1 -Dnexus_shared_EXPORTS
+  DEP_FILE = CMakeFiles\nexus_shared.dir\src\seg\nx_seg_builder.c.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1
+  INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
+  OBJECT_DIR = CMakeFiles\nexus_shared.dir
+  OBJECT_FILE_DIR = CMakeFiles\nexus_shared.dir\src\seg
+  TARGET_SUPPORT_DIR = CMakeFiles\nexus_shared.dir
+
+build CMakeFiles/nexus_shared.dir/src/seg/nx_table.c.obj: C_COMPILER__nexus_shared_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/src/seg/nx_table.c || cmake_object_order_depends_target_nexus_shared
+  CONFIG = Release
+  DEFINES = -DNX_BUILD_SHARED=1 -Dnexus_shared_EXPORTS
+  DEP_FILE = CMakeFiles\nexus_shared.dir\src\seg\nx_table.c.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1
+  INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
+  OBJECT_DIR = CMakeFiles\nexus_shared.dir
+  OBJECT_FILE_DIR = CMakeFiles\nexus_shared.dir\src\seg
+  TARGET_SUPPORT_DIR = CMakeFiles\nexus_shared.dir
+
+build CMakeFiles/nexus_shared.dir/src/server/nx_server.c.obj: C_COMPILER__nexus_shared_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/src/server/nx_server.c || cmake_object_order_depends_target_nexus_shared
+  CONFIG = Release
+  DEFINES = -DNX_BUILD_SHARED=1 -Dnexus_shared_EXPORTS
+  DEP_FILE = CMakeFiles\nexus_shared.dir\src\server\nx_server.c.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1
+  INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
+  OBJECT_DIR = CMakeFiles\nexus_shared.dir
+  OBJECT_FILE_DIR = CMakeFiles\nexus_shared.dir\src\server
+  TARGET_SUPPORT_DIR = CMakeFiles\nexus_shared.dir
+
+build CMakeFiles/nexus_shared.dir/src/store/nx_merge.c.obj: C_COMPILER__nexus_shared_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/src/store/nx_merge.c || cmake_object_order_depends_target_nexus_shared
+  CONFIG = Release
+  DEFINES = -DNX_BUILD_SHARED=1 -Dnexus_shared_EXPORTS
+  DEP_FILE = CMakeFiles\nexus_shared.dir\src\store\nx_merge.c.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1
+  INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
+  OBJECT_DIR = CMakeFiles\nexus_shared.dir
+  OBJECT_FILE_DIR = CMakeFiles\nexus_shared.dir\src\store
+  TARGET_SUPPORT_DIR = CMakeFiles\nexus_shared.dir
+
+build CMakeFiles/nexus_shared.dir/src/store/nx_store.c.obj: C_COMPILER__nexus_shared_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/src/store/nx_store.c || cmake_object_order_depends_target_nexus_shared
+  CONFIG = Release
+  DEFINES = -DNX_BUILD_SHARED=1 -Dnexus_shared_EXPORTS
+  DEP_FILE = CMakeFiles\nexus_shared.dir\src\store\nx_store.c.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1
+  INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
+  OBJECT_DIR = CMakeFiles\nexus_shared.dir
+  OBJECT_FILE_DIR = CMakeFiles\nexus_shared.dir\src\store
+  TARGET_SUPPORT_DIR = CMakeFiles\nexus_shared.dir
+
+build CMakeFiles/nexus_shared.dir/src/store/nx_wal.c.obj: C_COMPILER__nexus_shared_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/src/store/nx_wal.c || cmake_object_order_depends_target_nexus_shared
+  CONFIG = Release
+  DEFINES = -DNX_BUILD_SHARED=1 -Dnexus_shared_EXPORTS
+  DEP_FILE = CMakeFiles\nexus_shared.dir\src\store\nx_wal.c.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1
+  INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
+  OBJECT_DIR = CMakeFiles\nexus_shared.dir
+  OBJECT_FILE_DIR = CMakeFiles\nexus_shared.dir\src\store
   TARGET_SUPPORT_DIR = CMakeFiles\nexus_shared.dir
 
 
@@ -453,7 +635,7 @@ build CMakeFiles/nexus_shared.dir/src/query/nx_parse.c.obj: C_COMPILER__nexus_sh
 #############################################
 # Link the shared library libnexus.dll
 
-build libnexus.dll libnexus.dll.a: C_SHARED_LIBRARY_LINKER__nexus_shared_Release CMakeFiles/nexus_shared.dir/src/core/nx_arena.c.obj CMakeFiles/nexus_shared.dir/src/core/nx_buf.c.obj CMakeFiles/nexus_shared.dir/src/core/nx_crc32c.c.obj CMakeFiles/nexus_shared.dir/src/core/nx_file.c.obj CMakeFiles/nexus_shared.dir/src/core/nx_json.c.obj CMakeFiles/nexus_shared.dir/src/core/nx_mem.c.obj CMakeFiles/nexus_shared.dir/src/core/nx_simd.c.obj CMakeFiles/nexus_shared.dir/src/core/nx_status.c.obj CMakeFiles/nexus_shared.dir/src/core/nx_thread.c.obj CMakeFiles/nexus_shared.dir/src/core/nx_utf8.c.obj CMakeFiles/nexus_shared.dir/src/index/nx_bitmap.c.obj CMakeFiles/nexus_shared.dir/src/index/nx_fuzzy.c.obj CMakeFiles/nexus_shared.dir/src/index/nx_regex.c.obj CMakeFiles/nexus_shared.dir/src/index/nx_vec.c.obj CMakeFiles/nexus_shared.dir/src/query/nx_ast.c.obj CMakeFiles/nexus_shared.dir/src/query/nx_parse.c.obj
+build libnexus.dll libnexus.dll.a: C_SHARED_LIBRARY_LINKER__nexus_shared_Release CMakeFiles/nexus_shared.dir/src/core/nx_arena.c.obj CMakeFiles/nexus_shared.dir/src/core/nx_buf.c.obj CMakeFiles/nexus_shared.dir/src/core/nx_crc32c.c.obj CMakeFiles/nexus_shared.dir/src/core/nx_file.c.obj CMakeFiles/nexus_shared.dir/src/core/nx_json.c.obj CMakeFiles/nexus_shared.dir/src/core/nx_mem.c.obj CMakeFiles/nexus_shared.dir/src/core/nx_simd.c.obj CMakeFiles/nexus_shared.dir/src/core/nx_status.c.obj CMakeFiles/nexus_shared.dir/src/core/nx_thread.c.obj CMakeFiles/nexus_shared.dir/src/core/nx_utf8.c.obj CMakeFiles/nexus_shared.dir/src/engine/nx_search.c.obj CMakeFiles/nexus_shared.dir/src/index/nx_bitmap.c.obj CMakeFiles/nexus_shared.dir/src/index/nx_bsi.c.obj CMakeFiles/nexus_shared.dir/src/index/nx_dict.c.obj CMakeFiles/nexus_shared.dir/src/index/nx_fuzzy.c.obj CMakeFiles/nexus_shared.dir/src/index/nx_graph.c.obj CMakeFiles/nexus_shared.dir/src/index/nx_postings.c.obj CMakeFiles/nexus_shared.dir/src/index/nx_rabitq.c.obj CMakeFiles/nexus_shared.dir/src/index/nx_regex.c.obj CMakeFiles/nexus_shared.dir/src/index/nx_trigram.c.obj CMakeFiles/nexus_shared.dir/src/index/nx_vec.c.obj CMakeFiles/nexus_shared.dir/src/query/nx_ast.c.obj CMakeFiles/nexus_shared.dir/src/query/nx_parse.c.obj CMakeFiles/nexus_shared.dir/src/seg/nx_seg_builder.c.obj CMakeFiles/nexus_shared.dir/src/seg/nx_table.c.obj CMakeFiles/nexus_shared.dir/src/server/nx_server.c.obj CMakeFiles/nexus_shared.dir/src/store/nx_merge.c.obj CMakeFiles/nexus_shared.dir/src/store/nx_store.c.obj CMakeFiles/nexus_shared.dir/src/store/nx_wal.c.obj
   CONFIG = Release
   LANGUAGE_COMPILE_FLAGS = -O3 -DNDEBUG
   LINK_FLAGS = -shared -static-libgcc
@@ -462,11 +644,49 @@ build libnexus.dll libnexus.dll.a: C_SHARED_LIBRARY_LINKER__nexus_shared_Release
   POST_BUILD = cd .
   PRE_LINK = cd .
   RESTAT = 1
-  TARGET_COMPILE_PDB = CMakeFiles\nexus_shared.dir\
   TARGET_FILE = libnexus.dll
   TARGET_IMPLIB = libnexus.dll.a
-  TARGET_PDB = libnexus.pdb
+  TARGET_PDB = nexus.dll.dbg
   TARGET_SUPPORT_DIR = CMakeFiles\nexus_shared.dir
+
+# =============================================================================
+# Object build statements for EXECUTABLE target nexus_cli
+
+
+#############################################
+# Order-only phony target for nexus_cli
+
+build cmake_object_order_depends_target_nexus_cli: phony || cmake_object_order_depends_target_nexus
+
+build CMakeFiles/nexus_cli.dir/src/cli/nexus.c.obj: C_COMPILER__nexus_cli_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/src/cli/nexus.c || cmake_object_order_depends_target_nexus_cli
+  CONFIG = Release
+  DEP_FILE = CMakeFiles\nexus_cli.dir\src\cli\nexus.c.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1
+  INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
+  OBJECT_DIR = CMakeFiles\nexus_cli.dir
+  OBJECT_FILE_DIR = CMakeFiles\nexus_cli.dir\src\cli
+  TARGET_SUPPORT_DIR = CMakeFiles\nexus_cli.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target nexus_cli
+
+
+#############################################
+# Link the executable nexus.exe
+
+build nexus.exe: C_EXECUTABLE_LINKER__nexus_cli_Release CMakeFiles/nexus_cli.dir/src/cli/nexus.c.obj | libnexus.a || libnexus.a
+  CONFIG = Release
+  FLAGS = -O3 -DNDEBUG
+  LINK_FLAGS = -static -municode
+  LINK_LIBRARIES = libnexus.a  -lm  -lws2_32  -lbcrypt  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\nexus_cli.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = nexus.exe
+  TARGET_IMPLIB = libnexus.dll.a
+  TARGET_PDB = nexus.exe.dbg
+  TARGET_SUPPORT_DIR = CMakeFiles\nexus_cli.dir
 
 # =============================================================================
 # Object build statements for EXECUTABLE target test_arena_rollback
@@ -484,8 +704,6 @@ build CMakeFiles/test_arena_rollback.dir/tests/test_arena_rollback.c.obj: C_COMP
   INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
   OBJECT_DIR = CMakeFiles\test_arena_rollback.dir
   OBJECT_FILE_DIR = CMakeFiles\test_arena_rollback.dir\tests
-  TARGET_COMPILE_PDB = CMakeFiles\test_arena_rollback.dir\
-  TARGET_PDB = test_arena_rollback.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\test_arena_rollback.dir
 
 
@@ -504,10 +722,9 @@ build test_arena_rollback.exe: C_EXECUTABLE_LINKER__test_arena_rollback_Release 
   OBJECT_DIR = CMakeFiles\test_arena_rollback.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\test_arena_rollback.dir\
   TARGET_FILE = test_arena_rollback.exe
   TARGET_IMPLIB = libtest_arena_rollback.dll.a
-  TARGET_PDB = test_arena_rollback.pdb
+  TARGET_PDB = test_arena_rollback.exe.dbg
   TARGET_SUPPORT_DIR = CMakeFiles\test_arena_rollback.dir
 
 # =============================================================================
@@ -527,8 +744,6 @@ build CMakeFiles/test_arena_rollback_shared.dir/tests/test_arena_rollback.c.obj:
   INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
   OBJECT_DIR = CMakeFiles\test_arena_rollback_shared.dir
   OBJECT_FILE_DIR = CMakeFiles\test_arena_rollback_shared.dir\tests
-  TARGET_COMPILE_PDB = CMakeFiles\test_arena_rollback_shared.dir\
-  TARGET_PDB = test_arena_rollback_shared.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\test_arena_rollback_shared.dir
 
 
@@ -546,10 +761,9 @@ build test_arena_rollback_shared.exe: C_EXECUTABLE_LINKER__test_arena_rollback_s
   OBJECT_DIR = CMakeFiles\test_arena_rollback_shared.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\test_arena_rollback_shared.dir\
   TARGET_FILE = test_arena_rollback_shared.exe
   TARGET_IMPLIB = libtest_arena_rollback_shared.dll.a
-  TARGET_PDB = test_arena_rollback_shared.pdb
+  TARGET_PDB = test_arena_rollback_shared.exe.dbg
   TARGET_SUPPORT_DIR = CMakeFiles\test_arena_rollback_shared.dir
 
 # =============================================================================
@@ -568,8 +782,6 @@ build CMakeFiles/test_bitmap.dir/tests/test_bitmap.c.obj: C_COMPILER__test_bitma
   INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
   OBJECT_DIR = CMakeFiles\test_bitmap.dir
   OBJECT_FILE_DIR = CMakeFiles\test_bitmap.dir\tests
-  TARGET_COMPILE_PDB = CMakeFiles\test_bitmap.dir\
-  TARGET_PDB = test_bitmap.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\test_bitmap.dir
 
 
@@ -588,10 +800,9 @@ build test_bitmap.exe: C_EXECUTABLE_LINKER__test_bitmap_Release CMakeFiles/test_
   OBJECT_DIR = CMakeFiles\test_bitmap.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\test_bitmap.dir\
   TARGET_FILE = test_bitmap.exe
   TARGET_IMPLIB = libtest_bitmap.dll.a
-  TARGET_PDB = test_bitmap.pdb
+  TARGET_PDB = test_bitmap.exe.dbg
   TARGET_SUPPORT_DIR = CMakeFiles\test_bitmap.dir
 
 # =============================================================================
@@ -611,8 +822,6 @@ build CMakeFiles/test_bitmap_shared.dir/tests/test_bitmap.c.obj: C_COMPILER__tes
   INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
   OBJECT_DIR = CMakeFiles\test_bitmap_shared.dir
   OBJECT_FILE_DIR = CMakeFiles\test_bitmap_shared.dir\tests
-  TARGET_COMPILE_PDB = CMakeFiles\test_bitmap_shared.dir\
-  TARGET_PDB = test_bitmap_shared.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\test_bitmap_shared.dir
 
 
@@ -630,11 +839,88 @@ build test_bitmap_shared.exe: C_EXECUTABLE_LINKER__test_bitmap_shared_Release CM
   OBJECT_DIR = CMakeFiles\test_bitmap_shared.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\test_bitmap_shared.dir\
   TARGET_FILE = test_bitmap_shared.exe
   TARGET_IMPLIB = libtest_bitmap_shared.dll.a
-  TARGET_PDB = test_bitmap_shared.pdb
+  TARGET_PDB = test_bitmap_shared.exe.dbg
   TARGET_SUPPORT_DIR = CMakeFiles\test_bitmap_shared.dir
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_bsi
+
+
+#############################################
+# Order-only phony target for test_bsi
+
+build cmake_object_order_depends_target_test_bsi: phony || cmake_object_order_depends_target_nexus
+
+build CMakeFiles/test_bsi.dir/tests/test_bsi.c.obj: C_COMPILER__test_bsi_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/tests/test_bsi.c || cmake_object_order_depends_target_test_bsi
+  CONFIG = Release
+  DEP_FILE = CMakeFiles\test_bsi.dir\tests\test_bsi.c.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1
+  INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
+  OBJECT_DIR = CMakeFiles\test_bsi.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_bsi.dir\tests
+  TARGET_SUPPORT_DIR = CMakeFiles\test_bsi.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_bsi
+
+
+#############################################
+# Link the executable test_bsi.exe
+
+build test_bsi.exe: C_EXECUTABLE_LINKER__test_bsi_Release CMakeFiles/test_bsi.dir/tests/test_bsi.c.obj | libnexus.a || libnexus.a
+  CONFIG = Release
+  FLAGS = -O3 -DNDEBUG
+  LINK_FLAGS = -static
+  LINK_LIBRARIES = libnexus.a  -lm  -lws2_32  -lbcrypt  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\test_bsi.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = test_bsi.exe
+  TARGET_IMPLIB = libtest_bsi.dll.a
+  TARGET_PDB = test_bsi.exe.dbg
+  TARGET_SUPPORT_DIR = CMakeFiles\test_bsi.dir
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_bsi_shared
+
+
+#############################################
+# Order-only phony target for test_bsi_shared
+
+build cmake_object_order_depends_target_test_bsi_shared: phony || cmake_object_order_depends_target_nexus_shared
+
+build CMakeFiles/test_bsi_shared.dir/tests/test_bsi.c.obj: C_COMPILER__test_bsi_shared_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/tests/test_bsi.c || cmake_object_order_depends_target_test_bsi_shared
+  CONFIG = Release
+  DEFINES = -DNX_USE_SHARED=1
+  DEP_FILE = CMakeFiles\test_bsi_shared.dir\tests\test_bsi.c.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1
+  INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
+  OBJECT_DIR = CMakeFiles\test_bsi_shared.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_bsi_shared.dir\tests
+  TARGET_SUPPORT_DIR = CMakeFiles\test_bsi_shared.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_bsi_shared
+
+
+#############################################
+# Link the executable test_bsi_shared.exe
+
+build test_bsi_shared.exe: C_EXECUTABLE_LINKER__test_bsi_shared_Release CMakeFiles/test_bsi_shared.dir/tests/test_bsi.c.obj | libnexus.dll.a || libnexus.dll
+  CONFIG = Release
+  FLAGS = -O3 -DNDEBUG
+  LINK_LIBRARIES = libnexus.dll.a  -lm  -lws2_32  -lbcrypt  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\test_bsi_shared.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = test_bsi_shared.exe
+  TARGET_IMPLIB = libtest_bsi_shared.dll.a
+  TARGET_PDB = test_bsi_shared.exe.dbg
+  TARGET_SUPPORT_DIR = CMakeFiles\test_bsi_shared.dir
 
 # =============================================================================
 # Object build statements for EXECUTABLE target test_core
@@ -652,8 +938,6 @@ build CMakeFiles/test_core.dir/tests/test_core.c.obj: C_COMPILER__test_core_unsc
   INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
   OBJECT_DIR = CMakeFiles\test_core.dir
   OBJECT_FILE_DIR = CMakeFiles\test_core.dir\tests
-  TARGET_COMPILE_PDB = CMakeFiles\test_core.dir\
-  TARGET_PDB = test_core.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\test_core.dir
 
 
@@ -672,10 +956,9 @@ build test_core.exe: C_EXECUTABLE_LINKER__test_core_Release CMakeFiles/test_core
   OBJECT_DIR = CMakeFiles\test_core.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\test_core.dir\
   TARGET_FILE = test_core.exe
   TARGET_IMPLIB = libtest_core.dll.a
-  TARGET_PDB = test_core.pdb
+  TARGET_PDB = test_core.exe.dbg
   TARGET_SUPPORT_DIR = CMakeFiles\test_core.dir
 
 # =============================================================================
@@ -695,8 +978,6 @@ build CMakeFiles/test_core_shared.dir/tests/test_core.c.obj: C_COMPILER__test_co
   INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
   OBJECT_DIR = CMakeFiles\test_core_shared.dir
   OBJECT_FILE_DIR = CMakeFiles\test_core_shared.dir\tests
-  TARGET_COMPILE_PDB = CMakeFiles\test_core_shared.dir\
-  TARGET_PDB = test_core_shared.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\test_core_shared.dir
 
 
@@ -714,11 +995,88 @@ build test_core_shared.exe: C_EXECUTABLE_LINKER__test_core_shared_Release CMakeF
   OBJECT_DIR = CMakeFiles\test_core_shared.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\test_core_shared.dir\
   TARGET_FILE = test_core_shared.exe
   TARGET_IMPLIB = libtest_core_shared.dll.a
-  TARGET_PDB = test_core_shared.pdb
+  TARGET_PDB = test_core_shared.exe.dbg
   TARGET_SUPPORT_DIR = CMakeFiles\test_core_shared.dir
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_dict
+
+
+#############################################
+# Order-only phony target for test_dict
+
+build cmake_object_order_depends_target_test_dict: phony || cmake_object_order_depends_target_nexus
+
+build CMakeFiles/test_dict.dir/tests/test_dict.c.obj: C_COMPILER__test_dict_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/tests/test_dict.c || cmake_object_order_depends_target_test_dict
+  CONFIG = Release
+  DEP_FILE = CMakeFiles\test_dict.dir\tests\test_dict.c.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1
+  INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
+  OBJECT_DIR = CMakeFiles\test_dict.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_dict.dir\tests
+  TARGET_SUPPORT_DIR = CMakeFiles\test_dict.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_dict
+
+
+#############################################
+# Link the executable test_dict.exe
+
+build test_dict.exe: C_EXECUTABLE_LINKER__test_dict_Release CMakeFiles/test_dict.dir/tests/test_dict.c.obj | libnexus.a || libnexus.a
+  CONFIG = Release
+  FLAGS = -O3 -DNDEBUG
+  LINK_FLAGS = -static
+  LINK_LIBRARIES = libnexus.a  -lm  -lws2_32  -lbcrypt  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\test_dict.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = test_dict.exe
+  TARGET_IMPLIB = libtest_dict.dll.a
+  TARGET_PDB = test_dict.exe.dbg
+  TARGET_SUPPORT_DIR = CMakeFiles\test_dict.dir
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_dict_shared
+
+
+#############################################
+# Order-only phony target for test_dict_shared
+
+build cmake_object_order_depends_target_test_dict_shared: phony || cmake_object_order_depends_target_nexus_shared
+
+build CMakeFiles/test_dict_shared.dir/tests/test_dict.c.obj: C_COMPILER__test_dict_shared_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/tests/test_dict.c || cmake_object_order_depends_target_test_dict_shared
+  CONFIG = Release
+  DEFINES = -DNX_USE_SHARED=1
+  DEP_FILE = CMakeFiles\test_dict_shared.dir\tests\test_dict.c.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1
+  INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
+  OBJECT_DIR = CMakeFiles\test_dict_shared.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_dict_shared.dir\tests
+  TARGET_SUPPORT_DIR = CMakeFiles\test_dict_shared.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_dict_shared
+
+
+#############################################
+# Link the executable test_dict_shared.exe
+
+build test_dict_shared.exe: C_EXECUTABLE_LINKER__test_dict_shared_Release CMakeFiles/test_dict_shared.dir/tests/test_dict.c.obj | libnexus.dll.a || libnexus.dll
+  CONFIG = Release
+  FLAGS = -O3 -DNDEBUG
+  LINK_LIBRARIES = libnexus.dll.a  -lm  -lws2_32  -lbcrypt  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\test_dict_shared.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = test_dict_shared.exe
+  TARGET_IMPLIB = libtest_dict_shared.dll.a
+  TARGET_PDB = test_dict_shared.exe.dbg
+  TARGET_SUPPORT_DIR = CMakeFiles\test_dict_shared.dir
 
 # =============================================================================
 # Object build statements for EXECUTABLE target test_fuzzy
@@ -736,8 +1094,6 @@ build CMakeFiles/test_fuzzy.dir/tests/test_fuzzy.c.obj: C_COMPILER__test_fuzzy_u
   INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
   OBJECT_DIR = CMakeFiles\test_fuzzy.dir
   OBJECT_FILE_DIR = CMakeFiles\test_fuzzy.dir\tests
-  TARGET_COMPILE_PDB = CMakeFiles\test_fuzzy.dir\
-  TARGET_PDB = test_fuzzy.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\test_fuzzy.dir
 
 
@@ -756,10 +1112,9 @@ build test_fuzzy.exe: C_EXECUTABLE_LINKER__test_fuzzy_Release CMakeFiles/test_fu
   OBJECT_DIR = CMakeFiles\test_fuzzy.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\test_fuzzy.dir\
   TARGET_FILE = test_fuzzy.exe
   TARGET_IMPLIB = libtest_fuzzy.dll.a
-  TARGET_PDB = test_fuzzy.pdb
+  TARGET_PDB = test_fuzzy.exe.dbg
   TARGET_SUPPORT_DIR = CMakeFiles\test_fuzzy.dir
 
 # =============================================================================
@@ -779,8 +1134,6 @@ build CMakeFiles/test_fuzzy_shared.dir/tests/test_fuzzy.c.obj: C_COMPILER__test_
   INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
   OBJECT_DIR = CMakeFiles\test_fuzzy_shared.dir
   OBJECT_FILE_DIR = CMakeFiles\test_fuzzy_shared.dir\tests
-  TARGET_COMPILE_PDB = CMakeFiles\test_fuzzy_shared.dir\
-  TARGET_PDB = test_fuzzy_shared.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\test_fuzzy_shared.dir
 
 
@@ -798,11 +1151,88 @@ build test_fuzzy_shared.exe: C_EXECUTABLE_LINKER__test_fuzzy_shared_Release CMak
   OBJECT_DIR = CMakeFiles\test_fuzzy_shared.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\test_fuzzy_shared.dir\
   TARGET_FILE = test_fuzzy_shared.exe
   TARGET_IMPLIB = libtest_fuzzy_shared.dll.a
-  TARGET_PDB = test_fuzzy_shared.pdb
+  TARGET_PDB = test_fuzzy_shared.exe.dbg
   TARGET_SUPPORT_DIR = CMakeFiles\test_fuzzy_shared.dir
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_graph
+
+
+#############################################
+# Order-only phony target for test_graph
+
+build cmake_object_order_depends_target_test_graph: phony || cmake_object_order_depends_target_nexus
+
+build CMakeFiles/test_graph.dir/tests/test_graph.c.obj: C_COMPILER__test_graph_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/tests/test_graph.c || cmake_object_order_depends_target_test_graph
+  CONFIG = Release
+  DEP_FILE = CMakeFiles\test_graph.dir\tests\test_graph.c.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1
+  INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
+  OBJECT_DIR = CMakeFiles\test_graph.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_graph.dir\tests
+  TARGET_SUPPORT_DIR = CMakeFiles\test_graph.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_graph
+
+
+#############################################
+# Link the executable test_graph.exe
+
+build test_graph.exe: C_EXECUTABLE_LINKER__test_graph_Release CMakeFiles/test_graph.dir/tests/test_graph.c.obj | libnexus.a || libnexus.a
+  CONFIG = Release
+  FLAGS = -O3 -DNDEBUG
+  LINK_FLAGS = -static
+  LINK_LIBRARIES = libnexus.a  -lm  -lws2_32  -lbcrypt  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\test_graph.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = test_graph.exe
+  TARGET_IMPLIB = libtest_graph.dll.a
+  TARGET_PDB = test_graph.exe.dbg
+  TARGET_SUPPORT_DIR = CMakeFiles\test_graph.dir
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_graph_shared
+
+
+#############################################
+# Order-only phony target for test_graph_shared
+
+build cmake_object_order_depends_target_test_graph_shared: phony || cmake_object_order_depends_target_nexus_shared
+
+build CMakeFiles/test_graph_shared.dir/tests/test_graph.c.obj: C_COMPILER__test_graph_shared_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/tests/test_graph.c || cmake_object_order_depends_target_test_graph_shared
+  CONFIG = Release
+  DEFINES = -DNX_USE_SHARED=1
+  DEP_FILE = CMakeFiles\test_graph_shared.dir\tests\test_graph.c.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1
+  INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
+  OBJECT_DIR = CMakeFiles\test_graph_shared.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_graph_shared.dir\tests
+  TARGET_SUPPORT_DIR = CMakeFiles\test_graph_shared.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_graph_shared
+
+
+#############################################
+# Link the executable test_graph_shared.exe
+
+build test_graph_shared.exe: C_EXECUTABLE_LINKER__test_graph_shared_Release CMakeFiles/test_graph_shared.dir/tests/test_graph.c.obj | libnexus.dll.a || libnexus.dll
+  CONFIG = Release
+  FLAGS = -O3 -DNDEBUG
+  LINK_LIBRARIES = libnexus.dll.a  -lm  -lws2_32  -lbcrypt  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\test_graph_shared.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = test_graph_shared.exe
+  TARGET_IMPLIB = libtest_graph_shared.dll.a
+  TARGET_PDB = test_graph_shared.exe.dbg
+  TARGET_SUPPORT_DIR = CMakeFiles\test_graph_shared.dir
 
 # =============================================================================
 # Object build statements for EXECUTABLE target test_json
@@ -820,8 +1250,6 @@ build CMakeFiles/test_json.dir/tests/test_json.c.obj: C_COMPILER__test_json_unsc
   INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
   OBJECT_DIR = CMakeFiles\test_json.dir
   OBJECT_FILE_DIR = CMakeFiles\test_json.dir\tests
-  TARGET_COMPILE_PDB = CMakeFiles\test_json.dir\
-  TARGET_PDB = test_json.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\test_json.dir
 
 
@@ -840,10 +1268,9 @@ build test_json.exe: C_EXECUTABLE_LINKER__test_json_Release CMakeFiles/test_json
   OBJECT_DIR = CMakeFiles\test_json.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\test_json.dir\
   TARGET_FILE = test_json.exe
   TARGET_IMPLIB = libtest_json.dll.a
-  TARGET_PDB = test_json.pdb
+  TARGET_PDB = test_json.exe.dbg
   TARGET_SUPPORT_DIR = CMakeFiles\test_json.dir
 
 # =============================================================================
@@ -863,8 +1290,6 @@ build CMakeFiles/test_json_shared.dir/tests/test_json.c.obj: C_COMPILER__test_js
   INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
   OBJECT_DIR = CMakeFiles\test_json_shared.dir
   OBJECT_FILE_DIR = CMakeFiles\test_json_shared.dir\tests
-  TARGET_COMPILE_PDB = CMakeFiles\test_json_shared.dir\
-  TARGET_PDB = test_json_shared.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\test_json_shared.dir
 
 
@@ -882,11 +1307,88 @@ build test_json_shared.exe: C_EXECUTABLE_LINKER__test_json_shared_Release CMakeF
   OBJECT_DIR = CMakeFiles\test_json_shared.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\test_json_shared.dir\
   TARGET_FILE = test_json_shared.exe
   TARGET_IMPLIB = libtest_json_shared.dll.a
-  TARGET_PDB = test_json_shared.pdb
+  TARGET_PDB = test_json_shared.exe.dbg
   TARGET_SUPPORT_DIR = CMakeFiles\test_json_shared.dir
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_merge
+
+
+#############################################
+# Order-only phony target for test_merge
+
+build cmake_object_order_depends_target_test_merge: phony || cmake_object_order_depends_target_nexus
+
+build CMakeFiles/test_merge.dir/tests/test_merge.c.obj: C_COMPILER__test_merge_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/tests/test_merge.c || cmake_object_order_depends_target_test_merge
+  CONFIG = Release
+  DEP_FILE = CMakeFiles\test_merge.dir\tests\test_merge.c.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1
+  INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
+  OBJECT_DIR = CMakeFiles\test_merge.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_merge.dir\tests
+  TARGET_SUPPORT_DIR = CMakeFiles\test_merge.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_merge
+
+
+#############################################
+# Link the executable test_merge.exe
+
+build test_merge.exe: C_EXECUTABLE_LINKER__test_merge_Release CMakeFiles/test_merge.dir/tests/test_merge.c.obj | libnexus.a || libnexus.a
+  CONFIG = Release
+  FLAGS = -O3 -DNDEBUG
+  LINK_FLAGS = -static
+  LINK_LIBRARIES = libnexus.a  -lm  -lws2_32  -lbcrypt  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\test_merge.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = test_merge.exe
+  TARGET_IMPLIB = libtest_merge.dll.a
+  TARGET_PDB = test_merge.exe.dbg
+  TARGET_SUPPORT_DIR = CMakeFiles\test_merge.dir
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_merge_shared
+
+
+#############################################
+# Order-only phony target for test_merge_shared
+
+build cmake_object_order_depends_target_test_merge_shared: phony || cmake_object_order_depends_target_nexus_shared
+
+build CMakeFiles/test_merge_shared.dir/tests/test_merge.c.obj: C_COMPILER__test_merge_shared_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/tests/test_merge.c || cmake_object_order_depends_target_test_merge_shared
+  CONFIG = Release
+  DEFINES = -DNX_USE_SHARED=1
+  DEP_FILE = CMakeFiles\test_merge_shared.dir\tests\test_merge.c.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1
+  INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
+  OBJECT_DIR = CMakeFiles\test_merge_shared.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_merge_shared.dir\tests
+  TARGET_SUPPORT_DIR = CMakeFiles\test_merge_shared.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_merge_shared
+
+
+#############################################
+# Link the executable test_merge_shared.exe
+
+build test_merge_shared.exe: C_EXECUTABLE_LINKER__test_merge_shared_Release CMakeFiles/test_merge_shared.dir/tests/test_merge.c.obj | libnexus.dll.a || libnexus.dll
+  CONFIG = Release
+  FLAGS = -O3 -DNDEBUG
+  LINK_LIBRARIES = libnexus.dll.a  -lm  -lws2_32  -lbcrypt  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\test_merge_shared.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = test_merge_shared.exe
+  TARGET_IMPLIB = libtest_merge_shared.dll.a
+  TARGET_PDB = test_merge_shared.exe.dbg
+  TARGET_SUPPORT_DIR = CMakeFiles\test_merge_shared.dir
 
 # =============================================================================
 # Object build statements for EXECUTABLE target test_parse
@@ -904,8 +1406,6 @@ build CMakeFiles/test_parse.dir/tests/test_parse.c.obj: C_COMPILER__test_parse_u
   INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
   OBJECT_DIR = CMakeFiles\test_parse.dir
   OBJECT_FILE_DIR = CMakeFiles\test_parse.dir\tests
-  TARGET_COMPILE_PDB = CMakeFiles\test_parse.dir\
-  TARGET_PDB = test_parse.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\test_parse.dir
 
 
@@ -924,10 +1424,9 @@ build test_parse.exe: C_EXECUTABLE_LINKER__test_parse_Release CMakeFiles/test_pa
   OBJECT_DIR = CMakeFiles\test_parse.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\test_parse.dir\
   TARGET_FILE = test_parse.exe
   TARGET_IMPLIB = libtest_parse.dll.a
-  TARGET_PDB = test_parse.pdb
+  TARGET_PDB = test_parse.exe.dbg
   TARGET_SUPPORT_DIR = CMakeFiles\test_parse.dir
 
 # =============================================================================
@@ -947,8 +1446,6 @@ build CMakeFiles/test_parse_shared.dir/tests/test_parse.c.obj: C_COMPILER__test_
   INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
   OBJECT_DIR = CMakeFiles\test_parse_shared.dir
   OBJECT_FILE_DIR = CMakeFiles\test_parse_shared.dir\tests
-  TARGET_COMPILE_PDB = CMakeFiles\test_parse_shared.dir\
-  TARGET_PDB = test_parse_shared.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\test_parse_shared.dir
 
 
@@ -966,10 +1463,9 @@ build test_parse_shared.exe: C_EXECUTABLE_LINKER__test_parse_shared_Release CMak
   OBJECT_DIR = CMakeFiles\test_parse_shared.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\test_parse_shared.dir\
   TARGET_FILE = test_parse_shared.exe
   TARGET_IMPLIB = libtest_parse_shared.dll.a
-  TARGET_PDB = test_parse_shared.pdb
+  TARGET_PDB = test_parse_shared.exe.dbg
   TARGET_SUPPORT_DIR = CMakeFiles\test_parse_shared.dir
 
 # =============================================================================
@@ -988,8 +1484,6 @@ build CMakeFiles/test_platform.dir/tests/test_platform.c.obj: C_COMPILER__test_p
   INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
   OBJECT_DIR = CMakeFiles\test_platform.dir
   OBJECT_FILE_DIR = CMakeFiles\test_platform.dir\tests
-  TARGET_COMPILE_PDB = CMakeFiles\test_platform.dir\
-  TARGET_PDB = test_platform.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\test_platform.dir
 
 
@@ -1008,10 +1502,9 @@ build test_platform.exe: C_EXECUTABLE_LINKER__test_platform_Release CMakeFiles/t
   OBJECT_DIR = CMakeFiles\test_platform.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\test_platform.dir\
   TARGET_FILE = test_platform.exe
   TARGET_IMPLIB = libtest_platform.dll.a
-  TARGET_PDB = test_platform.pdb
+  TARGET_PDB = test_platform.exe.dbg
   TARGET_SUPPORT_DIR = CMakeFiles\test_platform.dir
 
 # =============================================================================
@@ -1031,8 +1524,6 @@ build CMakeFiles/test_platform_shared.dir/tests/test_platform.c.obj: C_COMPILER_
   INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
   OBJECT_DIR = CMakeFiles\test_platform_shared.dir
   OBJECT_FILE_DIR = CMakeFiles\test_platform_shared.dir\tests
-  TARGET_COMPILE_PDB = CMakeFiles\test_platform_shared.dir\
-  TARGET_PDB = test_platform_shared.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\test_platform_shared.dir
 
 
@@ -1050,11 +1541,166 @@ build test_platform_shared.exe: C_EXECUTABLE_LINKER__test_platform_shared_Releas
   OBJECT_DIR = CMakeFiles\test_platform_shared.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\test_platform_shared.dir\
   TARGET_FILE = test_platform_shared.exe
   TARGET_IMPLIB = libtest_platform_shared.dll.a
-  TARGET_PDB = test_platform_shared.pdb
+  TARGET_PDB = test_platform_shared.exe.dbg
   TARGET_SUPPORT_DIR = CMakeFiles\test_platform_shared.dir
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_postings
+
+
+#############################################
+# Order-only phony target for test_postings
+
+build cmake_object_order_depends_target_test_postings: phony || cmake_object_order_depends_target_nexus
+
+build CMakeFiles/test_postings.dir/tests/test_postings.c.obj: C_COMPILER__test_postings_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/tests/test_postings.c || cmake_object_order_depends_target_test_postings
+  CONFIG = Release
+  DEP_FILE = CMakeFiles\test_postings.dir\tests\test_postings.c.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1
+  INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
+  OBJECT_DIR = CMakeFiles\test_postings.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_postings.dir\tests
+  TARGET_SUPPORT_DIR = CMakeFiles\test_postings.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_postings
+
+
+#############################################
+# Link the executable test_postings.exe
+
+build test_postings.exe: C_EXECUTABLE_LINKER__test_postings_Release CMakeFiles/test_postings.dir/tests/test_postings.c.obj | libnexus.a || libnexus.a
+  CONFIG = Release
+  FLAGS = -O3 -DNDEBUG
+  LINK_FLAGS = -static
+  LINK_LIBRARIES = libnexus.a  -lm  -lws2_32  -lbcrypt  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\test_postings.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = test_postings.exe
+  TARGET_IMPLIB = libtest_postings.dll.a
+  TARGET_PDB = test_postings.exe.dbg
+  TARGET_SUPPORT_DIR = CMakeFiles\test_postings.dir
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_postings_shared
+
+
+#############################################
+# Order-only phony target for test_postings_shared
+
+build cmake_object_order_depends_target_test_postings_shared: phony || cmake_object_order_depends_target_nexus_shared
+
+build CMakeFiles/test_postings_shared.dir/tests/test_postings.c.obj: C_COMPILER__test_postings_shared_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/tests/test_postings.c || cmake_object_order_depends_target_test_postings_shared
+  CONFIG = Release
+  DEFINES = -DNX_USE_SHARED=1
+  DEP_FILE = CMakeFiles\test_postings_shared.dir\tests\test_postings.c.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1
+  INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
+  OBJECT_DIR = CMakeFiles\test_postings_shared.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_postings_shared.dir\tests
+  TARGET_SUPPORT_DIR = CMakeFiles\test_postings_shared.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_postings_shared
+
+
+#############################################
+# Link the executable test_postings_shared.exe
+
+build test_postings_shared.exe: C_EXECUTABLE_LINKER__test_postings_shared_Release CMakeFiles/test_postings_shared.dir/tests/test_postings.c.obj | libnexus.dll.a || libnexus.dll
+  CONFIG = Release
+  FLAGS = -O3 -DNDEBUG
+  LINK_LIBRARIES = libnexus.dll.a  -lm  -lws2_32  -lbcrypt  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\test_postings_shared.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = test_postings_shared.exe
+  TARGET_IMPLIB = libtest_postings_shared.dll.a
+  TARGET_PDB = test_postings_shared.exe.dbg
+  TARGET_SUPPORT_DIR = CMakeFiles\test_postings_shared.dir
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_rabitq
+
+
+#############################################
+# Order-only phony target for test_rabitq
+
+build cmake_object_order_depends_target_test_rabitq: phony || cmake_object_order_depends_target_nexus
+
+build CMakeFiles/test_rabitq.dir/tests/test_rabitq.c.obj: C_COMPILER__test_rabitq_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/tests/test_rabitq.c || cmake_object_order_depends_target_test_rabitq
+  CONFIG = Release
+  DEP_FILE = CMakeFiles\test_rabitq.dir\tests\test_rabitq.c.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1
+  INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
+  OBJECT_DIR = CMakeFiles\test_rabitq.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_rabitq.dir\tests
+  TARGET_SUPPORT_DIR = CMakeFiles\test_rabitq.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_rabitq
+
+
+#############################################
+# Link the executable test_rabitq.exe
+
+build test_rabitq.exe: C_EXECUTABLE_LINKER__test_rabitq_Release CMakeFiles/test_rabitq.dir/tests/test_rabitq.c.obj | libnexus.a || libnexus.a
+  CONFIG = Release
+  FLAGS = -O3 -DNDEBUG
+  LINK_FLAGS = -static
+  LINK_LIBRARIES = libnexus.a  -lm  -lws2_32  -lbcrypt  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\test_rabitq.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = test_rabitq.exe
+  TARGET_IMPLIB = libtest_rabitq.dll.a
+  TARGET_PDB = test_rabitq.exe.dbg
+  TARGET_SUPPORT_DIR = CMakeFiles\test_rabitq.dir
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_rabitq_shared
+
+
+#############################################
+# Order-only phony target for test_rabitq_shared
+
+build cmake_object_order_depends_target_test_rabitq_shared: phony || cmake_object_order_depends_target_nexus_shared
+
+build CMakeFiles/test_rabitq_shared.dir/tests/test_rabitq.c.obj: C_COMPILER__test_rabitq_shared_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/tests/test_rabitq.c || cmake_object_order_depends_target_test_rabitq_shared
+  CONFIG = Release
+  DEFINES = -DNX_USE_SHARED=1
+  DEP_FILE = CMakeFiles\test_rabitq_shared.dir\tests\test_rabitq.c.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1
+  INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
+  OBJECT_DIR = CMakeFiles\test_rabitq_shared.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_rabitq_shared.dir\tests
+  TARGET_SUPPORT_DIR = CMakeFiles\test_rabitq_shared.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_rabitq_shared
+
+
+#############################################
+# Link the executable test_rabitq_shared.exe
+
+build test_rabitq_shared.exe: C_EXECUTABLE_LINKER__test_rabitq_shared_Release CMakeFiles/test_rabitq_shared.dir/tests/test_rabitq.c.obj | libnexus.dll.a || libnexus.dll
+  CONFIG = Release
+  FLAGS = -O3 -DNDEBUG
+  LINK_LIBRARIES = libnexus.dll.a  -lm  -lws2_32  -lbcrypt  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\test_rabitq_shared.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = test_rabitq_shared.exe
+  TARGET_IMPLIB = libtest_rabitq_shared.dll.a
+  TARGET_PDB = test_rabitq_shared.exe.dbg
+  TARGET_SUPPORT_DIR = CMakeFiles\test_rabitq_shared.dir
 
 # =============================================================================
 # Object build statements for EXECUTABLE target test_regex
@@ -1072,8 +1718,6 @@ build CMakeFiles/test_regex.dir/tests/test_regex.c.obj: C_COMPILER__test_regex_u
   INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
   OBJECT_DIR = CMakeFiles\test_regex.dir
   OBJECT_FILE_DIR = CMakeFiles\test_regex.dir\tests
-  TARGET_COMPILE_PDB = CMakeFiles\test_regex.dir\
-  TARGET_PDB = test_regex.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\test_regex.dir
 
 
@@ -1092,10 +1736,9 @@ build test_regex.exe: C_EXECUTABLE_LINKER__test_regex_Release CMakeFiles/test_re
   OBJECT_DIR = CMakeFiles\test_regex.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\test_regex.dir\
   TARGET_FILE = test_regex.exe
   TARGET_IMPLIB = libtest_regex.dll.a
-  TARGET_PDB = test_regex.pdb
+  TARGET_PDB = test_regex.exe.dbg
   TARGET_SUPPORT_DIR = CMakeFiles\test_regex.dir
 
 # =============================================================================
@@ -1115,8 +1758,6 @@ build CMakeFiles/test_regex_shared.dir/tests/test_regex.c.obj: C_COMPILER__test_
   INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
   OBJECT_DIR = CMakeFiles\test_regex_shared.dir
   OBJECT_FILE_DIR = CMakeFiles\test_regex_shared.dir\tests
-  TARGET_COMPILE_PDB = CMakeFiles\test_regex_shared.dir\
-  TARGET_PDB = test_regex_shared.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\test_regex_shared.dir
 
 
@@ -1134,11 +1775,244 @@ build test_regex_shared.exe: C_EXECUTABLE_LINKER__test_regex_shared_Release CMak
   OBJECT_DIR = CMakeFiles\test_regex_shared.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\test_regex_shared.dir\
   TARGET_FILE = test_regex_shared.exe
   TARGET_IMPLIB = libtest_regex_shared.dll.a
-  TARGET_PDB = test_regex_shared.pdb
+  TARGET_PDB = test_regex_shared.exe.dbg
   TARGET_SUPPORT_DIR = CMakeFiles\test_regex_shared.dir
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_search
+
+
+#############################################
+# Order-only phony target for test_search
+
+build cmake_object_order_depends_target_test_search: phony || cmake_object_order_depends_target_nexus
+
+build CMakeFiles/test_search.dir/tests/test_search.c.obj: C_COMPILER__test_search_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/tests/test_search.c || cmake_object_order_depends_target_test_search
+  CONFIG = Release
+  DEP_FILE = CMakeFiles\test_search.dir\tests\test_search.c.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1
+  INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
+  OBJECT_DIR = CMakeFiles\test_search.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_search.dir\tests
+  TARGET_SUPPORT_DIR = CMakeFiles\test_search.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_search
+
+
+#############################################
+# Link the executable test_search.exe
+
+build test_search.exe: C_EXECUTABLE_LINKER__test_search_Release CMakeFiles/test_search.dir/tests/test_search.c.obj | libnexus.a || libnexus.a
+  CONFIG = Release
+  FLAGS = -O3 -DNDEBUG
+  LINK_FLAGS = -static
+  LINK_LIBRARIES = libnexus.a  -lm  -lws2_32  -lbcrypt  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\test_search.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = test_search.exe
+  TARGET_IMPLIB = libtest_search.dll.a
+  TARGET_PDB = test_search.exe.dbg
+  TARGET_SUPPORT_DIR = CMakeFiles\test_search.dir
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_search_shared
+
+
+#############################################
+# Order-only phony target for test_search_shared
+
+build cmake_object_order_depends_target_test_search_shared: phony || cmake_object_order_depends_target_nexus_shared
+
+build CMakeFiles/test_search_shared.dir/tests/test_search.c.obj: C_COMPILER__test_search_shared_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/tests/test_search.c || cmake_object_order_depends_target_test_search_shared
+  CONFIG = Release
+  DEFINES = -DNX_USE_SHARED=1
+  DEP_FILE = CMakeFiles\test_search_shared.dir\tests\test_search.c.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1
+  INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
+  OBJECT_DIR = CMakeFiles\test_search_shared.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_search_shared.dir\tests
+  TARGET_SUPPORT_DIR = CMakeFiles\test_search_shared.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_search_shared
+
+
+#############################################
+# Link the executable test_search_shared.exe
+
+build test_search_shared.exe: C_EXECUTABLE_LINKER__test_search_shared_Release CMakeFiles/test_search_shared.dir/tests/test_search.c.obj | libnexus.dll.a || libnexus.dll
+  CONFIG = Release
+  FLAGS = -O3 -DNDEBUG
+  LINK_LIBRARIES = libnexus.dll.a  -lm  -lws2_32  -lbcrypt  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\test_search_shared.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = test_search_shared.exe
+  TARGET_IMPLIB = libtest_search_shared.dll.a
+  TARGET_PDB = test_search_shared.exe.dbg
+  TARGET_SUPPORT_DIR = CMakeFiles\test_search_shared.dir
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_seg_builder
+
+
+#############################################
+# Order-only phony target for test_seg_builder
+
+build cmake_object_order_depends_target_test_seg_builder: phony || cmake_object_order_depends_target_nexus
+
+build CMakeFiles/test_seg_builder.dir/tests/test_seg_builder.c.obj: C_COMPILER__test_seg_builder_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/tests/test_seg_builder.c || cmake_object_order_depends_target_test_seg_builder
+  CONFIG = Release
+  DEP_FILE = CMakeFiles\test_seg_builder.dir\tests\test_seg_builder.c.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1
+  INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
+  OBJECT_DIR = CMakeFiles\test_seg_builder.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_seg_builder.dir\tests
+  TARGET_SUPPORT_DIR = CMakeFiles\test_seg_builder.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_seg_builder
+
+
+#############################################
+# Link the executable test_seg_builder.exe
+
+build test_seg_builder.exe: C_EXECUTABLE_LINKER__test_seg_builder_Release CMakeFiles/test_seg_builder.dir/tests/test_seg_builder.c.obj | libnexus.a || libnexus.a
+  CONFIG = Release
+  FLAGS = -O3 -DNDEBUG
+  LINK_FLAGS = -static
+  LINK_LIBRARIES = libnexus.a  -lm  -lws2_32  -lbcrypt  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\test_seg_builder.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = test_seg_builder.exe
+  TARGET_IMPLIB = libtest_seg_builder.dll.a
+  TARGET_PDB = test_seg_builder.exe.dbg
+  TARGET_SUPPORT_DIR = CMakeFiles\test_seg_builder.dir
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_seg_builder_shared
+
+
+#############################################
+# Order-only phony target for test_seg_builder_shared
+
+build cmake_object_order_depends_target_test_seg_builder_shared: phony || cmake_object_order_depends_target_nexus_shared
+
+build CMakeFiles/test_seg_builder_shared.dir/tests/test_seg_builder.c.obj: C_COMPILER__test_seg_builder_shared_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/tests/test_seg_builder.c || cmake_object_order_depends_target_test_seg_builder_shared
+  CONFIG = Release
+  DEFINES = -DNX_USE_SHARED=1
+  DEP_FILE = CMakeFiles\test_seg_builder_shared.dir\tests\test_seg_builder.c.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1
+  INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
+  OBJECT_DIR = CMakeFiles\test_seg_builder_shared.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_seg_builder_shared.dir\tests
+  TARGET_SUPPORT_DIR = CMakeFiles\test_seg_builder_shared.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_seg_builder_shared
+
+
+#############################################
+# Link the executable test_seg_builder_shared.exe
+
+build test_seg_builder_shared.exe: C_EXECUTABLE_LINKER__test_seg_builder_shared_Release CMakeFiles/test_seg_builder_shared.dir/tests/test_seg_builder.c.obj | libnexus.dll.a || libnexus.dll
+  CONFIG = Release
+  FLAGS = -O3 -DNDEBUG
+  LINK_LIBRARIES = libnexus.dll.a  -lm  -lws2_32  -lbcrypt  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\test_seg_builder_shared.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = test_seg_builder_shared.exe
+  TARGET_IMPLIB = libtest_seg_builder_shared.dll.a
+  TARGET_PDB = test_seg_builder_shared.exe.dbg
+  TARGET_SUPPORT_DIR = CMakeFiles\test_seg_builder_shared.dir
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_server
+
+
+#############################################
+# Order-only phony target for test_server
+
+build cmake_object_order_depends_target_test_server: phony || cmake_object_order_depends_target_nexus
+
+build CMakeFiles/test_server.dir/tests/test_server.c.obj: C_COMPILER__test_server_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/tests/test_server.c || cmake_object_order_depends_target_test_server
+  CONFIG = Release
+  DEP_FILE = CMakeFiles\test_server.dir\tests\test_server.c.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1
+  INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
+  OBJECT_DIR = CMakeFiles\test_server.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_server.dir\tests
+  TARGET_SUPPORT_DIR = CMakeFiles\test_server.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_server
+
+
+#############################################
+# Link the executable test_server.exe
+
+build test_server.exe: C_EXECUTABLE_LINKER__test_server_Release CMakeFiles/test_server.dir/tests/test_server.c.obj | libnexus.a || libnexus.a
+  CONFIG = Release
+  FLAGS = -O3 -DNDEBUG
+  LINK_FLAGS = -static
+  LINK_LIBRARIES = libnexus.a  -lm  -lws2_32  -lbcrypt  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\test_server.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = test_server.exe
+  TARGET_IMPLIB = libtest_server.dll.a
+  TARGET_PDB = test_server.exe.dbg
+  TARGET_SUPPORT_DIR = CMakeFiles\test_server.dir
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_server_shared
+
+
+#############################################
+# Order-only phony target for test_server_shared
+
+build cmake_object_order_depends_target_test_server_shared: phony || cmake_object_order_depends_target_nexus_shared
+
+build CMakeFiles/test_server_shared.dir/tests/test_server.c.obj: C_COMPILER__test_server_shared_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/tests/test_server.c || cmake_object_order_depends_target_test_server_shared
+  CONFIG = Release
+  DEFINES = -DNX_USE_SHARED=1
+  DEP_FILE = CMakeFiles\test_server_shared.dir\tests\test_server.c.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1
+  INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
+  OBJECT_DIR = CMakeFiles\test_server_shared.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_server_shared.dir\tests
+  TARGET_SUPPORT_DIR = CMakeFiles\test_server_shared.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_server_shared
+
+
+#############################################
+# Link the executable test_server_shared.exe
+
+build test_server_shared.exe: C_EXECUTABLE_LINKER__test_server_shared_Release CMakeFiles/test_server_shared.dir/tests/test_server.c.obj | libnexus.dll.a || libnexus.dll
+  CONFIG = Release
+  FLAGS = -O3 -DNDEBUG
+  LINK_LIBRARIES = libnexus.dll.a  -lm  -lws2_32  -lbcrypt  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\test_server_shared.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = test_server_shared.exe
+  TARGET_IMPLIB = libtest_server_shared.dll.a
+  TARGET_PDB = test_server_shared.exe.dbg
+  TARGET_SUPPORT_DIR = CMakeFiles\test_server_shared.dir
 
 # =============================================================================
 # Object build statements for EXECUTABLE target test_simd
@@ -1156,8 +2030,6 @@ build CMakeFiles/test_simd.dir/tests/test_simd.c.obj: C_COMPILER__test_simd_unsc
   INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
   OBJECT_DIR = CMakeFiles\test_simd.dir
   OBJECT_FILE_DIR = CMakeFiles\test_simd.dir\tests
-  TARGET_COMPILE_PDB = CMakeFiles\test_simd.dir\
-  TARGET_PDB = test_simd.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\test_simd.dir
 
 
@@ -1176,10 +2048,9 @@ build test_simd.exe: C_EXECUTABLE_LINKER__test_simd_Release CMakeFiles/test_simd
   OBJECT_DIR = CMakeFiles\test_simd.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\test_simd.dir\
   TARGET_FILE = test_simd.exe
   TARGET_IMPLIB = libtest_simd.dll.a
-  TARGET_PDB = test_simd.pdb
+  TARGET_PDB = test_simd.exe.dbg
   TARGET_SUPPORT_DIR = CMakeFiles\test_simd.dir
 
 # =============================================================================
@@ -1199,8 +2070,6 @@ build CMakeFiles/test_simd_shared.dir/tests/test_simd.c.obj: C_COMPILER__test_si
   INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
   OBJECT_DIR = CMakeFiles\test_simd_shared.dir
   OBJECT_FILE_DIR = CMakeFiles\test_simd_shared.dir\tests
-  TARGET_COMPILE_PDB = CMakeFiles\test_simd_shared.dir\
-  TARGET_PDB = test_simd_shared.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\test_simd_shared.dir
 
 
@@ -1218,11 +2087,166 @@ build test_simd_shared.exe: C_EXECUTABLE_LINKER__test_simd_shared_Release CMakeF
   OBJECT_DIR = CMakeFiles\test_simd_shared.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\test_simd_shared.dir\
   TARGET_FILE = test_simd_shared.exe
   TARGET_IMPLIB = libtest_simd_shared.dll.a
-  TARGET_PDB = test_simd_shared.pdb
+  TARGET_PDB = test_simd_shared.exe.dbg
   TARGET_SUPPORT_DIR = CMakeFiles\test_simd_shared.dir
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_table
+
+
+#############################################
+# Order-only phony target for test_table
+
+build cmake_object_order_depends_target_test_table: phony || cmake_object_order_depends_target_nexus
+
+build CMakeFiles/test_table.dir/tests/test_table.c.obj: C_COMPILER__test_table_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/tests/test_table.c || cmake_object_order_depends_target_test_table
+  CONFIG = Release
+  DEP_FILE = CMakeFiles\test_table.dir\tests\test_table.c.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1
+  INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
+  OBJECT_DIR = CMakeFiles\test_table.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_table.dir\tests
+  TARGET_SUPPORT_DIR = CMakeFiles\test_table.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_table
+
+
+#############################################
+# Link the executable test_table.exe
+
+build test_table.exe: C_EXECUTABLE_LINKER__test_table_Release CMakeFiles/test_table.dir/tests/test_table.c.obj | libnexus.a || libnexus.a
+  CONFIG = Release
+  FLAGS = -O3 -DNDEBUG
+  LINK_FLAGS = -static
+  LINK_LIBRARIES = libnexus.a  -lm  -lws2_32  -lbcrypt  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\test_table.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = test_table.exe
+  TARGET_IMPLIB = libtest_table.dll.a
+  TARGET_PDB = test_table.exe.dbg
+  TARGET_SUPPORT_DIR = CMakeFiles\test_table.dir
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_table_shared
+
+
+#############################################
+# Order-only phony target for test_table_shared
+
+build cmake_object_order_depends_target_test_table_shared: phony || cmake_object_order_depends_target_nexus_shared
+
+build CMakeFiles/test_table_shared.dir/tests/test_table.c.obj: C_COMPILER__test_table_shared_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/tests/test_table.c || cmake_object_order_depends_target_test_table_shared
+  CONFIG = Release
+  DEFINES = -DNX_USE_SHARED=1
+  DEP_FILE = CMakeFiles\test_table_shared.dir\tests\test_table.c.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1
+  INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
+  OBJECT_DIR = CMakeFiles\test_table_shared.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_table_shared.dir\tests
+  TARGET_SUPPORT_DIR = CMakeFiles\test_table_shared.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_table_shared
+
+
+#############################################
+# Link the executable test_table_shared.exe
+
+build test_table_shared.exe: C_EXECUTABLE_LINKER__test_table_shared_Release CMakeFiles/test_table_shared.dir/tests/test_table.c.obj | libnexus.dll.a || libnexus.dll
+  CONFIG = Release
+  FLAGS = -O3 -DNDEBUG
+  LINK_LIBRARIES = libnexus.dll.a  -lm  -lws2_32  -lbcrypt  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\test_table_shared.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = test_table_shared.exe
+  TARGET_IMPLIB = libtest_table_shared.dll.a
+  TARGET_PDB = test_table_shared.exe.dbg
+  TARGET_SUPPORT_DIR = CMakeFiles\test_table_shared.dir
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_trigram
+
+
+#############################################
+# Order-only phony target for test_trigram
+
+build cmake_object_order_depends_target_test_trigram: phony || cmake_object_order_depends_target_nexus
+
+build CMakeFiles/test_trigram.dir/tests/test_trigram.c.obj: C_COMPILER__test_trigram_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/tests/test_trigram.c || cmake_object_order_depends_target_test_trigram
+  CONFIG = Release
+  DEP_FILE = CMakeFiles\test_trigram.dir\tests\test_trigram.c.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1
+  INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
+  OBJECT_DIR = CMakeFiles\test_trigram.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_trigram.dir\tests
+  TARGET_SUPPORT_DIR = CMakeFiles\test_trigram.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_trigram
+
+
+#############################################
+# Link the executable test_trigram.exe
+
+build test_trigram.exe: C_EXECUTABLE_LINKER__test_trigram_Release CMakeFiles/test_trigram.dir/tests/test_trigram.c.obj | libnexus.a || libnexus.a
+  CONFIG = Release
+  FLAGS = -O3 -DNDEBUG
+  LINK_FLAGS = -static
+  LINK_LIBRARIES = libnexus.a  -lm  -lws2_32  -lbcrypt  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\test_trigram.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = test_trigram.exe
+  TARGET_IMPLIB = libtest_trigram.dll.a
+  TARGET_PDB = test_trigram.exe.dbg
+  TARGET_SUPPORT_DIR = CMakeFiles\test_trigram.dir
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_trigram_shared
+
+
+#############################################
+# Order-only phony target for test_trigram_shared
+
+build cmake_object_order_depends_target_test_trigram_shared: phony || cmake_object_order_depends_target_nexus_shared
+
+build CMakeFiles/test_trigram_shared.dir/tests/test_trigram.c.obj: C_COMPILER__test_trigram_shared_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/tests/test_trigram.c || cmake_object_order_depends_target_test_trigram_shared
+  CONFIG = Release
+  DEFINES = -DNX_USE_SHARED=1
+  DEP_FILE = CMakeFiles\test_trigram_shared.dir\tests\test_trigram.c.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1
+  INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
+  OBJECT_DIR = CMakeFiles\test_trigram_shared.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_trigram_shared.dir\tests
+  TARGET_SUPPORT_DIR = CMakeFiles\test_trigram_shared.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_trigram_shared
+
+
+#############################################
+# Link the executable test_trigram_shared.exe
+
+build test_trigram_shared.exe: C_EXECUTABLE_LINKER__test_trigram_shared_Release CMakeFiles/test_trigram_shared.dir/tests/test_trigram.c.obj | libnexus.dll.a || libnexus.dll
+  CONFIG = Release
+  FLAGS = -O3 -DNDEBUG
+  LINK_LIBRARIES = libnexus.dll.a  -lm  -lws2_32  -lbcrypt  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\test_trigram_shared.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = test_trigram_shared.exe
+  TARGET_IMPLIB = libtest_trigram_shared.dll.a
+  TARGET_PDB = test_trigram_shared.exe.dbg
+  TARGET_SUPPORT_DIR = CMakeFiles\test_trigram_shared.dir
 
 # =============================================================================
 # Object build statements for EXECUTABLE target test_utf8
@@ -1240,8 +2264,6 @@ build CMakeFiles/test_utf8.dir/tests/test_utf8.c.obj: C_COMPILER__test_utf8_unsc
   INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
   OBJECT_DIR = CMakeFiles\test_utf8.dir
   OBJECT_FILE_DIR = CMakeFiles\test_utf8.dir\tests
-  TARGET_COMPILE_PDB = CMakeFiles\test_utf8.dir\
-  TARGET_PDB = test_utf8.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\test_utf8.dir
 
 
@@ -1260,10 +2282,9 @@ build test_utf8.exe: C_EXECUTABLE_LINKER__test_utf8_Release CMakeFiles/test_utf8
   OBJECT_DIR = CMakeFiles\test_utf8.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\test_utf8.dir\
   TARGET_FILE = test_utf8.exe
   TARGET_IMPLIB = libtest_utf8.dll.a
-  TARGET_PDB = test_utf8.pdb
+  TARGET_PDB = test_utf8.exe.dbg
   TARGET_SUPPORT_DIR = CMakeFiles\test_utf8.dir
 
 # =============================================================================
@@ -1283,8 +2304,6 @@ build CMakeFiles/test_utf8_shared.dir/tests/test_utf8.c.obj: C_COMPILER__test_ut
   INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
   OBJECT_DIR = CMakeFiles\test_utf8_shared.dir
   OBJECT_FILE_DIR = CMakeFiles\test_utf8_shared.dir\tests
-  TARGET_COMPILE_PDB = CMakeFiles\test_utf8_shared.dir\
-  TARGET_PDB = test_utf8_shared.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\test_utf8_shared.dir
 
 
@@ -1302,10 +2321,9 @@ build test_utf8_shared.exe: C_EXECUTABLE_LINKER__test_utf8_shared_Release CMakeF
   OBJECT_DIR = CMakeFiles\test_utf8_shared.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\test_utf8_shared.dir\
   TARGET_FILE = test_utf8_shared.exe
   TARGET_IMPLIB = libtest_utf8_shared.dll.a
-  TARGET_PDB = test_utf8_shared.pdb
+  TARGET_PDB = test_utf8_shared.exe.dbg
   TARGET_SUPPORT_DIR = CMakeFiles\test_utf8_shared.dir
 
 # =============================================================================
@@ -1324,8 +2342,6 @@ build CMakeFiles/test_vec.dir/tests/test_vec.c.obj: C_COMPILER__test_vec_unscann
   INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
   OBJECT_DIR = CMakeFiles\test_vec.dir
   OBJECT_FILE_DIR = CMakeFiles\test_vec.dir\tests
-  TARGET_COMPILE_PDB = CMakeFiles\test_vec.dir\
-  TARGET_PDB = test_vec.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\test_vec.dir
 
 
@@ -1344,10 +2360,9 @@ build test_vec.exe: C_EXECUTABLE_LINKER__test_vec_Release CMakeFiles/test_vec.di
   OBJECT_DIR = CMakeFiles\test_vec.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\test_vec.dir\
   TARGET_FILE = test_vec.exe
   TARGET_IMPLIB = libtest_vec.dll.a
-  TARGET_PDB = test_vec.pdb
+  TARGET_PDB = test_vec.exe.dbg
   TARGET_SUPPORT_DIR = CMakeFiles\test_vec.dir
 
 # =============================================================================
@@ -1367,8 +2382,6 @@ build CMakeFiles/test_vec_shared.dir/tests/test_vec.c.obj: C_COMPILER__test_vec_
   INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
   OBJECT_DIR = CMakeFiles\test_vec_shared.dir
   OBJECT_FILE_DIR = CMakeFiles\test_vec_shared.dir\tests
-  TARGET_COMPILE_PDB = CMakeFiles\test_vec_shared.dir\
-  TARGET_PDB = test_vec_shared.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\test_vec_shared.dir
 
 
@@ -1386,11 +2399,205 @@ build test_vec_shared.exe: C_EXECUTABLE_LINKER__test_vec_shared_Release CMakeFil
   OBJECT_DIR = CMakeFiles\test_vec_shared.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\test_vec_shared.dir\
   TARGET_FILE = test_vec_shared.exe
   TARGET_IMPLIB = libtest_vec_shared.dll.a
-  TARGET_PDB = test_vec_shared.pdb
+  TARGET_PDB = test_vec_shared.exe.dbg
   TARGET_SUPPORT_DIR = CMakeFiles\test_vec_shared.dir
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_wal
+
+
+#############################################
+# Order-only phony target for test_wal
+
+build cmake_object_order_depends_target_test_wal: phony || cmake_object_order_depends_target_nexus
+
+build CMakeFiles/test_wal.dir/tests/test_wal.c.obj: C_COMPILER__test_wal_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/tests/test_wal.c || cmake_object_order_depends_target_test_wal
+  CONFIG = Release
+  DEP_FILE = CMakeFiles\test_wal.dir\tests\test_wal.c.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1
+  INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
+  OBJECT_DIR = CMakeFiles\test_wal.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_wal.dir\tests
+  TARGET_SUPPORT_DIR = CMakeFiles\test_wal.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_wal
+
+
+#############################################
+# Link the executable test_wal.exe
+
+build test_wal.exe: C_EXECUTABLE_LINKER__test_wal_Release CMakeFiles/test_wal.dir/tests/test_wal.c.obj | libnexus.a || libnexus.a
+  CONFIG = Release
+  FLAGS = -O3 -DNDEBUG
+  LINK_FLAGS = -static
+  LINK_LIBRARIES = libnexus.a  -lm  -lws2_32  -lbcrypt  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\test_wal.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = test_wal.exe
+  TARGET_IMPLIB = libtest_wal.dll.a
+  TARGET_PDB = test_wal.exe.dbg
+  TARGET_SUPPORT_DIR = CMakeFiles\test_wal.dir
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_wal_shared
+
+
+#############################################
+# Order-only phony target for test_wal_shared
+
+build cmake_object_order_depends_target_test_wal_shared: phony || cmake_object_order_depends_target_nexus_shared
+
+build CMakeFiles/test_wal_shared.dir/tests/test_wal.c.obj: C_COMPILER__test_wal_shared_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/tests/test_wal.c || cmake_object_order_depends_target_test_wal_shared
+  CONFIG = Release
+  DEFINES = -DNX_USE_SHARED=1
+  DEP_FILE = CMakeFiles\test_wal_shared.dir\tests\test_wal.c.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1
+  INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
+  OBJECT_DIR = CMakeFiles\test_wal_shared.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_wal_shared.dir\tests
+  TARGET_SUPPORT_DIR = CMakeFiles\test_wal_shared.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_wal_shared
+
+
+#############################################
+# Link the executable test_wal_shared.exe
+
+build test_wal_shared.exe: C_EXECUTABLE_LINKER__test_wal_shared_Release CMakeFiles/test_wal_shared.dir/tests/test_wal.c.obj | libnexus.dll.a || libnexus.dll
+  CONFIG = Release
+  FLAGS = -O3 -DNDEBUG
+  LINK_LIBRARIES = libnexus.dll.a  -lm  -lws2_32  -lbcrypt  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\test_wal_shared.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = test_wal_shared.exe
+  TARGET_IMPLIB = libtest_wal_shared.dll.a
+  TARGET_PDB = test_wal_shared.exe.dbg
+  TARGET_SUPPORT_DIR = CMakeFiles\test_wal_shared.dir
+
+# =============================================================================
+# Object build statements for EXECUTABLE target bench_bsi
+
+
+#############################################
+# Order-only phony target for bench_bsi
+
+build cmake_object_order_depends_target_bench_bsi: phony || cmake_object_order_depends_target_nexus
+
+build CMakeFiles/bench_bsi.dir/bench/bench_bsi.c.obj: C_COMPILER__bench_bsi_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/bench/bench_bsi.c || cmake_object_order_depends_target_bench_bsi
+  CONFIG = Release
+  DEP_FILE = CMakeFiles\bench_bsi.dir\bench\bench_bsi.c.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1
+  INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/bench -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
+  OBJECT_DIR = CMakeFiles\bench_bsi.dir
+  OBJECT_FILE_DIR = CMakeFiles\bench_bsi.dir\bench
+  TARGET_SUPPORT_DIR = CMakeFiles\bench_bsi.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target bench_bsi
+
+
+#############################################
+# Link the executable bench_bsi.exe
+
+build bench_bsi.exe: C_EXECUTABLE_LINKER__bench_bsi_Release CMakeFiles/bench_bsi.dir/bench/bench_bsi.c.obj | libnexus.a || libnexus.a
+  CONFIG = Release
+  FLAGS = -O3 -DNDEBUG
+  LINK_FLAGS = -static
+  LINK_LIBRARIES = libnexus.a  -lm  -lws2_32  -lbcrypt  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\bench_bsi.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = bench_bsi.exe
+  TARGET_IMPLIB = libbench_bsi.dll.a
+  TARGET_PDB = bench_bsi.exe.dbg
+  TARGET_SUPPORT_DIR = CMakeFiles\bench_bsi.dir
+
+# =============================================================================
+# Object build statements for EXECUTABLE target bench_search
+
+
+#############################################
+# Order-only phony target for bench_search
+
+build cmake_object_order_depends_target_bench_search: phony || cmake_object_order_depends_target_nexus
+
+build CMakeFiles/bench_search.dir/bench/bench_search.c.obj: C_COMPILER__bench_search_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/bench/bench_search.c || cmake_object_order_depends_target_bench_search
+  CONFIG = Release
+  DEP_FILE = CMakeFiles\bench_search.dir\bench\bench_search.c.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1
+  INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/bench -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
+  OBJECT_DIR = CMakeFiles\bench_search.dir
+  OBJECT_FILE_DIR = CMakeFiles\bench_search.dir\bench
+  TARGET_SUPPORT_DIR = CMakeFiles\bench_search.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target bench_search
+
+
+#############################################
+# Link the executable bench_search.exe
+
+build bench_search.exe: C_EXECUTABLE_LINKER__bench_search_Release CMakeFiles/bench_search.dir/bench/bench_search.c.obj | libnexus.a || libnexus.a
+  CONFIG = Release
+  FLAGS = -O3 -DNDEBUG
+  LINK_FLAGS = -static
+  LINK_LIBRARIES = libnexus.a  -lm  -lws2_32  -lbcrypt  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\bench_search.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = bench_search.exe
+  TARGET_IMPLIB = libbench_search.dll.a
+  TARGET_PDB = bench_search.exe.dbg
+  TARGET_SUPPORT_DIR = CMakeFiles\bench_search.dir
+
+# =============================================================================
+# Object build statements for EXECUTABLE target bench_vec
+
+
+#############################################
+# Order-only phony target for bench_vec
+
+build cmake_object_order_depends_target_bench_vec: phony || cmake_object_order_depends_target_nexus
+
+build CMakeFiles/bench_vec.dir/bench/bench_vec.c.obj: C_COMPILER__bench_vec_unscanned_Release C$:/Users/kai99/Desktop/NEXUS/bench/bench_vec.c || cmake_object_order_depends_target_bench_vec
+  CONFIG = Release
+  DEP_FILE = CMakeFiles\bench_vec.dir\bench\bench_vec.c.obj.d
+  FLAGS = -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1
+  INCLUDES = -IC:/Users/kai99/Desktop/NEXUS/tests -IC:/Users/kai99/Desktop/NEXUS/bench -IC:/Users/kai99/Desktop/NEXUS/src -IC:/Users/kai99/Desktop/NEXUS/include
+  OBJECT_DIR = CMakeFiles\bench_vec.dir
+  OBJECT_FILE_DIR = CMakeFiles\bench_vec.dir\bench
+  TARGET_SUPPORT_DIR = CMakeFiles\bench_vec.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target bench_vec
+
+
+#############################################
+# Link the executable bench_vec.exe
+
+build bench_vec.exe: C_EXECUTABLE_LINKER__bench_vec_Release CMakeFiles/bench_vec.dir/bench/bench_vec.c.obj | libnexus.a || libnexus.a
+  CONFIG = Release
+  FLAGS = -O3 -DNDEBUG
+  LINK_FLAGS = -static
+  LINK_LIBRARIES = libnexus.a  -lm  -lws2_32  -lbcrypt  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\bench_vec.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = bench_vec.exe
+  TARGET_IMPLIB = libbench_vec.dll.a
+  TARGET_PDB = bench_vec.exe.dbg
+  TARGET_SUPPORT_DIR = CMakeFiles\bench_vec.dir
 
 
 #############################################
@@ -1430,7 +2637,15 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
+build bench_bsi: phony bench_bsi.exe
+
+build bench_search: phony bench_search.exe
+
+build bench_vec: phony bench_vec.exe
+
 build nexus: phony libnexus.a
+
+build nexus_cli: phony nexus.exe
 
 build nexus_shared: phony libnexus.dll
 
@@ -1442,17 +2657,33 @@ build test_bitmap: phony test_bitmap.exe
 
 build test_bitmap_shared: phony test_bitmap_shared.exe
 
+build test_bsi: phony test_bsi.exe
+
+build test_bsi_shared: phony test_bsi_shared.exe
+
 build test_core: phony test_core.exe
 
 build test_core_shared: phony test_core_shared.exe
+
+build test_dict: phony test_dict.exe
+
+build test_dict_shared: phony test_dict_shared.exe
 
 build test_fuzzy: phony test_fuzzy.exe
 
 build test_fuzzy_shared: phony test_fuzzy_shared.exe
 
+build test_graph: phony test_graph.exe
+
+build test_graph_shared: phony test_graph_shared.exe
+
 build test_json: phony test_json.exe
 
 build test_json_shared: phony test_json_shared.exe
+
+build test_merge: phony test_merge.exe
+
+build test_merge_shared: phony test_merge_shared.exe
 
 build test_parse: phony test_parse.exe
 
@@ -1462,13 +2693,41 @@ build test_platform: phony test_platform.exe
 
 build test_platform_shared: phony test_platform_shared.exe
 
+build test_postings: phony test_postings.exe
+
+build test_postings_shared: phony test_postings_shared.exe
+
+build test_rabitq: phony test_rabitq.exe
+
+build test_rabitq_shared: phony test_rabitq_shared.exe
+
 build test_regex: phony test_regex.exe
 
 build test_regex_shared: phony test_regex_shared.exe
 
+build test_search: phony test_search.exe
+
+build test_search_shared: phony test_search_shared.exe
+
+build test_seg_builder: phony test_seg_builder.exe
+
+build test_seg_builder_shared: phony test_seg_builder_shared.exe
+
+build test_server: phony test_server.exe
+
+build test_server_shared: phony test_server_shared.exe
+
 build test_simd: phony test_simd.exe
 
 build test_simd_shared: phony test_simd_shared.exe
+
+build test_table: phony test_table.exe
+
+build test_table_shared: phony test_table_shared.exe
+
+build test_trigram: phony test_trigram.exe
+
+build test_trigram_shared: phony test_trigram_shared.exe
 
 build test_utf8: phony test_utf8.exe
 
@@ -1478,6 +2737,10 @@ build test_vec: phony test_vec.exe
 
 build test_vec_shared: phony test_vec_shared.exe
 
+build test_wal: phony test_wal.exe
+
+build test_wal_shared: phony test_wal_shared.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -1486,7 +2749,7 @@ build test_vec_shared: phony test_vec_shared.exe
 #############################################
 # Folder: C:/Users/kai99/Desktop/NEXUS/build-release
 
-build all: phony libnexus.a libnexus.dll test_arena_rollback.exe test_arena_rollback_shared.exe test_bitmap.exe test_bitmap_shared.exe test_core.exe test_core_shared.exe test_fuzzy.exe test_fuzzy_shared.exe test_json.exe test_json_shared.exe test_parse.exe test_parse_shared.exe test_platform.exe test_platform_shared.exe test_regex.exe test_regex_shared.exe test_simd.exe test_simd_shared.exe test_utf8.exe test_utf8_shared.exe test_vec.exe test_vec_shared.exe
+build all: phony libnexus.a libnexus.dll nexus.exe test_arena_rollback.exe test_arena_rollback_shared.exe test_bitmap.exe test_bitmap_shared.exe test_bsi.exe test_bsi_shared.exe test_core.exe test_core_shared.exe test_dict.exe test_dict_shared.exe test_fuzzy.exe test_fuzzy_shared.exe test_graph.exe test_graph_shared.exe test_json.exe test_json_shared.exe test_merge.exe test_merge_shared.exe test_parse.exe test_parse_shared.exe test_platform.exe test_platform_shared.exe test_postings.exe test_postings_shared.exe test_rabitq.exe test_rabitq_shared.exe test_regex.exe test_regex_shared.exe test_search.exe test_search_shared.exe test_seg_builder.exe test_seg_builder_shared.exe test_server.exe test_server_shared.exe test_simd.exe test_simd_shared.exe test_table.exe test_table_shared.exe test_trigram.exe test_trigram_shared.exe test_utf8.exe test_utf8_shared.exe test_vec.exe test_vec_shared.exe test_wal.exe test_wal_shared.exe bench_bsi.exe bench_search.exe bench_vec.exe
 
 # =============================================================================
 # Built-in targets
@@ -1509,14 +2772,14 @@ build C$:/Users/kai99/Desktop/NEXUS/build-release/CMakeFiles/cmake.verify_globs:
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja C$:/Users/kai99/Desktop/NEXUS/build-release/cmake_install.cmake C$:/Users/kai99/Desktop/NEXUS/build-release/CTestTestfile.cmake: RERUN_CMAKE C$:/Users/kai99/Desktop/NEXUS/build-release/CMakeFiles/cmake.verify_globs | C$:/Users/kai99/Desktop/NEXUS/build-release/CMakeFiles/VerifyGlobs.cmake C$:/Users/kai99/Desktop/NEXUS/CMakeLists.txt C$:/msys64/ucrt64/share/cmake/Modules/CMakeCCompiler.cmake.in C$:/msys64/ucrt64/share/cmake/Modules/CMakeCCompilerABI.c C$:/msys64/ucrt64/share/cmake/Modules/CMakeCInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCompilerIdDetection.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerId.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerSupport.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineRCCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineSystem.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeFindBinUtils.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeGenericSystem.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeInitializeConfigs.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeLanguageInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeNinjaFindMake.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeRCCompiler.cmake.in C$:/msys64/ucrt64/share/cmake/Modules/CMakeRCInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystem.cmake.in C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeTestCCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeTestCompilerCommon.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeTestRCCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/CheckCSourceCompiles.cmake C$:/msys64/ucrt64/share/cmake/Modules/CheckIncludeFile.cmake C$:/msys64/ucrt64/share/cmake/Modules/CheckLibraryExists.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/CrayClang-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Diab-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/LCC-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/OrangeC-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Renesas-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/TIClang-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindPackageHandleStandardArgs.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindPackageMessage.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindThreads.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeInspectCLinker.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CheckSourceCompiles.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/FeatureTesting.cmake C$:/msys64/ucrt64/share/cmake/Modules/Linker/GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Linker/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Initialize.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-windres.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/4.2.1/CMakeCCompiler.cmake CMakeFiles/4.2.1/CMakeRCCompiler.cmake CMakeFiles/4.2.1/CMakeSystem.cmake
+build build.ninja C$:/Users/kai99/Desktop/NEXUS/build-release/cmake_install.cmake C$:/Users/kai99/Desktop/NEXUS/build-release/CTestTestfile.cmake: RERUN_CMAKE C$:/Users/kai99/Desktop/NEXUS/build-release/CMakeFiles/cmake.verify_globs | C$:/Users/kai99/Desktop/NEXUS/build-release/CMakeFiles/VerifyGlobs.cmake C$:/Users/kai99/Desktop/NEXUS/CMakeLists.txt C$:/msys64/ucrt64/share/cmake/Modules/CMakeCInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeGenericSystem.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeInitializeConfigs.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeLanguageInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeRCInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake C$:/msys64/ucrt64/share/cmake/Modules/CheckCSourceCompiles.cmake C$:/msys64/ucrt64/share/cmake/Modules/CheckIncludeFile.cmake C$:/msys64/ucrt64/share/cmake/Modules/CheckLibraryExists.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindPackageHandleStandardArgs.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindPackageMessage.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindThreads.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CheckSourceCompiles.cmake C$:/msys64/ucrt64/share/cmake/Modules/Linker/GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Linker/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Initialize.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-windres.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/4.2.1/CMakeCCompiler.cmake CMakeFiles/4.2.1/CMakeRCCompiler.cmake CMakeFiles/4.2.1/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Users/kai99/Desktop/NEXUS/build-release/CMakeFiles/VerifyGlobs.cmake C$:/Users/kai99/Desktop/NEXUS/CMakeLists.txt C$:/msys64/ucrt64/share/cmake/Modules/CMakeCCompiler.cmake.in C$:/msys64/ucrt64/share/cmake/Modules/CMakeCCompilerABI.c C$:/msys64/ucrt64/share/cmake/Modules/CMakeCInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCompilerIdDetection.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerId.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerSupport.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineRCCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineSystem.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeFindBinUtils.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeGenericSystem.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeInitializeConfigs.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeLanguageInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeNinjaFindMake.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeRCCompiler.cmake.in C$:/msys64/ucrt64/share/cmake/Modules/CMakeRCInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystem.cmake.in C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeTestCCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeTestCompilerCommon.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeTestRCCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/CheckCSourceCompiles.cmake C$:/msys64/ucrt64/share/cmake/Modules/CheckIncludeFile.cmake C$:/msys64/ucrt64/share/cmake/Modules/CheckLibraryExists.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/CrayClang-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Diab-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/LCC-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/OrangeC-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Renesas-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/TIClang-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindPackageHandleStandardArgs.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindPackageMessage.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindThreads.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeInspectCLinker.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CheckSourceCompiles.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/FeatureTesting.cmake C$:/msys64/ucrt64/share/cmake/Modules/Linker/GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Linker/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Initialize.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-windres.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/4.2.1/CMakeCCompiler.cmake CMakeFiles/4.2.1/CMakeRCCompiler.cmake CMakeFiles/4.2.1/CMakeSystem.cmake: phony
+build C$:/Users/kai99/Desktop/NEXUS/build-release/CMakeFiles/VerifyGlobs.cmake C$:/Users/kai99/Desktop/NEXUS/CMakeLists.txt C$:/msys64/ucrt64/share/cmake/Modules/CMakeCInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeGenericSystem.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeInitializeConfigs.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeLanguageInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeRCInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake C$:/msys64/ucrt64/share/cmake/Modules/CheckCSourceCompiles.cmake C$:/msys64/ucrt64/share/cmake/Modules/CheckIncludeFile.cmake C$:/msys64/ucrt64/share/cmake/Modules/CheckLibraryExists.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindPackageHandleStandardArgs.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindPackageMessage.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindThreads.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CheckSourceCompiles.cmake C$:/msys64/ucrt64/share/cmake/Modules/Linker/GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Linker/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Initialize.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-windres.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/4.2.1/CMakeCCompiler.cmake CMakeFiles/4.2.1/CMakeRCCompiler.cmake CMakeFiles/4.2.1/CMakeSystem.cmake: phony
 
 
 #############################################

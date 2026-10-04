@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.20)
-project(NexusSearch VERSION 0.1.0 LANGUAGES C)
+project(NexusSearch VERSION 0.2.0 LANGUAGES C)
 
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_C_STANDARD_REQUIRED ON)
@@ -96,7 +96,7 @@ if(NX_CLI_SOURCES)
   target_compile_options(nexus_cli PRIVATE ${NX_COMPILE_OPTIONS})
   target_link_libraries(nexus_cli PRIVATE nexus)
   if(MINGW)
-    target_link_options(nexus_cli PRIVATE -static)
+    target_link_options(nexus_cli PRIVATE -static -municode)
   endif()
 endif()
 

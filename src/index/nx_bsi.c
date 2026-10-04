@@ -79,8 +79,6 @@ nx_status nx_bsi_open(nx_slice bytes, nx_bsi *out) {
     return NX_OK;
 }
 
-/* Evaluate one 64-row lane from most-significant plane to least. eq contains
- * the still-equal prefix; lt accumulates lanes that first differ below key. */
 nx_status nx_bsi_get(const nx_bsi *index, uint32_t row, int64_t *value, bool *present) {
     if (value) *value = 0;
     if (present) *present = false;
@@ -101,6 +99,8 @@ nx_status nx_bsi_get(const nx_bsi *index, uint32_t row, int64_t *value, bool *pr
     return NX_OK;
 }
 
+/* Evaluate one 64-row lane from most-significant plane to least. eq contains
+ * the still-equal prefix; lt accumulates lanes that first differ below key. */
 static uint64_t filter_word(const nx_bsi *index, uint32_t word, nx_compare op, uint64_t key) {
     size_t stride = (size_t)index->words * 8u;
     const uint8_t *base = index->bytes.p + BSI_HEADER + (size_t)word * 8u;

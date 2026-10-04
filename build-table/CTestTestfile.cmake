@@ -1,0 +1,36 @@
+# CMake generated Testfile for 
+# Source directory: C:/Users/kai99/Desktop/NEXUS
+# Build directory: C:/Users/kai99/Desktop/NEXUS/build-table
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+add_test([=[test_arena_rollback]=] "C:/Users/kai99/Desktop/NEXUS/build-table/test_arena_rollback.exe")
+set_tests_properties([=[test_arena_rollback]=] PROPERTIES  TIMEOUT "60" WORKING_DIRECTORY "C:/Users/kai99/Desktop/NEXUS" _BACKTRACE_TRIPLES "C:/Users/kai99/Desktop/NEXUS/CMakeLists.txt;116;add_test;C:/Users/kai99/Desktop/NEXUS/CMakeLists.txt;0;")
+add_test([=[test_bitmap]=] "C:/Users/kai99/Desktop/NEXUS/build-table/test_bitmap.exe")
+set_tests_properties([=[test_bitmap]=] PROPERTIES  TIMEOUT "60" WORKING_DIRECTORY "C:/Users/kai99/Desktop/NEXUS" _BACKTRACE_TRIPLES "C:/Users/kai99/Desktop/NEXUS/CMakeLists.txt;116;add_test;C:/Users/kai99/Desktop/NEXUS/CMakeLists.txt;0;")
+add_test([=[test_bsi]=] "C:/Users/kai99/Desktop/NEXUS/build-table/test_bsi.exe")
+set_tests_properties([=[test_bsi]=] PROPERTIES  TIMEOUT "60" WORKING_DIRECTORY "C:/Users/kai99/Desktop/NEXUS" _BACKTRACE_TRIPLES "C:/Users/kai99/Desktop/NEXUS/CMakeLists.txt;116;add_test;C:/Users/kai99/Desktop/NEXUS/CMakeLists.txt;0;")
+add_test([=[test_core]=] "C:/Users/kai99/Desktop/NEXUS/build-table/test_core.exe")
+set_tests_properties([=[test_core]=] PROPERTIES  TIMEOUT "60" WORKING_DIRECTORY "C:/Users/kai99/Desktop/NEXUS" _BACKTRACE_TRIPLES "C:/Users/kai99/Desktop/NEXUS/CMakeLists.txt;116;add_test;C:/Users/kai99/Desktop/NEXUS/CMakeLists.txt;0;")
+add_test([=[test_dict]=] "C:/Users/kai99/Desktop/NEXUS/build-table/test_dict.exe")
+set_tests_properties([=[test_dict]=] PROPERTIES  TIMEOUT "60" WORKING_DIRECTORY "C:/Users/kai99/Desktop/NEXUS" _BACKTRACE_TRIPLES "C:/Users/kai99/Desktop/NEXUS/CMakeLists.txt;116;add_test;C:/Users/kai99/Desktop/NEXUS/CMakeLists.txt;0;")
+add_test([=[test_fuzzy]=] "C:/Users/kai99/Desktop/NEXUS/build-table/test_fuzzy.exe")
+set_tests_properties([=[test_fuzzy]=] PROPERTIES  TIMEOUT "60" WORKING_DIRECTORY "C:/Users/kai99/Desktop/NEXUS" _BACKTRACE_TRIPLES "C:/Users/kai99/Desktop/NEXUS/CMakeLists.txt;116;add_test;C:/Users/kai99/Desktop/NEXUS/CMakeLists.txt;0;")
+add_test([=[test_json]=] "C:/Users/kai99/Desktop/NEXUS/build-table/test_json.exe")
+set_tests_properties([=[test_json]=] PROPERTIES  TIMEOUT "60" WORKING_DIRECTORY "C:/Users/kai99/Desktop/NEXUS" _BACKTRACE_TRIPLES "C:/Users/kai99/Desktop/NEXUS/CMakeLists.txt;116;add_test;C:/Users/kai99/Desktop/NEXUS/CMakeLists.txt;0;")
+add_test([=[test_parse]=] "C:/Users/kai99/Desktop/NEXUS/build-table/test_parse.exe")
+set_tests_properties([=[test_parse]=] PROPERTIES  TIMEOUT "60" WORKING_DIRECTORY "C:/Users/kai99/Desktop/NEXUS" _BACKTRACE_TRIPLES "C:/Users/kai99/Desktop/NEXUS/CMakeLists.txt;116;add_test;C:/Users/kai99/Desktop/NEXUS/CMakeLists.txt;0;")
+add_test([=[test_platform]=] "C:/Users/kai99/Desktop/NEXUS/build-table/test_platform.exe")
+set_tests_properties([=[test_platform]=] PROPERTIES  TIMEOUT "60" WORKING_DIRECTORY "C:/Users/kai99/Desktop/NEXUS" _BACKTRACE_TRIPLES "C:/Users/kai99/Desktop/NEXUS/CMakeLists.txt;116;add_test;C:/Users/kai99/Desktop/NEXUS/CMakeLists.txt;0;")
+add_test([=[test_regex]=] "C:/Users/kai99/Desktop/NEXUS/build-table/test_regex.exe")
+set_tests_properties([=[test_regex]=] PROPERTIES  TIMEOUT "60" WORKING_DIRECTORY "C:/Users/kai99/Desktop/NEXUS" _BACKTRACE_TRIPLES "C:/Users/kai99/Desktop/NEXUS/CMakeLists.txt;116;add_test;C:/Users/kai99/Desktop/NEXUS/CMakeLists.txt;0;")
+add_test([=[test_search]=] "C:/Users/kai99/Desktop/NEXUS/build-table/test_search.exe")
+set_tests_properties([=[test_search]=] PROPERTIES  TIMEOUT "60" WORKING_DIRECTORY "C:/Users/kai99/Desktop/NEXUS" _BACKTRACE_TRIPLES "C:/Users/kai99/Desktop/NEXUS/CMakeLists.txt;116;add_test;C:/Users/kai99/Desktop/NEXUS/CMakeLists.txt;0;")
+add_test([=[test_simd]=] "C:/Users/kai99/Desktop/NEXUS/build-table/test_simd.exe")
+set_tests_properties([=[test_simd]=] PROPERTIES  TIMEOUT "60" WORKING_DIRECTORY "C:/Users/kai99/Desktop/NEXUS" _BACKTRACE_TRIPLES "C:/Users/kai99/Desktop/NEXUS/CMakeLists.txt;116;add_test;C:/Users/kai99/Desktop/NEXUS/CMakeLists.txt;0;")
+add_test([=[test_table]=] "C:/Users/kai99/Desktop/NEXUS/build-table/test_table.exe")
+set_tests_properties([=[test_table]=] PROPERTIES  TIMEOUT "60" WORKING_DIRECTORY "C:/Users/kai99/Desktop/NEXUS" _BACKTRACE_TRIPLES "C:/Users/kai99/Desktop/NEXUS/CMakeLists.txt;116;add_test;C:/Users/kai99/Desktop/NEXUS/CMakeLists.txt;0;")
+add_test([=[test_utf8]=] "C:/Users/kai99/Desktop/NEXUS/build-table/test_utf8.exe")
+set_tests_properties([=[test_utf8]=] PROPERTIES  TIMEOUT "60" WORKING_DIRECTORY "C:/Users/kai99/Desktop/NEXUS" _BACKTRACE_TRIPLES "C:/Users/kai99/Desktop/NEXUS/CMakeLists.txt;116;add_test;C:/Users/kai99/Desktop/NEXUS/CMakeLists.txt;0;")
+add_test([=[test_vec]=] "C:/Users/kai99/Desktop/NEXUS/build-table/test_vec.exe")
+set_tests_properties([=[test_vec]=] PROPERTIES  TIMEOUT "60" WORKING_DIRECTORY "C:/Users/kai99/Desktop/NEXUS" _BACKTRACE_TRIPLES "C:/Users/kai99/Desktop/NEXUS/CMakeLists.txt;116;add_test;C:/Users/kai99/Desktop/NEXUS/CMakeLists.txt;0;")

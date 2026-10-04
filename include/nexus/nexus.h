@@ -6,5 +6,7 @@
 #include "core/nx_file.h"
 #include "seg/nx_table.h"
 #include "engine/nx_search.h"
+#include "server/nx_server.h"
 #define NEXUS_VERSION "0.2.0"
 #endif
+

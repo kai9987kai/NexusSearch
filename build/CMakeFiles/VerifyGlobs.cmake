@@ -4,6 +4,9 @@
 # NX_BENCH_SOURCES at CMakeLists.txt:132 (file)
 file(GLOB NEW_GLOB LIST_DIRECTORIES true "C:/Users/kai99/Desktop/NEXUS/bench/bench_*.c")
 set(OLD_GLOB
+  "C:/Users/kai99/Desktop/NEXUS/bench/bench_bsi.c"
+  "C:/Users/kai99/Desktop/NEXUS/bench/bench_search.c"
+  "C:/Users/kai99/Desktop/NEXUS/bench/bench_vec.c"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
@@ -29,6 +32,7 @@ endif()
 # NX_CLI_SOURCES at CMakeLists.txt:92 (file)
 file(GLOB NEW_GLOB LIST_DIRECTORIES true "C:/Users/kai99/Desktop/NEXUS/src/cli/*.c")
 set(OLD_GLOB
+  "C:/Users/kai99/Desktop/NEXUS/src/cli/nexus.c"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
@@ -56,15 +60,27 @@ file(GLOB NEW_GLOB LIST_DIRECTORIES true "C:/Users/kai99/Desktop/NEXUS/tests/tes
 set(OLD_GLOB
   "C:/Users/kai99/Desktop/NEXUS/tests/test_arena_rollback.c"
   "C:/Users/kai99/Desktop/NEXUS/tests/test_bitmap.c"
+  "C:/Users/kai99/Desktop/NEXUS/tests/test_bsi.c"
   "C:/Users/kai99/Desktop/NEXUS/tests/test_core.c"
+  "C:/Users/kai99/Desktop/NEXUS/tests/test_dict.c"
   "C:/Users/kai99/Desktop/NEXUS/tests/test_fuzzy.c"
+  "C:/Users/kai99/Desktop/NEXUS/tests/test_graph.c"
   "C:/Users/kai99/Desktop/NEXUS/tests/test_json.c"
+  "C:/Users/kai99/Desktop/NEXUS/tests/test_merge.c"
   "C:/Users/kai99/Desktop/NEXUS/tests/test_parse.c"
   "C:/Users/kai99/Desktop/NEXUS/tests/test_platform.c"
+  "C:/Users/kai99/Desktop/NEXUS/tests/test_postings.c"
+  "C:/Users/kai99/Desktop/NEXUS/tests/test_rabitq.c"
   "C:/Users/kai99/Desktop/NEXUS/tests/test_regex.c"
+  "C:/Users/kai99/Desktop/NEXUS/tests/test_search.c"
+  "C:/Users/kai99/Desktop/NEXUS/tests/test_seg_builder.c"
+  "C:/Users/kai99/Desktop/NEXUS/tests/test_server.c"
   "C:/Users/kai99/Desktop/NEXUS/tests/test_simd.c"
+  "C:/Users/kai99/Desktop/NEXUS/tests/test_table.c"
+  "C:/Users/kai99/Desktop/NEXUS/tests/test_trigram.c"
   "C:/Users/kai99/Desktop/NEXUS/tests/test_utf8.c"
   "C:/Users/kai99/Desktop/NEXUS/tests/test_vec.c"
+  "C:/Users/kai99/Desktop/NEXUS/tests/test_wal.c"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
@@ -90,6 +106,7 @@ endif()
 # NX_LIB_SOURCES at CMakeLists.txt:46 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/Users/kai99/Desktop/NEXUS/src/*.c")
 set(OLD_GLOB
+  "C:/Users/kai99/Desktop/NEXUS/src/cli/nexus.c"
   "C:/Users/kai99/Desktop/NEXUS/src/core/nx_arena.c"
   "C:/Users/kai99/Desktop/NEXUS/src/core/nx_buf.c"
   "C:/Users/kai99/Desktop/NEXUS/src/core/nx_crc32c.c"
@@ -100,12 +117,25 @@ set(OLD_GLOB
   "C:/Users/kai99/Desktop/NEXUS/src/core/nx_status.c"
   "C:/Users/kai99/Desktop/NEXUS/src/core/nx_thread.c"
   "C:/Users/kai99/Desktop/NEXUS/src/core/nx_utf8.c"
+  "C:/Users/kai99/Desktop/NEXUS/src/engine/nx_search.c"
   "C:/Users/kai99/Desktop/NEXUS/src/index/nx_bitmap.c"
+  "C:/Users/kai99/Desktop/NEXUS/src/index/nx_bsi.c"
+  "C:/Users/kai99/Desktop/NEXUS/src/index/nx_dict.c"
   "C:/Users/kai99/Desktop/NEXUS/src/index/nx_fuzzy.c"
+  "C:/Users/kai99/Desktop/NEXUS/src/index/nx_graph.c"
+  "C:/Users/kai99/Desktop/NEXUS/src/index/nx_postings.c"
+  "C:/Users/kai99/Desktop/NEXUS/src/index/nx_rabitq.c"
   "C:/Users/kai99/Desktop/NEXUS/src/index/nx_regex.c"
+  "C:/Users/kai99/Desktop/NEXUS/src/index/nx_trigram.c"
   "C:/Users/kai99/Desktop/NEXUS/src/index/nx_vec.c"
   "C:/Users/kai99/Desktop/NEXUS/src/query/nx_ast.c"
   "C:/Users/kai99/Desktop/NEXUS/src/query/nx_parse.c"
+  "C:/Users/kai99/Desktop/NEXUS/src/seg/nx_seg_builder.c"
+  "C:/Users/kai99/Desktop/NEXUS/src/seg/nx_table.c"
+  "C:/Users/kai99/Desktop/NEXUS/src/server/nx_server.c"
+  "C:/Users/kai99/Desktop/NEXUS/src/store/nx_merge.c"
+  "C:/Users/kai99/Desktop/NEXUS/src/store/nx_store.c"
+  "C:/Users/kai99/Desktop/NEXUS/src/store/nx_wal.c"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

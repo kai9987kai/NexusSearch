@@ -1,6 +1,9 @@
 /* Immutable typed document table. All views/cells borrow validated bytes until
- * those bytes are freed/unmapped; opening allocates nothing. JSONL construction
- * appends transactionally to a caller-owned buffer. No mutable global state.
+ * those bytes are freed/unmapped. Opening uses bounded temporary parser storage
+ * to cross-check original documents against every typed cell, then frees it;
+ * accessors allocate nothing. Opening clears the view on any error (including
+ * NOMEM). JSONL construction appends transactionally to a caller-owned buffer.
+ * No mutable global state.
  * Empty/whitespace-only input produces a table with zero rows and fields.
  * Nonempty input requires unique, nonempty UTF-8 _id strings without NUL;
  * field zero is always _id. Names are nonempty UTF-8 without NUL. Null and

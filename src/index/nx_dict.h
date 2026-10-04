@@ -20,6 +20,8 @@
 
 #define NX_DICT_MAX_TERMS 1000000u
 #define NX_DICT_MAX_TERM_BYTES 65536u
+/* Both the aggregate input bytes (including duplicates) and stored unique
+ * bytes are capped, bounding sorting work even for adversarial duplicates. */
 #define NX_DICT_MAX_DATA_BYTES (64u * 1024u * 1024u)
 typedef struct nx_dict { nx_slice bytes; uint32_t count, data_offset; } nx_dict;
 

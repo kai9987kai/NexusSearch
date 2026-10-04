@@ -15,17 +15,21 @@
 #define SNAPSHOT_LIMIT ((size_t)256 * 1024 * 1024)
 
 static void usage(FILE *stream) {
-    fputs("NexusSearch " NEXUS_VERSION " - offline document search\n"
+    fputs("NexusSearch " NEXUS_VERSION " - high-performance embedded document search\n"
           "Usage:\n"
           "  nexus build INPUT.jsonl OUTPUT.nxs\n"
           "  nexus search SNAPSHOT.nxs QUERY [--scan]\n"
           "  nexus explain SNAPSHOT.nxs QUERY\n"
           "  nexus stats SNAPSHOT.nxs\n"
+          "  nexus serve SNAPSHOT.nxs [--port 8080] [--host 127.0.0.1]\n"
+          "  nexus mcp SNAPSHOT.nxs\n"
+          "  nexus repl SNAPSHOT.nxs\n"
           "  nexus --help\n"
           "  nexus --version\n"
           "Quote QUERY as one shell argument. --scan selects the filter oracle.\n"
           "Build replaces OUTPUT only after complete validation.\n", stream);
 }
+
 
 static int report(const char *action, nx_status status, const nx_error *error) {
     fprintf(stderr, "nexus: %s: %s", action, nx_status_str(status));
@@ -155,6 +159,113 @@ static int search(const nx_table *table, const char *text, bool scan, bool expla
     return exit_code;
 }
 
+static int repl(const nx_table *table) {
+    printf("\n  ============================================================\n"
+           "  NexusSearch " NEXUS_VERSION " Interactive Shell\n"
+           "  Snapshot: %" PRIu32 " rows, %" PRIu32 " fields\n"
+           "  Type query, or :help for commands, :quit to exit.\n"
+           "  ============================================================\n\n",
+           table->rows, table->fields);
+    char line[4096];
+    while (1) {
+        printf("nexus> ");
+        fflush(stdout);
+        if (!fgets(line, sizeof(line), stdin)) break;
+        size_t len = strlen(line);
+        while (len && (line[len - 1] == '\r' || line[len - 1] == '\n')) line[--len] = '\0';
+        while (len && (line[0] == ' ' || line[0] == '\t')) {
+            memmove(line, line + 1, len--);
+        }
+        if (!len) continue;
+        if (!strcmp(line, ":q") || !strcmp(line, ":quit") || !strcmp(line, ":exit")) break;
+        if (!strcmp(line, ":help")) {
+            puts("\nCommands:\n"
+                 "  :stats           Display schema and document counts\n"
+                 "  :explain <q>     Explain query execution plan\n"
+                 "  :scan <q>        Execute query in scan oracle mode\n"
+                 "  :json <q>        Execute and output raw JSON result\n"
+                 "  :doc <row>       Print raw document JSON for row\n"
+                 "  :quit            Exit interactive shell\n"
+                 "\nNexusQL Examples:\n"
+                 "  title:search AND year:>=2025\n"
+                 "  active:true SORT BY year DESC LIMIT 5\n"
+                 "  embedding:[1,0,0]\n");
+            continue;
+        }
+        if (!strcmp(line, ":stats")) {
+            stats(table);
+            continue;
+        }
+        if (!strncmp(line, ":doc ", 5)) {
+            uint32_t r = (uint32_t)strtoul(line + 5, NULL, 10);
+            if (r < table->rows) {
+                nx_slice d = nx_table_document(table, r);
+                printf("%.*s\n", (int)d.n, (const char *)d.p);
+            } else {
+                puts("Row index out of range.");
+            }
+            continue;
+        }
+        bool scan = false;
+        bool explain = false;
+        bool raw_json = false;
+        const char *q = line;
+        if (!strncmp(line, ":explain ", 9)) {
+            explain = true;
+            q = line + 9;
+        } else if (!strncmp(line, ":scan ", 6)) {
+            scan = true;
+            q = line + 6;
+        } else if (!strncmp(line, ":json ", 6)) {
+            raw_json = true;
+            q = line + 6;
+        }
+
+        nx_buf query;
+        nx_buf_init(&query);
+        if (explain && strncmp(q, "EXPLAIN", 7) != 0) nx_buf_put_str(&query, "EXPLAIN ");
+        nx_buf_put_str(&query, q);
+        nx_search_options options = nx_search_default_options();
+        options.indexed = !scan;
+        nx_search_result res = {0};
+        nx_error err;
+        nx_error_clear(&err);
+
+        nx_status st = nx_search(table, nx_buf_slice(&query), &options, &res, &err);
+        nx_buf_free(&query);
+
+        if (st != NX_OK) {
+            fprintf(stderr, "Error: %s", nx_status_str(st));
+            if (err.msg[0]) fprintf(stderr, ": %s", err.msg);
+            fputc('\n', stderr);
+            continue;
+        }
+
+        if (raw_json || explain) {
+            nx_buf jbuf;
+            nx_buf_init(&jbuf);
+            nx_search_json(&res, &jbuf);
+            emit(&jbuf);
+            nx_buf_free(&jbuf);
+        } else {
+            printf("Found %zu / %zu matches (work: %zu, scanned: %zu, idx: %zu, vec: %zu)\n",
+                   res.count, res.total, res.work, res.scanned_cells, res.numeric_indexes, res.vectors_scored);
+            puts("--------------------------------------------------------------------------------");
+            for (size_t i = 0; i < res.count; ++i) {
+                printf("#%-2zu [score: %7.4f] _id: %.*s (row %" PRIu32 ")\n",
+                       i + 1, res.hits[i].score, (int)res.hits[i].id.n, (const char *)res.hits[i].id.p, res.hits[i].row);
+                printf("    %.*s\n", (int)res.hits[i].document.n, (const char *)res.hits[i].document.p);
+            }
+            if (res.count == 0) {
+                puts("  (No documents matched)");
+            }
+            puts("--------------------------------------------------------------------------------");
+        }
+        nx_search_result_free(&res);
+    }
+    return 0;
+}
+
 static int run(int argc, char **argv) {
     if (argc == 2 && (!strcmp(argv[1], "--help") || !strcmp(argv[1], "help"))) {
         usage(stdout);
@@ -169,10 +280,27 @@ static int run(int argc, char **argv) {
     bool want_explain = argc == 4 && !strcmp(argv[1], "explain");
     bool want_search = (argc == 4 || (argc == 5 && !strcmp(argv[4], "--scan"))) &&
                        !strcmp(argv[1], "search");
-    if (!want_stats && !want_explain && !want_search) {
+    bool want_repl = argc == 3 && (!strcmp(argv[1], "repl") || !strcmp(argv[1], "interactive"));
+    bool want_mcp = argc == 3 && !strcmp(argv[1], "mcp");
+    bool want_serve = argc >= 3 && !strcmp(argv[1], "serve");
+
+    if (!want_stats && !want_explain && !want_search && !want_repl && !want_mcp && !want_serve) {
         usage(stderr);
         return 2;
     }
+
+    const char *host = "127.0.0.1";
+    uint16_t port = 8080;
+    if (want_serve) {
+        for (int i = 3; i < argc; ++i) {
+            if ((!strcmp(argv[i], "--port") || !strcmp(argv[i], "-p")) && i + 1 < argc) {
+                port = (uint16_t)atoi(argv[++i]);
+            } else if ((!strcmp(argv[i], "--host") || !strcmp(argv[i], "-h")) && i + 1 < argc) {
+                host = argv[++i];
+            }
+        }
+    }
+
     nx_mmap mapping = {0};
     nx_status status = nx_mmap_open(argv[2], SNAPSHOT_LIMIT, &mapping);
     if (status != NX_OK) return report("open snapshot", status, NULL);
@@ -183,10 +311,17 @@ static int run(int argc, char **argv) {
     int result;
     if (status != NX_OK) result = report("validate snapshot", status, &error);
     else if (want_stats) result = stats(&table);
+    else if (want_repl) result = repl(&table);
+    else if (want_mcp) result = nx_server_run_mcp(&table) == NX_OK ? 0 : 1;
+    else if (want_serve) {
+        nx_server_config cfg = {host, port, true};
+        result = nx_server_run_http(&table, &cfg) == NX_OK ? 0 : 1;
+    }
     else result = search(&table, argv[3], argc == 5, want_explain);
     nx_mmap_close(&mapping);
     return result;
 }
+
 
 #ifdef _WIN32
 /* Preserve original Unicode command-line paths instead of ANSI argv loss. */
