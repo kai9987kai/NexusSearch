@@ -1,0 +1,109 @@
+Test project C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T081632Z-3f050851/build
+      Start  1: test_arena_rollback
+ 1/52 Test  #1: test_arena_rollback ..............   Passed    0.06 sec
+      Start  2: test_arena_rollback_shared
+ 2/52 Test  #2: test_arena_rollback_shared .......   Passed    0.08 sec
+      Start  3: test_bitmap
+ 3/52 Test  #3: test_bitmap ......................   Passed    0.10 sec
+      Start  4: test_bitmap_shared
+ 4/52 Test  #4: test_bitmap_shared ...............   Passed    0.14 sec
+      Start  5: test_bsi
+ 5/52 Test  #5: test_bsi .........................   Passed    0.16 sec
+      Start  6: test_bsi_shared
+ 6/52 Test  #6: test_bsi_shared ..................   Passed    0.19 sec
+      Start  7: test_core
+ 7/52 Test  #7: test_core ........................   Passed    0.24 sec
+      Start  8: test_core_shared
+ 8/52 Test  #8: test_core_shared .................   Passed    0.25 sec
+      Start  9: test_date
+ 9/52 Test  #9: test_date ........................   Passed    0.09 sec
+      Start 10: test_date_shared
+10/52 Test #10: test_date_shared .................   Passed    0.07 sec
+      Start 11: test_dict
+11/52 Test #11: test_dict ........................   Passed    0.17 sec
+      Start 12: test_dict_shared
+12/52 Test #12: test_dict_shared .................   Passed    0.18 sec
+      Start 13: test_fuzzy
+13/52 Test #13: test_fuzzy .......................   Passed    0.09 sec
+      Start 14: test_fuzzy_shared
+14/52 Test #14: test_fuzzy_shared ................   Passed    0.08 sec
+      Start 15: test_graph
+15/52 Test #15: test_graph .......................   Passed    0.09 sec
+      Start 16: test_graph_shared
+16/52 Test #16: test_graph_shared ................   Passed    0.07 sec
+      Start 17: test_json
+17/52 Test #17: test_json ........................   Passed    0.10 sec
+      Start 18: test_json_shared
+18/52 Test #18: test_json_shared .................   Passed    0.09 sec
+      Start 19: test_merge
+19/52 Test #19: test_merge .......................   Passed    0.17 sec
+      Start 20: test_merge_shared
+20/52 Test #20: test_merge_shared ................   Passed    0.19 sec
+      Start 21: test_parse
+21/52 Test #21: test_parse .......................   Passed    0.21 sec
+      Start 22: test_parse_shared
+22/52 Test #22: test_parse_shared ................   Passed    0.14 sec
+      Start 23: test_platform
+23/52 Test #23: test_platform ....................   Passed    0.11 sec
+      Start 24: test_platform_shared
+24/52 Test #24: test_platform_shared .............   Passed    0.16 sec
+      Start 25: test_postings
+25/52 Test #25: test_postings ....................   Passed    0.11 sec
+      Start 26: test_postings_shared
+26/52 Test #26: test_postings_shared .............   Passed    0.07 sec
+      Start 27: test_rabitq
+27/52 Test #27: test_rabitq ......................   Passed    0.08 sec
+      Start 28: test_rabitq_shared
+28/52 Test #28: test_rabitq_shared ...............   Passed    0.08 sec
+      Start 29: test_regex
+29/52 Test #29: test_regex .......................   Passed    0.18 sec
+      Start 30: test_regex_shared
+30/52 Test #30: test_regex_shared ................   Passed    0.23 sec
+      Start 31: test_search
+31/52 Test #31: test_search ......................   Passed    0.13 sec
+      Start 32: test_search_shared
+32/52 Test #32: test_search_shared ...............   Passed    0.11 sec
+      Start 33: test_search_index
+33/52 Test #33: test_search_index ................   Passed    0.10 sec
+      Start 34: test_search_index_shared
+34/52 Test #34: test_search_index_shared .........   Passed    0.09 sec
+      Start 35: test_seg_builder
+35/52 Test #35: test_seg_builder .................   Passed    0.25 sec
+      Start 36: test_seg_builder_shared
+36/52 Test #36: test_seg_builder_shared ..........   Passed    0.35 sec
+      Start 37: test_server
+37/52 Test #37: test_server ......................   Passed    0.10 sec
+      Start 38: test_server_shared
+38/52 Test #38: test_server_shared ...............   Passed    0.07 sec
+      Start 39: test_simd
+39/52 Test #39: test_simd ........................   Passed    0.09 sec
+      Start 40: test_simd_shared
+40/52 Test #40: test_simd_shared .................   Passed    0.07 sec
+      Start 41: test_table
+41/52 Test #41: test_table .......................   Passed    0.13 sec
+      Start 42: test_table_shared
+42/52 Test #42: test_table_shared ................   Passed    0.27 sec
+      Start 43: test_trigram
+43/52 Test #43: test_trigram .....................   Passed    0.10 sec
+      Start 44: test_trigram_shared
+44/52 Test #44: test_trigram_shared ..............   Passed    0.08 sec
+      Start 45: test_update
+45/52 Test #45: test_update ......................   Passed    0.14 sec
+      Start 46: test_update_shared
+46/52 Test #46: test_update_shared ...............   Passed    0.13 sec
+      Start 47: test_utf8
+47/52 Test #47: test_utf8 ........................   Passed    0.10 sec
+      Start 48: test_utf8_shared
+48/52 Test #48: test_utf8_shared .................   Passed    0.09 sec
+      Start 49: test_vec
+49/52 Test #49: test_vec .........................   Passed    0.07 sec
+      Start 50: test_vec_shared
+50/52 Test #50: test_vec_shared ..................   Passed    0.09 sec
+      Start 51: test_wal
+51/52 Test #51: test_wal .........................   Passed    0.10 sec
+      Start 52: test_wal_shared
+52/52 Test #52: test_wal_shared ..................   Passed    0.08 sec
+
+100% tests passed, 0 tests failed out of 52
+
+Total Test time (real) =   6.81 sec

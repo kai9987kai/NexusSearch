@@ -1,0 +1,692 @@
+[
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus.dir\\src\\core\\nx_arena.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\core\\nx_arena.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/core/nx_arena.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus.dir/src/core/nx_arena.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus.dir\\src\\core\\nx_buf.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\core\\nx_buf.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/core/nx_buf.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus.dir/src/core/nx_buf.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus.dir\\src\\core\\nx_crc32c.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\core\\nx_crc32c.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/core/nx_crc32c.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus.dir/src/core/nx_crc32c.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus.dir\\src\\core\\nx_file.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\core\\nx_file.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/core/nx_file.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus.dir/src/core/nx_file.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus.dir\\src\\core\\nx_json.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\core\\nx_json.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/core/nx_json.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus.dir/src/core/nx_json.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus.dir\\src\\core\\nx_mem.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\core\\nx_mem.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/core/nx_mem.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus.dir/src/core/nx_mem.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus.dir\\src\\core\\nx_simd.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\core\\nx_simd.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/core/nx_simd.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus.dir/src/core/nx_simd.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus.dir\\src\\core\\nx_status.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\core\\nx_status.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/core/nx_status.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus.dir/src/core/nx_status.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus.dir\\src\\core\\nx_thread.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\core\\nx_thread.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/core/nx_thread.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus.dir/src/core/nx_thread.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus.dir\\src\\core\\nx_utf8.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\core\\nx_utf8.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/core/nx_utf8.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus.dir/src/core/nx_utf8.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus.dir\\src\\engine\\nx_search.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\engine\\nx_search.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/engine/nx_search.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus.dir/src/engine/nx_search.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus.dir\\src\\engine\\nx_search_index.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\engine\\nx_search_index.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/engine/nx_search_index.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus.dir/src/engine/nx_search_index.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus.dir\\src\\index\\nx_bitmap.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\index\\nx_bitmap.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/index/nx_bitmap.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus.dir/src/index/nx_bitmap.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus.dir\\src\\index\\nx_bsi.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\index\\nx_bsi.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/index/nx_bsi.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus.dir/src/index/nx_bsi.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus.dir\\src\\index\\nx_dict.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\index\\nx_dict.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/index/nx_dict.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus.dir/src/index/nx_dict.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus.dir\\src\\index\\nx_fuzzy.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\index\\nx_fuzzy.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/index/nx_fuzzy.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus.dir/src/index/nx_fuzzy.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus.dir\\src\\index\\nx_graph.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\index\\nx_graph.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/index/nx_graph.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus.dir/src/index/nx_graph.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus.dir\\src\\index\\nx_postings.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\index\\nx_postings.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/index/nx_postings.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus.dir/src/index/nx_postings.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus.dir\\src\\index\\nx_rabitq.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\index\\nx_rabitq.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/index/nx_rabitq.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus.dir/src/index/nx_rabitq.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus.dir\\src\\index\\nx_regex.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\index\\nx_regex.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/index/nx_regex.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus.dir/src/index/nx_regex.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus.dir\\src\\index\\nx_trigram.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\index\\nx_trigram.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/index/nx_trigram.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus.dir/src/index/nx_trigram.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus.dir\\src\\index\\nx_vec.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\index\\nx_vec.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/index/nx_vec.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus.dir/src/index/nx_vec.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus.dir\\src\\query\\nx_ast.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\query\\nx_ast.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/query/nx_ast.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus.dir/src/query/nx_ast.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus.dir\\src\\query\\nx_date.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\query\\nx_date.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/query/nx_date.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus.dir/src/query/nx_date.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus.dir\\src\\query\\nx_parse.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\query\\nx_parse.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/query/nx_parse.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus.dir/src/query/nx_parse.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus.dir\\src\\seg\\nx_seg_builder.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\seg\\nx_seg_builder.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/seg/nx_seg_builder.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus.dir/src/seg/nx_seg_builder.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus.dir\\src\\seg\\nx_table.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\seg\\nx_table.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/seg/nx_table.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus.dir/src/seg/nx_table.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus.dir\\src\\server\\nx_server.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\server\\nx_server.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/server/nx_server.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus.dir/src/server/nx_server.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus.dir\\src\\store\\nx_merge.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\store\\nx_merge.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/store/nx_merge.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus.dir/src/store/nx_merge.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus.dir\\src\\store\\nx_store.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\store\\nx_store.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/store/nx_store.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus.dir/src/store/nx_store.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus.dir\\src\\store\\nx_update.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\store\\nx_update.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/store/nx_update.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus.dir/src/store/nx_update.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus.dir\\src\\store\\nx_wal.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\store\\nx_wal.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/store/nx_wal.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus.dir/src/store/nx_wal.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DNX_BUILD_SHARED=1 -Dnexus_shared_EXPORTS -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus_shared.dir\\src\\core\\nx_arena.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\core\\nx_arena.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/core/nx_arena.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus_shared.dir/src/core/nx_arena.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DNX_BUILD_SHARED=1 -Dnexus_shared_EXPORTS -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus_shared.dir\\src\\core\\nx_buf.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\core\\nx_buf.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/core/nx_buf.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus_shared.dir/src/core/nx_buf.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DNX_BUILD_SHARED=1 -Dnexus_shared_EXPORTS -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus_shared.dir\\src\\core\\nx_crc32c.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\core\\nx_crc32c.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/core/nx_crc32c.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus_shared.dir/src/core/nx_crc32c.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DNX_BUILD_SHARED=1 -Dnexus_shared_EXPORTS -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus_shared.dir\\src\\core\\nx_file.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\core\\nx_file.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/core/nx_file.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus_shared.dir/src/core/nx_file.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DNX_BUILD_SHARED=1 -Dnexus_shared_EXPORTS -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus_shared.dir\\src\\core\\nx_json.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\core\\nx_json.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/core/nx_json.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus_shared.dir/src/core/nx_json.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DNX_BUILD_SHARED=1 -Dnexus_shared_EXPORTS -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus_shared.dir\\src\\core\\nx_mem.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\core\\nx_mem.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/core/nx_mem.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus_shared.dir/src/core/nx_mem.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DNX_BUILD_SHARED=1 -Dnexus_shared_EXPORTS -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus_shared.dir\\src\\core\\nx_simd.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\core\\nx_simd.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/core/nx_simd.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus_shared.dir/src/core/nx_simd.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DNX_BUILD_SHARED=1 -Dnexus_shared_EXPORTS -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus_shared.dir\\src\\core\\nx_status.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\core\\nx_status.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/core/nx_status.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus_shared.dir/src/core/nx_status.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DNX_BUILD_SHARED=1 -Dnexus_shared_EXPORTS -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus_shared.dir\\src\\core\\nx_thread.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\core\\nx_thread.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/core/nx_thread.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus_shared.dir/src/core/nx_thread.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DNX_BUILD_SHARED=1 -Dnexus_shared_EXPORTS -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus_shared.dir\\src\\core\\nx_utf8.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\core\\nx_utf8.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/core/nx_utf8.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus_shared.dir/src/core/nx_utf8.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DNX_BUILD_SHARED=1 -Dnexus_shared_EXPORTS -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus_shared.dir\\src\\engine\\nx_search.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\engine\\nx_search.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/engine/nx_search.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus_shared.dir/src/engine/nx_search.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DNX_BUILD_SHARED=1 -Dnexus_shared_EXPORTS -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus_shared.dir\\src\\engine\\nx_search_index.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\engine\\nx_search_index.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/engine/nx_search_index.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus_shared.dir/src/engine/nx_search_index.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DNX_BUILD_SHARED=1 -Dnexus_shared_EXPORTS -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus_shared.dir\\src\\index\\nx_bitmap.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\index\\nx_bitmap.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/index/nx_bitmap.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus_shared.dir/src/index/nx_bitmap.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DNX_BUILD_SHARED=1 -Dnexus_shared_EXPORTS -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus_shared.dir\\src\\index\\nx_bsi.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\index\\nx_bsi.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/index/nx_bsi.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus_shared.dir/src/index/nx_bsi.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DNX_BUILD_SHARED=1 -Dnexus_shared_EXPORTS -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus_shared.dir\\src\\index\\nx_dict.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\index\\nx_dict.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/index/nx_dict.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus_shared.dir/src/index/nx_dict.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DNX_BUILD_SHARED=1 -Dnexus_shared_EXPORTS -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus_shared.dir\\src\\index\\nx_fuzzy.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\index\\nx_fuzzy.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/index/nx_fuzzy.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus_shared.dir/src/index/nx_fuzzy.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DNX_BUILD_SHARED=1 -Dnexus_shared_EXPORTS -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus_shared.dir\\src\\index\\nx_graph.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\index\\nx_graph.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/index/nx_graph.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus_shared.dir/src/index/nx_graph.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DNX_BUILD_SHARED=1 -Dnexus_shared_EXPORTS -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus_shared.dir\\src\\index\\nx_postings.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\index\\nx_postings.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/index/nx_postings.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus_shared.dir/src/index/nx_postings.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DNX_BUILD_SHARED=1 -Dnexus_shared_EXPORTS -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus_shared.dir\\src\\index\\nx_rabitq.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\index\\nx_rabitq.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/index/nx_rabitq.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus_shared.dir/src/index/nx_rabitq.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DNX_BUILD_SHARED=1 -Dnexus_shared_EXPORTS -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus_shared.dir\\src\\index\\nx_regex.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\index\\nx_regex.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/index/nx_regex.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus_shared.dir/src/index/nx_regex.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DNX_BUILD_SHARED=1 -Dnexus_shared_EXPORTS -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus_shared.dir\\src\\index\\nx_trigram.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\index\\nx_trigram.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/index/nx_trigram.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus_shared.dir/src/index/nx_trigram.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DNX_BUILD_SHARED=1 -Dnexus_shared_EXPORTS -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus_shared.dir\\src\\index\\nx_vec.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\index\\nx_vec.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/index/nx_vec.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus_shared.dir/src/index/nx_vec.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DNX_BUILD_SHARED=1 -Dnexus_shared_EXPORTS -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus_shared.dir\\src\\query\\nx_ast.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\query\\nx_ast.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/query/nx_ast.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus_shared.dir/src/query/nx_ast.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DNX_BUILD_SHARED=1 -Dnexus_shared_EXPORTS -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus_shared.dir\\src\\query\\nx_date.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\query\\nx_date.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/query/nx_date.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus_shared.dir/src/query/nx_date.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DNX_BUILD_SHARED=1 -Dnexus_shared_EXPORTS -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus_shared.dir\\src\\query\\nx_parse.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\query\\nx_parse.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/query/nx_parse.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus_shared.dir/src/query/nx_parse.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DNX_BUILD_SHARED=1 -Dnexus_shared_EXPORTS -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus_shared.dir\\src\\seg\\nx_seg_builder.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\seg\\nx_seg_builder.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/seg/nx_seg_builder.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus_shared.dir/src/seg/nx_seg_builder.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DNX_BUILD_SHARED=1 -Dnexus_shared_EXPORTS -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus_shared.dir\\src\\seg\\nx_table.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\seg\\nx_table.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/seg/nx_table.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus_shared.dir/src/seg/nx_table.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DNX_BUILD_SHARED=1 -Dnexus_shared_EXPORTS -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus_shared.dir\\src\\server\\nx_server.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\server\\nx_server.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/server/nx_server.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus_shared.dir/src/server/nx_server.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DNX_BUILD_SHARED=1 -Dnexus_shared_EXPORTS -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus_shared.dir\\src\\store\\nx_merge.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\store\\nx_merge.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/store/nx_merge.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus_shared.dir/src/store/nx_merge.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DNX_BUILD_SHARED=1 -Dnexus_shared_EXPORTS -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus_shared.dir\\src\\store\\nx_store.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\store\\nx_store.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/store/nx_store.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus_shared.dir/src/store/nx_store.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DNX_BUILD_SHARED=1 -Dnexus_shared_EXPORTS -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus_shared.dir\\src\\store\\nx_update.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\store\\nx_update.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/store/nx_update.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus_shared.dir/src/store/nx_update.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DNX_BUILD_SHARED=1 -Dnexus_shared_EXPORTS -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus_shared.dir\\src\\store\\nx_wal.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\store\\nx_wal.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/store/nx_wal.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus_shared.dir/src/store/nx_wal.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\nexus_cli.dir\\src\\cli\\nexus.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\src\\cli\\nexus.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src/cli/nexus.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/nexus_cli.dir/src/cli/nexus.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_arena_rollback.dir\\tests\\test_arena_rollback.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\tests\\test_arena_rollback.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests/test_arena_rollback.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/test_arena_rollback.dir/tests/test_arena_rollback.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DNX_USE_SHARED=1 -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_arena_rollback_shared.dir\\tests\\test_arena_rollback.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\tests\\test_arena_rollback.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests/test_arena_rollback.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/test_arena_rollback_shared.dir/tests/test_arena_rollback.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_bitmap.dir\\tests\\test_bitmap.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\tests\\test_bitmap.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests/test_bitmap.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/test_bitmap.dir/tests/test_bitmap.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DNX_USE_SHARED=1 -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_bitmap_shared.dir\\tests\\test_bitmap.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\tests\\test_bitmap.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests/test_bitmap.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/test_bitmap_shared.dir/tests/test_bitmap.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_bsi.dir\\tests\\test_bsi.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\tests\\test_bsi.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests/test_bsi.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/test_bsi.dir/tests/test_bsi.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DNX_USE_SHARED=1 -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_bsi_shared.dir\\tests\\test_bsi.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\tests\\test_bsi.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests/test_bsi.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/test_bsi_shared.dir/tests/test_bsi.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_core.dir\\tests\\test_core.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\tests\\test_core.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests/test_core.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/test_core.dir/tests/test_core.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DNX_USE_SHARED=1 -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_core_shared.dir\\tests\\test_core.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\tests\\test_core.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests/test_core.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/test_core_shared.dir/tests/test_core.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_dict.dir\\tests\\test_dict.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\tests\\test_dict.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests/test_dict.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/test_dict.dir/tests/test_dict.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DNX_USE_SHARED=1 -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_dict_shared.dir\\tests\\test_dict.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\tests\\test_dict.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests/test_dict.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/test_dict_shared.dir/tests/test_dict.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_fuzzy.dir\\tests\\test_fuzzy.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\tests\\test_fuzzy.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests/test_fuzzy.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/test_fuzzy.dir/tests/test_fuzzy.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DNX_USE_SHARED=1 -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_fuzzy_shared.dir\\tests\\test_fuzzy.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\tests\\test_fuzzy.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests/test_fuzzy.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/test_fuzzy_shared.dir/tests/test_fuzzy.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_graph.dir\\tests\\test_graph.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\tests\\test_graph.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests/test_graph.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/test_graph.dir/tests/test_graph.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DNX_USE_SHARED=1 -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_graph_shared.dir\\tests\\test_graph.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\tests\\test_graph.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests/test_graph.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/test_graph_shared.dir/tests/test_graph.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_json.dir\\tests\\test_json.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\tests\\test_json.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests/test_json.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/test_json.dir/tests/test_json.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DNX_USE_SHARED=1 -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_json_shared.dir\\tests\\test_json.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\tests\\test_json.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests/test_json.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/test_json_shared.dir/tests/test_json.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_merge.dir\\tests\\test_merge.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\tests\\test_merge.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests/test_merge.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/test_merge.dir/tests/test_merge.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DNX_USE_SHARED=1 -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_merge_shared.dir\\tests\\test_merge.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\tests\\test_merge.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests/test_merge.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/test_merge_shared.dir/tests/test_merge.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_parse.dir\\tests\\test_parse.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\tests\\test_parse.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests/test_parse.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/test_parse.dir/tests/test_parse.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DNX_USE_SHARED=1 -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_parse_shared.dir\\tests\\test_parse.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\tests\\test_parse.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests/test_parse.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/test_parse_shared.dir/tests/test_parse.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_platform.dir\\tests\\test_platform.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\tests\\test_platform.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests/test_platform.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/test_platform.dir/tests/test_platform.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DNX_USE_SHARED=1 -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_platform_shared.dir\\tests\\test_platform.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\tests\\test_platform.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests/test_platform.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/test_platform_shared.dir/tests/test_platform.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_postings.dir\\tests\\test_postings.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\tests\\test_postings.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests/test_postings.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/test_postings.dir/tests/test_postings.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DNX_USE_SHARED=1 -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_postings_shared.dir\\tests\\test_postings.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\tests\\test_postings.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests/test_postings.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/test_postings_shared.dir/tests/test_postings.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_rabitq.dir\\tests\\test_rabitq.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\tests\\test_rabitq.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests/test_rabitq.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/test_rabitq.dir/tests/test_rabitq.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DNX_USE_SHARED=1 -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_rabitq_shared.dir\\tests\\test_rabitq.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\tests\\test_rabitq.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests/test_rabitq.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/test_rabitq_shared.dir/tests/test_rabitq.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_regex.dir\\tests\\test_regex.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\tests\\test_regex.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests/test_regex.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/test_regex.dir/tests/test_regex.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DNX_USE_SHARED=1 -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_regex_shared.dir\\tests\\test_regex.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\tests\\test_regex.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests/test_regex.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/test_regex_shared.dir/tests/test_regex.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_search.dir\\tests\\test_search.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\tests\\test_search.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests/test_search.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/test_search.dir/tests/test_search.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DNX_USE_SHARED=1 -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_search_shared.dir\\tests\\test_search.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\tests\\test_search.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests/test_search.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/test_search_shared.dir/tests/test_search.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_search_index.dir\\tests\\test_search_index.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\tests\\test_search_index.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests/test_search_index.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/test_search_index.dir/tests/test_search_index.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DNX_USE_SHARED=1 -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_search_index_shared.dir\\tests\\test_search_index.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\tests\\test_search_index.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests/test_search_index.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/test_search_index_shared.dir/tests/test_search_index.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_seg_builder.dir\\tests\\test_seg_builder.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\tests\\test_seg_builder.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests/test_seg_builder.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/test_seg_builder.dir/tests/test_seg_builder.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DNX_USE_SHARED=1 -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_seg_builder_shared.dir\\tests\\test_seg_builder.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\tests\\test_seg_builder.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests/test_seg_builder.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/test_seg_builder_shared.dir/tests/test_seg_builder.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_server.dir\\tests\\test_server.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\tests\\test_server.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests/test_server.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/test_server.dir/tests/test_server.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DNX_USE_SHARED=1 -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_server_shared.dir\\tests\\test_server.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\tests\\test_server.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests/test_server.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/test_server_shared.dir/tests/test_server.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_simd.dir\\tests\\test_simd.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\tests\\test_simd.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests/test_simd.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/test_simd.dir/tests/test_simd.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DNX_USE_SHARED=1 -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_simd_shared.dir\\tests\\test_simd.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\tests\\test_simd.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests/test_simd.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/test_simd_shared.dir/tests/test_simd.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_table.dir\\tests\\test_table.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\tests\\test_table.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests/test_table.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/test_table.dir/tests/test_table.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DNX_USE_SHARED=1 -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_table_shared.dir\\tests\\test_table.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\tests\\test_table.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests/test_table.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/test_table_shared.dir/tests/test_table.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_trigram.dir\\tests\\test_trigram.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\tests\\test_trigram.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests/test_trigram.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/test_trigram.dir/tests/test_trigram.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DNX_USE_SHARED=1 -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_trigram_shared.dir\\tests\\test_trigram.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\tests\\test_trigram.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests/test_trigram.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/test_trigram_shared.dir/tests/test_trigram.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_update.dir\\tests\\test_update.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\tests\\test_update.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests/test_update.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/test_update.dir/tests/test_update.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DNX_USE_SHARED=1 -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_update_shared.dir\\tests\\test_update.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\tests\\test_update.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests/test_update.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/test_update_shared.dir/tests/test_update.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_utf8.dir\\tests\\test_utf8.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\tests\\test_utf8.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests/test_utf8.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/test_utf8.dir/tests/test_utf8.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DNX_USE_SHARED=1 -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_utf8_shared.dir\\tests\\test_utf8.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\tests\\test_utf8.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests/test_utf8.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/test_utf8_shared.dir/tests/test_utf8.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_vec.dir\\tests\\test_vec.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\tests\\test_vec.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests/test_vec.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/test_vec.dir/tests/test_vec.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DNX_USE_SHARED=1 -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_vec_shared.dir\\tests\\test_vec.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\tests\\test_vec.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests/test_vec.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/test_vec_shared.dir/tests/test_vec.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_wal.dir\\tests\\test_wal.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\tests\\test_wal.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests/test_wal.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/test_wal.dir/tests/test_wal.c.obj"
+},
+{
+  "directory": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DNX_USE_SHARED=1 -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/src -IC:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/include -O3 -DNDEBUG -std=c11 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion -Werror -march=x86-64-v2 -D__USE_MINGW_ANSI_STDIO=1 -o CMakeFiles\\test_wal_shared.dir\\tests\\test_wal.c.obj -c C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T074812Z-c176ef10\\source\\tests\\test_wal.c",
+  "file": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/source/tests/test_wal.c",
+  "output": "C:/Users/kai99/Desktop/NEXUS/build-portable/20261005T074812Z-c176ef10/build/CMakeFiles/test_wal_shared.dir/tests/test_wal.c.obj"
+}
+]

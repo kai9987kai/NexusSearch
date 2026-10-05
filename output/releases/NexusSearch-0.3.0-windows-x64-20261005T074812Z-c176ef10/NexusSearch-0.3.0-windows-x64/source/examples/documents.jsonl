@@ -1,0 +1,6 @@
+{"_id":"paper-01","title":"Local search in C","body":"A compact search engine with exact filters and deterministic ranking.","year":2026,"active":true,"rating":4.8,"embedding":[1,0,0]}
+{"_id":"paper-02","title":"Vector search foundations","body":"Vector similarity and metadata filters for document search.","year":2025,"active":true,"rating":4.5,"embedding":[0.9,0.1,0]}
+{"_id":"paper-03","title":"Safe immutable storage","body":"Checksums and immutable snapshots help detect corrupted files.","year":2024,"active":false,"rating":4.2,"embedding":[0,1,0]}
+{"_id":"paper-04","title":"Search search search","body":"Search ranking with term frequency and document length.","year":2023,"active":true,"rating":4.1,"embedding":[0.8,0.2,0]}
+{"_id":"paper-05","title":"Unicode notes","body":"Café and fullwidth text examples: Ｓｅａｒｃｈ.","year":2026,"active":true,"rating":4.7,"embedding":[0,0,1]}
+{"_id":"paper-06","title":"Draft without metadata","body":"An example of missing optional fields.","active":false}

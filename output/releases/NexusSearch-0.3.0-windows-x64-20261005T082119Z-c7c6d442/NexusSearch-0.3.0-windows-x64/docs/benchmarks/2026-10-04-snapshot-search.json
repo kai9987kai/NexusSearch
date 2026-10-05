@@ -1,0 +1,670 @@
+{
+  "schema": 1,
+  "benchmark": "snapshot-numeric-index-vs-scan",
+  "seed": 1314411313,
+  "generator": "xorshift32",
+  "documents": 10000,
+  "missing": 1277,
+  "explicit_null": 1223,
+  "snapshot_bytes": 944898,
+  "warmup_pairs_per_case": 3,
+  "measured_pairs_per_case": 21,
+  "order": "even pair indexed first; odd pair scan first",
+  "timing_scope": "nx_search only, including allocation and sorting; no build, open, validation, serialization or result-free",
+  "percentile_method": "nearest rank",
+  "validation": "Every warmup and measured search: full membership, IDs, order, zero scores and execution path against original generated values; paired results identical",
+  "limitations": "Single-process warm-cache synthetic numeric workload; not ANN, text, cold-cache, concurrency, memory-use or cross-platform performance evidence",
+  "memory_debug": false,
+  "binary_arch": "x86_64",
+  "cases": [
+    {
+      "name": "selective",
+      "query": "value:>=49000 LIMIT 10000",
+      "expected_total": 85,
+      "selectivity": 0.0085,
+      "indexed": {
+        "p50_ns": 1128600,
+        "p95_ns": 1916100,
+        "samples": [
+          {
+            "pair": 0,
+            "ns": 1011900,
+            "work": 16416,
+            "numeric_indexes": 1,
+            "scanned_cells": 0
+          },
+          {
+            "pair": 1,
+            "ns": 950600,
+            "work": 16416,
+            "numeric_indexes": 1,
+            "scanned_cells": 0
+          },
+          {
+            "pair": 2,
+            "ns": 834900,
+            "work": 16416,
+            "numeric_indexes": 1,
+            "scanned_cells": 0
+          },
+          {
+            "pair": 3,
+            "ns": 2171600,
+            "work": 16416,
+            "numeric_indexes": 1,
+            "scanned_cells": 0
+          },
+          {
+            "pair": 4,
+            "ns": 1916100,
+            "work": 16416,
+            "numeric_indexes": 1,
+            "scanned_cells": 0
+          },
+          {
+            "pair": 5,
+            "ns": 1225700,
+            "work": 16416,
+            "numeric_indexes": 1,
+            "scanned_cells": 0
+          },
+          {
+            "pair": 6,
+            "ns": 1241100,
+            "work": 16416,
+            "numeric_indexes": 1,
+            "scanned_cells": 0
+          },
+          {
+            "pair": 7,
+            "ns": 1201900,
+            "work": 16416,
+            "numeric_indexes": 1,
+            "scanned_cells": 0
+          },
+          {
+            "pair": 8,
+            "ns": 1459800,
+            "work": 16416,
+            "numeric_indexes": 1,
+            "scanned_cells": 0
+          },
+          {
+            "pair": 9,
+            "ns": 1374100,
+            "work": 16416,
+            "numeric_indexes": 1,
+            "scanned_cells": 0
+          },
+          {
+            "pair": 10,
+            "ns": 1128600,
+            "work": 16416,
+            "numeric_indexes": 1,
+            "scanned_cells": 0
+          },
+          {
+            "pair": 11,
+            "ns": 1098200,
+            "work": 16416,
+            "numeric_indexes": 1,
+            "scanned_cells": 0
+          },
+          {
+            "pair": 12,
+            "ns": 1112000,
+            "work": 16416,
+            "numeric_indexes": 1,
+            "scanned_cells": 0
+          },
+          {
+            "pair": 13,
+            "ns": 701700,
+            "work": 16416,
+            "numeric_indexes": 1,
+            "scanned_cells": 0
+          },
+          {
+            "pair": 14,
+            "ns": 984500,
+            "work": 16416,
+            "numeric_indexes": 1,
+            "scanned_cells": 0
+          },
+          {
+            "pair": 15,
+            "ns": 905100,
+            "work": 16416,
+            "numeric_indexes": 1,
+            "scanned_cells": 0
+          },
+          {
+            "pair": 16,
+            "ns": 1169800,
+            "work": 16416,
+            "numeric_indexes": 1,
+            "scanned_cells": 0
+          },
+          {
+            "pair": 17,
+            "ns": 1060100,
+            "work": 16416,
+            "numeric_indexes": 1,
+            "scanned_cells": 0
+          },
+          {
+            "pair": 18,
+            "ns": 1163800,
+            "work": 16416,
+            "numeric_indexes": 1,
+            "scanned_cells": 0
+          },
+          {
+            "pair": 19,
+            "ns": 1206300,
+            "work": 16416,
+            "numeric_indexes": 1,
+            "scanned_cells": 0
+          },
+          {
+            "pair": 20,
+            "ns": 1008000,
+            "work": 16416,
+            "numeric_indexes": 1,
+            "scanned_cells": 0
+          }
+        ]
+      },
+      "scan": {
+        "p50_ns": 1941000,
+        "p95_ns": 2583800,
+        "samples": [
+          {
+            "pair": 0,
+            "ns": 1881200,
+            "work": 16211,
+            "numeric_indexes": 0,
+            "scanned_cells": 10000
+          },
+          {
+            "pair": 1,
+            "ns": 1385600,
+            "work": 16211,
+            "numeric_indexes": 0,
+            "scanned_cells": 10000
+          },
+          {
+            "pair": 2,
+            "ns": 1804000,
+            "work": 16211,
+            "numeric_indexes": 0,
+            "scanned_cells": 10000
+          },
+          {
+            "pair": 3,
+            "ns": 1941000,
+            "work": 16211,
+            "numeric_indexes": 0,
+            "scanned_cells": 10000
+          },
+          {
+            "pair": 4,
+            "ns": 1988400,
+            "work": 16211,
+            "numeric_indexes": 0,
+            "scanned_cells": 10000
+          },
+          {
+            "pair": 5,
+            "ns": 1969200,
+            "work": 16211,
+            "numeric_indexes": 0,
+            "scanned_cells": 10000
+          },
+          {
+            "pair": 6,
+            "ns": 2027200,
+            "work": 16211,
+            "numeric_indexes": 0,
+            "scanned_cells": 10000
+          },
+          {
+            "pair": 7,
+            "ns": 2022900,
+            "work": 16211,
+            "numeric_indexes": 0,
+            "scanned_cells": 10000
+          },
+          {
+            "pair": 8,
+            "ns": 2488700,
+            "work": 16211,
+            "numeric_indexes": 0,
+            "scanned_cells": 10000
+          },
+          {
+            "pair": 9,
+            "ns": 1931400,
+            "work": 16211,
+            "numeric_indexes": 0,
+            "scanned_cells": 10000
+          },
+          {
+            "pair": 10,
+            "ns": 1668600,
+            "work": 16211,
+            "numeric_indexes": 0,
+            "scanned_cells": 10000
+          },
+          {
+            "pair": 11,
+            "ns": 2114400,
+            "work": 16211,
+            "numeric_indexes": 0,
+            "scanned_cells": 10000
+          },
+          {
+            "pair": 12,
+            "ns": 1927300,
+            "work": 16211,
+            "numeric_indexes": 0,
+            "scanned_cells": 10000
+          },
+          {
+            "pair": 13,
+            "ns": 2583800,
+            "work": 16211,
+            "numeric_indexes": 0,
+            "scanned_cells": 10000
+          },
+          {
+            "pair": 14,
+            "ns": 1925200,
+            "work": 16211,
+            "numeric_indexes": 0,
+            "scanned_cells": 10000
+          },
+          {
+            "pair": 15,
+            "ns": 1888000,
+            "work": 16211,
+            "numeric_indexes": 0,
+            "scanned_cells": 10000
+          },
+          {
+            "pair": 16,
+            "ns": 1894800,
+            "work": 16211,
+            "numeric_indexes": 0,
+            "scanned_cells": 10000
+          },
+          {
+            "pair": 17,
+            "ns": 1873700,
+            "work": 16211,
+            "numeric_indexes": 0,
+            "scanned_cells": 10000
+          },
+          {
+            "pair": 18,
+            "ns": 3974900,
+            "work": 16211,
+            "numeric_indexes": 0,
+            "scanned_cells": 10000
+          },
+          {
+            "pair": 19,
+            "ns": 2097300,
+            "work": 16211,
+            "numeric_indexes": 0,
+            "scanned_cells": 10000
+          },
+          {
+            "pair": 20,
+            "ns": 2079700,
+            "work": 16211,
+            "numeric_indexes": 0,
+            "scanned_cells": 10000
+          }
+        ]
+      }
+    },
+    {
+      "name": "broad",
+      "query": "value:>=-40000 LIMIT 10000",
+      "expected_total": 6722,
+      "selectivity": 0.6722,
+      "indexed": {
+        "p50_ns": 7526000,
+        "p95_ns": 13542700,
+        "samples": [
+          {
+            "pair": 0,
+            "ns": 7100800,
+            "work": 908617,
+            "numeric_indexes": 1,
+            "scanned_cells": 0
+          },
+          {
+            "pair": 1,
+            "ns": 10749500,
+            "work": 908617,
+            "numeric_indexes": 1,
+            "scanned_cells": 0
+          },
+          {
+            "pair": 2,
+            "ns": 6438600,
+            "work": 908617,
+            "numeric_indexes": 1,
+            "scanned_cells": 0
+          },
+          {
+            "pair": 3,
+            "ns": 5032200,
+            "work": 908617,
+            "numeric_indexes": 1,
+            "scanned_cells": 0
+          },
+          {
+            "pair": 4,
+            "ns": 4924500,
+            "work": 908617,
+            "numeric_indexes": 1,
+            "scanned_cells": 0
+          },
+          {
+            "pair": 5,
+            "ns": 6802200,
+            "work": 908617,
+            "numeric_indexes": 1,
+            "scanned_cells": 0
+          },
+          {
+            "pair": 6,
+            "ns": 7299300,
+            "work": 908617,
+            "numeric_indexes": 1,
+            "scanned_cells": 0
+          },
+          {
+            "pair": 7,
+            "ns": 7016000,
+            "work": 908617,
+            "numeric_indexes": 1,
+            "scanned_cells": 0
+          },
+          {
+            "pair": 8,
+            "ns": 7436000,
+            "work": 908617,
+            "numeric_indexes": 1,
+            "scanned_cells": 0
+          },
+          {
+            "pair": 9,
+            "ns": 8643600,
+            "work": 908617,
+            "numeric_indexes": 1,
+            "scanned_cells": 0
+          },
+          {
+            "pair": 10,
+            "ns": 7151700,
+            "work": 908617,
+            "numeric_indexes": 1,
+            "scanned_cells": 0
+          },
+          {
+            "pair": 11,
+            "ns": 9073100,
+            "work": 908617,
+            "numeric_indexes": 1,
+            "scanned_cells": 0
+          },
+          {
+            "pair": 12,
+            "ns": 9342200,
+            "work": 908617,
+            "numeric_indexes": 1,
+            "scanned_cells": 0
+          },
+          {
+            "pair": 13,
+            "ns": 7702700,
+            "work": 908617,
+            "numeric_indexes": 1,
+            "scanned_cells": 0
+          },
+          {
+            "pair": 14,
+            "ns": 7487800,
+            "work": 908617,
+            "numeric_indexes": 1,
+            "scanned_cells": 0
+          },
+          {
+            "pair": 15,
+            "ns": 13542700,
+            "work": 908617,
+            "numeric_indexes": 1,
+            "scanned_cells": 0
+          },
+          {
+            "pair": 16,
+            "ns": 13864000,
+            "work": 908617,
+            "numeric_indexes": 1,
+            "scanned_cells": 0
+          },
+          {
+            "pair": 17,
+            "ns": 7711900,
+            "work": 908617,
+            "numeric_indexes": 1,
+            "scanned_cells": 0
+          },
+          {
+            "pair": 18,
+            "ns": 11400000,
+            "work": 908617,
+            "numeric_indexes": 1,
+            "scanned_cells": 0
+          },
+          {
+            "pair": 19,
+            "ns": 10237900,
+            "work": 908617,
+            "numeric_indexes": 1,
+            "scanned_cells": 0
+          },
+          {
+            "pair": 20,
+            "ns": 7526000,
+            "work": 908617,
+            "numeric_indexes": 1,
+            "scanned_cells": 0
+          }
+        ]
+      },
+      "scan": {
+        "p50_ns": 8276600,
+        "p95_ns": 16585600,
+        "samples": [
+          {
+            "pair": 0,
+            "ns": 8482400,
+            "work": 908412,
+            "numeric_indexes": 0,
+            "scanned_cells": 10000
+          },
+          {
+            "pair": 1,
+            "ns": 7237000,
+            "work": 908412,
+            "numeric_indexes": 0,
+            "scanned_cells": 10000
+          },
+          {
+            "pair": 2,
+            "ns": 20138700,
+            "work": 908412,
+            "numeric_indexes": 0,
+            "scanned_cells": 10000
+          },
+          {
+            "pair": 3,
+            "ns": 7396100,
+            "work": 908412,
+            "numeric_indexes": 0,
+            "scanned_cells": 10000
+          },
+          {
+            "pair": 4,
+            "ns": 7078900,
+            "work": 908412,
+            "numeric_indexes": 0,
+            "scanned_cells": 10000
+          },
+          {
+            "pair": 5,
+            "ns": 7976200,
+            "work": 908412,
+            "numeric_indexes": 0,
+            "scanned_cells": 10000
+          },
+          {
+            "pair": 6,
+            "ns": 7929000,
+            "work": 908412,
+            "numeric_indexes": 0,
+            "scanned_cells": 10000
+          },
+          {
+            "pair": 7,
+            "ns": 10436400,
+            "work": 908412,
+            "numeric_indexes": 0,
+            "scanned_cells": 10000
+          },
+          {
+            "pair": 8,
+            "ns": 8837200,
+            "work": 908412,
+            "numeric_indexes": 0,
+            "scanned_cells": 10000
+          },
+          {
+            "pair": 9,
+            "ns": 8114000,
+            "work": 908412,
+            "numeric_indexes": 0,
+            "scanned_cells": 10000
+          },
+          {
+            "pair": 10,
+            "ns": 10265100,
+            "work": 908412,
+            "numeric_indexes": 0,
+            "scanned_cells": 10000
+          },
+          {
+            "pair": 11,
+            "ns": 8058700,
+            "work": 908412,
+            "numeric_indexes": 0,
+            "scanned_cells": 10000
+          },
+          {
+            "pair": 12,
+            "ns": 10316800,
+            "work": 908412,
+            "numeric_indexes": 0,
+            "scanned_cells": 10000
+          },
+          {
+            "pair": 13,
+            "ns": 8168000,
+            "work": 908412,
+            "numeric_indexes": 0,
+            "scanned_cells": 10000
+          },
+          {
+            "pair": 14,
+            "ns": 9443200,
+            "work": 908412,
+            "numeric_indexes": 0,
+            "scanned_cells": 10000
+          },
+          {
+            "pair": 15,
+            "ns": 16585600,
+            "work": 908412,
+            "numeric_indexes": 0,
+            "scanned_cells": 10000
+          },
+          {
+            "pair": 16,
+            "ns": 10141400,
+            "work": 908412,
+            "numeric_indexes": 0,
+            "scanned_cells": 10000
+          },
+          {
+            "pair": 17,
+            "ns": 8030800,
+            "work": 908412,
+            "numeric_indexes": 0,
+            "scanned_cells": 10000
+          },
+          {
+            "pair": 18,
+            "ns": 8215500,
+            "work": 908412,
+            "numeric_indexes": 0,
+            "scanned_cells": 10000
+          },
+          {
+            "pair": 19,
+            "ns": 8276600,
+            "work": 908412,
+            "numeric_indexes": 0,
+            "scanned_cells": 10000
+          },
+          {
+            "pair": 20,
+            "ns": 8524000,
+            "work": 908412,
+            "numeric_indexes": 0,
+            "scanned_cells": 10000
+          }
+        ]
+      }
+    }
+  ],
+  "recorded_utc": "2026-10-04T08:50:38.245836+00:00",
+  "environment": {
+    "os": "Microsoft Windows 11 Home Insider Preview 10.0.28120",
+    "host_arch": "ARM64",
+    "processor": "Snapdragon X Plus (8-core) @ 3.30 GHz",
+    "logical_processors": 8,
+    "execution": "Windows x64 emulation on ARM64",
+    "compiler": "gcc (Rev8, Built by MSYS2 project) 15.2.0",
+    "cmake_build_type": "Release",
+    "memory_debug": false,
+    "processes": "No CPU affinity, priority change, or system-wide workload isolation; shared interactive host"
+  },
+  "reproduce": [
+    "cmake -S . -B build-release -G Ninja -DCMAKE_BUILD_TYPE=Release -DNX_MEM_DEBUG=OFF",
+    "cmake --build build-release --target bench_search_compare",
+    "build-release/bench_search_compare.exe"
+  ],
+  "sha256": {
+    "bench/bench_search_compare.c": "0d61df204dab039c998c9e8ef5f9485b6a1683e99d2e487ad8dc621f322ee42c",
+    "src/engine/nx_search.c": "b146f45735ba17a832b069067ba1a16a06feb42d9198bb241939708ca60d91be",
+    "src/seg/nx_table.c": "93e0191e9bc1a10f8759f6113524b9113ff6db1aa37baefa511ddc11eb756771",
+    "src/index/nx_bsi.c": "634f05f183703de987af82d1d13abd1da1f5c6e6711f9abb96ea36f4db6c7305",
+    "build-release/bench_search_compare.exe": "267dea0c226951421f24c8cbb1f9ee67781f402266e2ddd3cced97efe84fc647",
+    "build-release/libnexus.a": "93247acf3b83f7606cb2d55dd480f3e103f6fe56cdb6dc0867536f7fe09e8fbf"
+  }
+}

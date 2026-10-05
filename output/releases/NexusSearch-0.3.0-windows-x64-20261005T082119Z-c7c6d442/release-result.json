@@ -1,0 +1,31 @@
+{
+  "archive": "C:\\Users\\kai99\\Desktop\\NEXUS\\output\\releases\\NexusSearch-0.3.0-windows-x64-20261005T082119Z-c7c6d442\\NexusSearch-0.3.0-windows-x64.zip",
+  "build_directory": "C:\\Users\\kai99\\Desktop\\NEXUS\\build-portable\\20261005T082119Z-c7c6d442\\build",
+  "directory": "C:\\Users\\kai99\\Desktop\\NEXUS\\output\\releases\\NexusSearch-0.3.0-windows-x64-20261005T082119Z-c7c6d442\\NexusSearch-0.3.0-windows-x64",
+  "files": 197,
+  "sha256": "98d7bbac279693c258d2fe05461dac98873df852d120f2837000f2eac2230b29",
+  "validation": {
+    "binary_target": "windows-x64",
+    "built_rows": 6,
+    "checks": [
+      "CLI version",
+      "snapshot build",
+      "exact search",
+      "prepared text search",
+      "Python shared library",
+      "unchanged Python PATH",
+      "HTTP health",
+      "HTTP search",
+      "launcher readiness",
+      "launcher preserves existing snapshot"
+    ],
+    "copied_path_includes_spaces_and_unicode": true,
+    "development_path_removed": true,
+    "host": "Windows-11-10.0.28120-SP0",
+    "passed": true,
+    "python_machine": "ARM64",
+    "python_version": "3.12.10",
+    "version": "0.3.0"
+  },
+  "version": "0.3.0"
+}

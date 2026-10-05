@@ -1,0 +1,352 @@
+{
+  "schema_version": 1,
+  "recovered_utc": "2026-10-03",
+  "meaning": "Hashes of the reconstructed pre-deletion source state, before recovery documentation and backup enhancements. Not the original filesystem metadata.",
+  "original_logged_files": 35,
+  "original_logged_operations": 55,
+  "codex_successful_patches": 25,
+  "codex_literal_replacements": 1,
+  "codex_failed_patches_omitted": 3,
+  "recovered_files": 66,
+  "files": [
+    {
+      "path": "CMakeLists.txt",
+      "bytes": 5892,
+      "sha256": "d8bd25ffc9d48ee45821c177672738a79c97e45220133ba525876715c255ffd2"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2717,
+      "sha256": "d077eaed06d65b4bfa8b7961da12ad2e7e6b18b5fda6dda3d470b277fc207b07"
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "bytes": 8297,
+      "sha256": "c5aa6e1fb0decd00d5d51dc22c9d3f492522c47c90565d96154ef679e5178600"
+    },
+    {
+      "path": "docs/CODING_STANDARD.md",
+      "bytes": 5328,
+      "sha256": "7a53e9a5ff65dddfdfaa5fa72bd7cbd55d088d5c12a59f519858afcb28298ce6"
+    },
+    {
+      "path": "docs/LEAF_MODULES.md",
+      "bytes": 3750,
+      "sha256": "b644775e4bfd61e24d0601f92a44d05cec6db9d31020f0b4a89a397f05d0ee99"
+    },
+    {
+      "path": "docs/NEXT_LAYER.md",
+      "bytes": 3049,
+      "sha256": "c71eb3cb25950e88e4f3bc15a76cea96293a185a56f821602950150dd92169d6"
+    },
+    {
+      "path": "docs/PROGRESS.md",
+      "bytes": 1924,
+      "sha256": "02d94dca460fc4af984b8a54159eb148a94afdf6e3ed52d19a527a4a3d90f16e"
+    },
+    {
+      "path": "docs/QUERY_LANGUAGE.md",
+      "bytes": 8582,
+      "sha256": "8b749258fda5a667fa57e7609239e27deb188a4dcf93a595f600735392412724"
+    },
+    {
+      "path": "docs/TEXT_JSON.md",
+      "bytes": 1923,
+      "sha256": "7c68a7cc7641837305eac412607107b87da734f9be50f52c0a2e763381e5f77f"
+    },
+    {
+      "path": "docs/research/01-filtered-ann.md",
+      "bytes": 37337,
+      "sha256": "45859d86e54a46966cff34658e2cfb26b995189973263fa2fc1da7b14c4df52e"
+    },
+    {
+      "path": "docs/research/02-graph-ann.md",
+      "bytes": 36224,
+      "sha256": "67d571f8d1aefd27b0631465d49e27495bf77a364050637ebc0f3cc975649d22"
+    },
+    {
+      "path": "docs/research/03-quantization-simd.md",
+      "bytes": 32889,
+      "sha256": "7e2fe5c61e6aaf815bf1a64a38c0261cdeee24b28039a2e5f63285f4ac9f4b2a"
+    },
+    {
+      "path": "docs/research/04-lexical-ranking.md",
+      "bytes": 41389,
+      "sha256": "758f59eaf4ce2d5d409b4d955431b41e09eab2396f6a15913526b0fbb27e4c94"
+    },
+    {
+      "path": "docs/research/05-bitmaps-columns-dicts.md",
+      "bytes": 38929,
+      "sha256": "c742275770c282192ad6d3dc39c5d395a8bba536ee97b0293071acdeee82736a"
+    },
+    {
+      "path": "docs/research/06-regex-code-search.md",
+      "bytes": 42069,
+      "sha256": "6c36928a8033fbc8ae0152bb08087cd0a5f4090914cc42f685d25aa60e21a067"
+    },
+    {
+      "path": "docs/research/07-fuzzy-text.md",
+      "bytes": 36941,
+      "sha256": "12ebd21b3b230757accc45b033ef79f8303f938b7cd73dbc3526e72a9e0ca0aa"
+    },
+    {
+      "path": "docs/research/08-fusion-ranking-explain.md",
+      "bytes": 36304,
+      "sha256": "b296c6fb888f881bd9d0d1ea68821efd5a6241c0646aec20ec485509550dd67c"
+    },
+    {
+      "path": "docs/research/09-planner-cardinality.md",
+      "bytes": 41320,
+      "sha256": "c1734040a8c53fa515431ed7275ce96c95783aba7d203df7295140e032db4df2"
+    },
+    {
+      "path": "src/core/nx_arena.c",
+      "bytes": 4108,
+      "sha256": "5006bbb9b5c3671824ab1b2916f6722bbbb0da052e46c9a286a0df4d8d721d89"
+    },
+    {
+      "path": "src/core/nx_arena.h",
+      "bytes": 1940,
+      "sha256": "de852e6f8e8e1eb09168cd9e10de56231e342bbd2313d5e5c0f67bd5e8262289"
+    },
+    {
+      "path": "src/core/nx_buf.c",
+      "bytes": 5558,
+      "sha256": "305ea7f7c42031846c69a352af36cc8d642942db3e257b24a68df24cb4a9009f"
+    },
+    {
+      "path": "src/core/nx_buf.h",
+      "bytes": 4658,
+      "sha256": "4aeec9d302746392aaf92bd2c0fa4bc00794baa8dd2530c127cfd237e904216b"
+    },
+    {
+      "path": "src/core/nx_config.h",
+      "bytes": 7385,
+      "sha256": "e2d211e590b6cfad0386323d9242100e82b47564d046e24e00ff2faa3037f03b"
+    },
+    {
+      "path": "src/core/nx_crc32c.c",
+      "bytes": 7174,
+      "sha256": "d9a855770547981f85a2a7142edf8b21e3eb2e16dba3acea4c2833d38d30f01d"
+    },
+    {
+      "path": "src/core/nx_crc32c.h",
+      "bytes": 2992,
+      "sha256": "1e5808647510e72e7f7b9d20846c3ced5b67f802b295395d3d9302cec8e1e6d8"
+    },
+    {
+      "path": "src/core/nx_file.c",
+      "bytes": 8774,
+      "sha256": "c110489b610c627ab3cd67fbceae7371dc7c4913ec72fed3732b67509c436366"
+    },
+    {
+      "path": "src/core/nx_file.h",
+      "bytes": 2076,
+      "sha256": "338c804f22610a2a521a5594f68b83ff99b21aecd2241634864e36f777463ab7"
+    },
+    {
+      "path": "src/core/nx_hash.h",
+      "bytes": 3087,
+      "sha256": "e387cd5389818b506d76cf82064d88551eeb568cb64d57a220f3cb9ee0f5fbfa"
+    },
+    {
+      "path": "src/core/nx_json.c",
+      "bytes": 14939,
+      "sha256": "13fa372ea93386199d41590b51747627ddb469fbdb5f233147b1a994a518be26"
+    },
+    {
+      "path": "src/core/nx_json.h",
+      "bytes": 3313,
+      "sha256": "68b587c43ae9f6fb0298f40f583aff09fab2a8b5d22b63ae211c29c06c0c67d4"
+    },
+    {
+      "path": "src/core/nx_mem.c",
+      "bytes": 7589,
+      "sha256": "58e57ce8f5b70c0871296670b241009b320af1f744397dbe52f3cebb79233224"
+    },
+    {
+      "path": "src/core/nx_mem.h",
+      "bytes": 3165,
+      "sha256": "4ec1a7bc7b6650d5238260bee7049bba28b975193b44f646e52eff0013b39f84"
+    },
+    {
+      "path": "src/core/nx_simd.c",
+      "bytes": 3594,
+      "sha256": "facc464ed4bb5b20b79c6e989d76a57b121c88d30b2a3b6c1c183e05cb371850"
+    },
+    {
+      "path": "src/core/nx_simd.h",
+      "bytes": 1676,
+      "sha256": "1ca0b2d3e5169c15ffabc57b823be3484d89644d72b7f3a33c880fdcb436d5e4"
+    },
+    {
+      "path": "src/core/nx_status.c",
+      "bytes": 1311,
+      "sha256": "066823432f0eb47b8f062ab37d216deb62d0bb24f95869cdaf162dcabefde46d"
+    },
+    {
+      "path": "src/core/nx_status.h",
+      "bytes": 1604,
+      "sha256": "360639cf0b0bf24501b4cc74d8e6d0ef31fe094ac37d18e5b98a9ce580f29e05"
+    },
+    {
+      "path": "src/core/nx_thread.c",
+      "bytes": 11405,
+      "sha256": "322f54eaac424d0d3157e3c86cfde6ea6adf3b16ddb3facae26e3421eadc0661"
+    },
+    {
+      "path": "src/core/nx_thread.h",
+      "bytes": 4095,
+      "sha256": "c46cdcef719f22bff5454b235591de4bf711411590462a16e942dc950732ad4a"
+    },
+    {
+      "path": "src/core/nx_utf8.c",
+      "bytes": 7006,
+      "sha256": "4127b9ab54d3f4ce28ef7e0f599a69bd5c5fcecc855d55371f4d3e6e35317460"
+    },
+    {
+      "path": "src/core/nx_utf8.h",
+      "bytes": 2655,
+      "sha256": "63b1a255dea17d685aec75290dd95320582438fb3bcbe4fac96840998c2875bd"
+    },
+    {
+      "path": "src/index/nx_bitmap.c",
+      "bytes": 8373,
+      "sha256": "8e94ba5f18a11102b7d87ba61814a923ea3d75154cbdbf6547444d9807b7f284"
+    },
+    {
+      "path": "src/index/nx_bitmap.h",
+      "bytes": 1509,
+      "sha256": "860fa38ca63fe700f33688e86ec5f5032d6e33874ca02ffa418e9ca10263b470"
+    },
+    {
+      "path": "src/index/nx_fuzzy.c",
+      "bytes": 2068,
+      "sha256": "0fc61518ce880bc579236f6d707ca2a7fa6264c2357742554888ca75aee07b1e"
+    },
+    {
+      "path": "src/index/nx_fuzzy.h",
+      "bytes": 751,
+      "sha256": "90402049dc560df7bac82d1e476de16f3ecd5a2b52e39d12a3446d82fb972323"
+    },
+    {
+      "path": "src/index/nx_regex.c",
+      "bytes": 13538,
+      "sha256": "8576071f094c27a9e72b0906b111fd932a8987441a5150e2cf0fdd6021ab1c96"
+    },
+    {
+      "path": "src/index/nx_regex.h",
+      "bytes": 1503,
+      "sha256": "27d03b7b0ca86f2d137ef49a42d05c3cd1d0c021b7674fbd35e0b34cc4dec8dd"
+    },
+    {
+      "path": "src/index/nx_vec.c",
+      "bytes": 4140,
+      "sha256": "4917377f928b102667919582dc762c5031c3cec330cf7aaf3a33bd849b32eb00"
+    },
+    {
+      "path": "src/index/nx_vec.h",
+      "bytes": 1572,
+      "sha256": "af75571298acfe7ebd8faf214d4a2caa0d47240f842ad6e713abb3e17ecad5a5"
+    },
+    {
+      "path": "src/query/nx_ast.c",
+      "bytes": 14529,
+      "sha256": "22958ce897325267862f056d79c1e293a04e1e20090f8b710f1611a9405b7d3b"
+    },
+    {
+      "path": "src/query/nx_ast.h",
+      "bytes": 15510,
+      "sha256": "7e452a26d997fc7bc562be23141afa5280768da90a8d92618ed7b484bfa0740c"
+    },
+    {
+      "path": "src/query/nx_parse.c",
+      "bytes": 39194,
+      "sha256": "9b6c65f9e15ce43e90f0d124a80f2fdffaabf9ef71e03456bef6c8a54aa04b95"
+    },
+    {
+      "path": "src/query/nx_parse.h",
+      "bytes": 1714,
+      "sha256": "a34219b0c734f95e0b0018758f97ddcde024fc85c8226d28149c0329660c01af"
+    },
+    {
+      "path": "tests/nx_test.h",
+      "bytes": 6340,
+      "sha256": "bf908f2dfc08bf7ec31af80ab4a4710529dbec42a6f246235172f719312af7da"
+    },
+    {
+      "path": "tests/test_arena_rollback.c",
+      "bytes": 1226,
+      "sha256": "f87f1df4555e940192fe182cca46e331aa81490c9fff6982e2fa33a13f6b006d"
+    },
+    {
+      "path": "tests/test_bitmap.c",
+      "bytes": 5665,
+      "sha256": "9463e6496f7fa766a71a002e154e03f7bb1879b9a9119d351333effb75241244"
+    },
+    {
+      "path": "tests/test_core.c",
+      "bytes": 17604,
+      "sha256": "919a847010543eb42489164fd19adef282340f6d4c0f421d5ebe65ef8f85cb8c"
+    },
+    {
+      "path": "tests/test_fuzzy.c",
+      "bytes": 1986,
+      "sha256": "d27a86b5946aa9623d1445bf821d88acb70ec197d255787bdf8bc4715f6358f3"
+    },
+    {
+      "path": "tests/test_json.c",
+      "bytes": 7772,
+      "sha256": "4186c47c2a68f4037107f58175f73f8c64590cf1ea9415740b21193afa8a675c"
+    },
+    {
+      "path": "tests/test_parse.c",
+      "bytes": 9865,
+      "sha256": "51528f1c58ff09bd84a378eb03b7f6cb927dd723427b6ceb8e333bb7ee966f0e"
+    },
+    {
+      "path": "tests/test_platform.c",
+      "bytes": 4587,
+      "sha256": "963e91a034700c5d017948b47a6ed64de90b3f68f7eb2c2596b075fc9695dff9"
+    },
+    {
+      "path": "tests/test_regex.c",
+      "bytes": 4656,
+      "sha256": "c7061decb605ae84f784b18c076d3dac4117983055bc8660b53595a8b2892de6"
+    },
+    {
+      "path": "tests/test_simd.c",
+      "bytes": 641,
+      "sha256": "1a630470c91b0149f0c2b8e6cb2b08f4f56bf4372a76dae97af00181a42fec68"
+    },
+    {
+      "path": "tests/test_utf8.c",
+      "bytes": 4725,
+      "sha256": "6f31557ebf864e4ede2849d28fecbff03c3fcc20205895451ddb33120fef400b"
+    },
+    {
+      "path": "tests/test_vec.c",
+      "bytes": 3114,
+      "sha256": "bbf729056b6d87fdf2b4ba8b21b3a6c5bd05d6ebae637cf02fc0c318871a72bf"
+    },
+    {
+      "path": "tools/gen_unicode.py",
+      "bytes": 25450,
+      "sha256": "43b9c371a628521fadc56b157fc273abef46fd0cfe7d6220de166a74c43072db"
+    },
+    {
+      "path": "tools/nxbuild.sh",
+      "bytes": 1139,
+      "sha256": "2655ca08a6236418b753ad4ae9640c229fe02456c6c39da6e80542955585c708"
+    }
+  ],
+  "omitted_generated_content": [
+    "Original build outputs and build logs (rebuilt)",
+    "Two temporary failing-test stubs under build/agent-json"
+  ],
+  "known_not_previously_created": [
+    "Research notes 10-17, independent fact checks and synthesis",
+    "Generated full-Unicode table and golden data",
+    "Higher-level engine, storage, servers, UI and bindings"
+  ]
+}

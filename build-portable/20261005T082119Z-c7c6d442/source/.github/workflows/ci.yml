@@ -1,0 +1,79 @@
+name: Build and validate
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  linux:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        compiler: [gcc, clang]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Configure and build
+        run: >-
+          cmake -S . -B build -G Ninja
+          -DCMAKE_C_COMPILER=${{ matrix.compiler }}
+          -DCMAKE_BUILD_TYPE=Release
+          -DNX_MEM_DEBUG=OFF
+      - name: C tests
+        run: cmake --build build --parallel 4 && ctest --test-dir build --output-on-failure
+      - name: Python, CLI, HTTP, MCP and UI tests
+        env:
+          PYTHONPATH: ${{ github.workspace }}/bindings/python
+          NEXUS_LIB_PATH: ${{ github.workspace }}/build/libnexus.so
+        run: |
+          python tests/test_bindings.py
+          python tests/test_cli.py
+          python tests/test_server.py
+          python tests/test_mcp.py
+          node tests/test_web_ui.cjs
+
+  windows-mingw:
+    runs-on: windows-latest
+    defaults:
+      run:
+        shell: msys2 {0}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: msys2/setup-msys2@v2
+        with:
+          msystem: UCRT64
+          update: true
+          install: >-
+            mingw-w64-ucrt-x86_64-gcc
+            mingw-w64-ucrt-x86_64-cmake
+            mingw-w64-ucrt-x86_64-ninja
+            mingw-w64-ucrt-x86_64-python
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Configure and build
+        run: >-
+          cmake -S . -B build -G Ninja
+          -DCMAKE_C_COMPILER=gcc
+          -DCMAKE_BUILD_TYPE=Release
+          -DNX_MEM_DEBUG=OFF
+      - name: C tests
+        run: cmake --build build --parallel 4 && ctest --test-dir build --output-on-failure
+      - name: Python, CLI, HTTP, MCP and UI tests
+        env:
+          PYTHONPATH: ${{ github.workspace }}/bindings/python
+          NEXUS_LIB_PATH: ${{ github.workspace }}/build/libnexus.dll
+        run: |
+          python tests/test_bindings.py
+          python tests/test_cli.py
+          python tests/test_server.py
+          python tests/test_mcp.py
+          node tests/test_web_ui.cjs
